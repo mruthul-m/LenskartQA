@@ -38,7 +38,6 @@ public class TestBase {
 		driver = invokeBrowser();
 		wait = setWait(driver, 10);
 		actions = setActions(driver);
-		navigateTo();
 	}
 
 	/**
@@ -101,6 +100,14 @@ public class TestBase {
 
 		}
 
+	}
+	
+	public static void  delay(int msonds) {
+		try {
+			Thread.sleep(msonds);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 }
