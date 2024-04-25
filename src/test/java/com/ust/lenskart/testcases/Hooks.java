@@ -1,18 +1,20 @@
 package com.ust.lenskart.testcases;
 
-import org.testng.annotations.*;
-
-import com.ust.lenskart.base.TestBase;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
 public class Hooks extends TestBase {
-	
-@BeforeClass
-public void startup() {
-	appInit();
-}
 
-//@AfterClass
-//public void teardown() {
-//    driver.quit();
-//}
+	@BeforeClass
+	public void pageLoader() {
+		appInit();
+		navigateTo();
+	}
+
+	@AfterClass
+	public void quitDriver() {
+		driver.quit();
+	}
+
+	>>>>>>>mruthul
 }

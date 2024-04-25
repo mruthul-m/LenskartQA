@@ -113,6 +113,12 @@ public class HomePage extends TestBase {
 	@FindBy(css = "span[class='SpecialPriceSpan--1mh26ry gDbhuM']")
 	public List<WebElement> priceList;
 
+	@FindBy(id = "lrd9")
+	private WebElement storeLocator;
+
+	@FindBy(linkText = "Locate a Store")
+	private WebElement storeLink;
+
 	public HomePage enterSearchBox(String itemtext) {
 		searchbox.sendKeys(itemtext, Keys.ENTER);
 		delay(1);
@@ -291,7 +297,7 @@ public class HomePage extends TestBase {
 		Select drop = new Select(selectsort);
 		drop.selectByVisibleText("Price: Low to High");
 	}
-	
+
 	public void setSortHighToLow() {
 		Select drop = new Select(selectsort);
 		drop.selectByVisibleText("Price: High to Low");
@@ -301,27 +307,42 @@ public class HomePage extends TestBase {
 		js.executeScript("window.scrollBy(0, 500);");
 		delay(2);
 	}
-	
+
 	public boolean checkSortAsc() {
-		int j =0;
-		for(int i =0;i<priceList.size()-1;i++) {
-			j = i+1;
-			
-			if(Integer.parseInt(priceList.get(i).getText().replace("₹", "").replaceAll(",", "")) > Integer.parseInt(priceList.get(j).getText().replace("₹", "").replaceAll(",", ""))) {
+		int j = 0;
+		for (int i = 0; i < priceList.size() - 1; i++) {
+			j = i + 1;
+
+			if (Integer.parseInt(priceList.get(i).getText().replace("₹", "").replaceAll(",", "")) > Integer
+					.parseInt(priceList.get(j).getText().replace("₹", "").replaceAll(",", ""))) {
 				return false;
 			}
-			}
+		}
 		return true;
 	}
+
 	public boolean checkSortDesc() {
-		int j =0;
-		for(int i =0;i<priceList.size()-1;i++) {
-			j = i+1;
-			
-			if(Integer.parseInt(priceList.get(i).getText().replace("₹", "").replaceAll(",", "")) < Integer.parseInt(priceList.get(j).getText().replace("₹", "").replaceAll(",", ""))) {
+		int j = 0;
+		for (int i = 0; i < priceList.size() - 1; i++) {
+			j = i + 1;
+
+			if (Integer.parseInt(priceList.get(i).getText().replace("₹", "").replaceAll(",", "")) < Integer
+					.parseInt(priceList.get(j).getText().replace("₹", "").replaceAll(",", ""))) {
 				return false;
 			}
-			}
+		}
 		return true;
+	}
+
+	public HomePage hoverStoreLocator(WebDriver driver) {
+		setWait(driver, 10).until(ExpectedConditions.visibilityOf(storeLocator));
+		setActions(driver).moveToElement(storeLocator).build().perform();
+		return this;
+	}
+
+	public HomePage clickStoreLink() {
+		storeLink.click();
+		delay(3000);
+		return this;
 	}
 }

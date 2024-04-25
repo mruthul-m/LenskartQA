@@ -32,19 +32,19 @@ public class TestBase {
 	protected static Select select;
 
 	/**
-	 * Initializes the WebDriver, WebDriverWait, Actions, and navigates to the test URL.
+	 * Initializes the WebDriver, WebDriverWait, Actions, and navigates to the test
+	 * URL.
 	 */
 	public static void appInit() {
 		driver = invokeBrowser();
 		wait = setWait(driver, 10);
 		actions = setActions(driver);
-		navigateTo();
 	}
 
 	/**
 	 * Creates a WebDriverWait object with a specified wait timeout.
 	 * 
-	 * @param driver The WebDriver instance to use for waiting.
+	 * @param driver  The WebDriver instance to use for waiting.
 	 * @param seconds The wait timeout in seconds.
 	 * @return A new WebDriverWait object.
 	 */
@@ -65,7 +65,8 @@ public class TestBase {
 	}
 
 	/**
-	 * Navigates the WebDriver to the Lenskart URL obtained from the TestConfig class.
+	 * Navigates the WebDriver to the Lenskart URL obtained from the TestConfig
+	 * class.
 	 */
 	public static void navigateTo() {
 		String url = testconfig.getUrl();
@@ -73,7 +74,8 @@ public class TestBase {
 	}
 
 	/**
-	 * Launches the browser based on the configuration (currently supports Chrome and Edge).
+	 * Launches the browser based on the configuration (currently supports Chrome
+	 * and Edge).
 	 * 
 	 * @return A new WebDriver instance for the chosen browser.
 	 */
@@ -102,14 +104,13 @@ public class TestBase {
 		}
 
 	}
+
 	public static void delay(int num) {
 		try {
-			Thread.sleep(num*1000);
-		}
-		catch(Exception e) {
+			Thread.sleep(num * 1000);
+		} catch (Exception e) {
 			System.out.println(e.getMessage());
+
 		}
 	}
-
 }
-
