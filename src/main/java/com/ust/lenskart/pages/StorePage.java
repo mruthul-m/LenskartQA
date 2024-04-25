@@ -44,7 +44,7 @@ public class StorePage extends TestBase{
 	private WebElement confirmation;
 	
 	public boolean isSearchBoxVisible() {
-		delay(1000);
+		delay(1);
 		return storeSearchBox.isDisplayed();
 	}
 	
@@ -55,14 +55,14 @@ public class StorePage extends TestBase{
 	
 	public StorePage clickCity() {
 		
-		delay(2000);
+		delay(2);
 		city.click();
 		return this;
 	}
 	
 	public List<String> getShopText() {
 		
-		delay(2000);
+		delay(2);
 		List<String> places = new ArrayList<String>();
 		for (WebElement shop : shops) {
 			if (shop.getText().split("\n")[1].equals("Open Now")) {
@@ -77,13 +77,13 @@ public class StorePage extends TestBase{
 	}
 	
 	public StorePage clickBookAppointment() {
-		delay(3000);
+		delay(3);
 		bookAppointment.click();
 		return this;
 	}
 	
 	public StorePage setDetails(String num, String name) {
-		delay(2500);
+		delay(2);
 		numberBox.sendKeys(num);
 		nameBox.sendKeys(name);
 		
@@ -96,7 +96,7 @@ public class StorePage extends TestBase{
 	}
 	
 	public StorePage selectShift() {
-		delay(3000);
+		delay(3);
 		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", shiftSlot);
 		shiftSlot.click();
 		slotBookingBtn.click();
