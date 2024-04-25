@@ -3,22 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.ust.lenskart.testcases.TestSortBy">
+      <class name="com.ust.lenskart.testcases.TestResetFilters">
         <methods>
-          <include name="setSortBy"/>
-          <include name="startup"/>
+          <include name="pageLoader"/>
+          <include name="testSetFilters"/>
+          <include name="testResetFilters"/>
+          <include name="quitDriver"/>
         </methods>
-      </class> <!-- com.ust.lenskart.testcases.TestSortBy -->
-=======
-      <class name="com.ust.lenskart.testrunner.TestRunner">
-        <methods>
-          <include name="setUpClass"/>
-          <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- com.ust.lenskart.testrunner.TestRunner -->
->>>>>>> mruthul
+      </class> <!-- com.ust.lenskart.testcases.TestResetFilters -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

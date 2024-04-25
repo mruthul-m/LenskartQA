@@ -1,57 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-24T18:14:31 IST" name="Default suite" finished-at="2024-04-24T18:19:03 IST" duration-ms="272717">
+  <suite started-at="2024-04-25T11:54:50 IST" name="Default suite" finished-at="2024-04-25T11:55:31 IST" duration-ms="41615">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@5ddeb7cb]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-04-24T18:14:31 IST" name="Default test" finished-at="2024-04-24T18:19:03 IST" duration-ms="272717">
-      <class name="com.ust.lenskart.testcases.TestSortBy">
-        <test-method is-config="true" signature="startup()[pri:0, instance:com.ust.lenskart.testcases.TestSortBy@49b2a47d]" started-at="2024-04-24T18:14:31 IST" name="startup" finished-at="2024-04-24T18:15:15 IST" duration-ms="44627" status="PASS">
+    <test started-at="2024-04-25T11:54:50 IST" name="Default test" finished-at="2024-04-25T11:55:31 IST" duration-ms="41615">
+      <class name="com.ust.lenskart.testrunner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@5ddeb7cb]" started-at="2024-04-25T11:54:50 IST" name="setUpClass" finished-at="2024-04-25T11:54:50 IST" duration-ms="348" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7f7af971]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startup -->
-        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestSortBy@49b2a47d]" started-at="2024-04-24T18:15:16 IST" name="testEnterSearchBox" finished-at="2024-04-24T18:15:41 IST" duration-ms="25865" status="PASS">
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@5ddeb7cb]" started-at="2024-04-25T11:54:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-25T11:55:31 IST" duration-ms="41214" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Appointment booking functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["book an appointment"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testEnterSearchBox -->
-        <test-method signature="TsetSortByLowToHigh()[pri:1, instance:com.ust.lenskart.testcases.TestSortBy@49b2a47d]" started-at="2024-04-24T18:15:42 IST" name="TsetSortByLowToHigh" finished-at="2024-04-24T18:17:26 IST" duration-ms="104981" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@5ddeb7cb]" started-at="2024-04-25T11:55:31 IST" name="tearDownClass" finished-at="2024-04-25T11:55:31 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TsetSortByLowToHigh -->
-        <test-method signature="TsetSortByHighToLow()[pri:2, instance:com.ust.lenskart.testcases.TestSortBy@49b2a47d]" started-at="2024-04-24T18:17:26 IST" name="TsetSortByHighToLow" finished-at="2024-04-24T18:19:03 IST" duration-ms="96971" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TsetSortByHighToLow -->
-      </class> <!-- com.ust.lenskart.testcases.TestSortBy -->
-=======
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
-  <reporter-output>
-  </reporter-output>
-  <suite started-at="2024-04-24T10:01:26 IST" name="Default suite" finished-at="2024-04-24T10:02:10 IST" duration-ms="44687">
-    <groups>
-    </groups>
-    <test started-at="2024-04-24T10:01:26 IST" name="Default test" finished-at="2024-04-24T10:02:10 IST" duration-ms="44687">
-      <class name="com.ust.lenskart.testcases.StoreLocatorTest">
-        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.StoreLocatorTest@6f36c2f0]" started-at="2024-04-24T10:01:26 IST" name="pageLoader" finished-at="2024-04-24T10:01:55 IST" duration-ms="29877" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pageLoader -->
-        <test-method signature="gotoLocator()[pri:0, instance:com.ust.lenskart.testcases.StoreLocatorTest@6f36c2f0]" started-at="2024-04-24T10:01:55 IST" name="gotoLocator" finished-at="2024-04-24T10:02:04 IST" duration-ms="8738" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gotoLocator -->
-        <test-method signature="searchCity()[pri:0, instance:com.ust.lenskart.testcases.StoreLocatorTest@6f36c2f0]" started-at="2024-04-24T10:02:04 IST" name="searchCity" finished-at="2024-04-24T10:02:10 IST" depends-on-methods="com.ust.lenskart.testcases.StoreLocatorTest.gotoLocator" duration-ms="5293" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchCity -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.StoreLocatorTest@6f36c2f0]" started-at="2024-04-24T10:02:10 IST" name="quitDriver" finished-at="2024-04-24T10:02:10 IST" duration-ms="705" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- com.ust.lenskart.testcases.StoreLocatorTest -->
->>>>>>> mruthul
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.ust.lenskart.testrunner.TestRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
