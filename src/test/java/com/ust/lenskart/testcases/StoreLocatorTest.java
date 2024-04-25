@@ -41,7 +41,7 @@ public class StoreLocatorTest extends Hooks{
 			}
 		}
 		List<String> places= PageFactory.initElements(driver, StorePage.class)
-				.setCity().clickCity().getShopText();
+				.setCity("Thiruvananthapuram, Kerala, India").clickCity().getShopText();
 		
 		
 		List<String> locations = Arrays.asList(
