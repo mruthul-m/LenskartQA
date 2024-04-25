@@ -44,6 +44,7 @@ public class StoreLocatorTest extends Hooks{
 				.setCity("Thiruvananthapuram, Kerala, India").clickCity().getShopText();
 		
 		
+		
 		List<String> locations = Arrays.asList(
 				"Murinjapalam", "Ulloor", "Paruthipara", "KP Road",
 				"Sreekariyam","General Hospital Trivandrum","Sasthamangalam","Vazhuthacaud",

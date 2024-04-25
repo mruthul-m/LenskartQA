@@ -119,7 +119,14 @@ public class HomePage extends TestBase {
 
 	@FindBy(linkText = "Locate a Store")
 	private WebElement storeLink;
+	
+	@FindBy(css = ".ActionLinksContainer--5xj1y5.gKkoeY > div:last-child")
+	private WebElement cartLink;
+	
+	@FindBy(xpath = "//div[@class='Buttons--15b7dyn jAmxXC']//span[text()='Remove']")
+	private WebElement removeItem;
 
+	
 	public HomePage enterSearchBox(String itemtext) {
 		searchbox.sendKeys(itemtext, Keys.ENTER);
 		delay(1);
