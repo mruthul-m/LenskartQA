@@ -28,5 +28,13 @@ public interface TestConfig extends Config {
 	 */
 	@Key("BASE_URL")
 	String getUrl();
+	
+	
+	
+	@Key("VALID_SEARCH_ITEM")
+	String getValidSearchItem();
+	
+	@Key("SEARCH_URL")
+	String getSearchUrl();
 
 }
