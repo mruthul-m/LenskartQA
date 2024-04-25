@@ -102,6 +102,14 @@ public class TestBase {
 		}
 
 	}
+	public static void delay(int num) {
+		try {
+			Thread.sleep(num*1000);
+		}
+		catch(Exception e) {
+			System.out.println(e.getMessage());
+		}
+	}
 
 }
 
