@@ -3,6 +3,8 @@ package com.ust.lenskart.testcases;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
+import com.ust.lenskart.base.TestBase;
+
 public class Hooks extends TestBase {
 
 	@BeforeClass
@@ -16,5 +18,5 @@ public class Hooks extends TestBase {
 		driver.quit();
 	}
 
-	>>>>>>>mruthul
+
 }
