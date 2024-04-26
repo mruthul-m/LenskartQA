@@ -1,8 +1,9 @@
 package com.ust.lenskart.base;
 
 import java.time.Duration;
+import java.util.Set;
 
-import com.ust.lenskart.utils.CucumberTestConfig;
+import com.ust.lenskart.utils.DriverIsNotChanged;
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -35,8 +36,7 @@ public class TestBase {
 	protected static Select select;
 
 	/**
-	 * Initializes the WebDriver, WebDriverWait, Actions, and navigates to the test
-	 * URL.
+	 * Initializes the WebDriver, WebDriverWait, Actions.
 	 */
 	public static void appInit() {
 		driver = invokeBrowser();
@@ -115,5 +115,21 @@ public class TestBase {
 			System.out.println(e.getMessage());
 
 		}
+	}
+
+	public static WebDriver changeWindow(WebDriver driver, String parentWindow) throws DriverIsNotChanged {
+		Set<String> windows = driver.getWindowHandles();
+		System.out.println(windows);
+		for(String window: windows){
+			if (! window.equals(parentWindow)){
+				driver.switchTo().window(window);
+				return driver;
+			}
+
+		}
+
+		throw new DriverIsNotChanged(String.format(
+				"Driver is not changed, still: %s",parentWindow
+		));
 	}
 }

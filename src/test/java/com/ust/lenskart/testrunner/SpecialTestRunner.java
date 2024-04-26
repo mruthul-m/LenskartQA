@@ -4,7 +4,6 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(glue = "stepdefinitions",
-				features = "src/test/resources", tags = "@itemAdding")
-public class TestRunner extends AbstractTestNGCucumberTests{
-
+        features = "src/test/resources", tags = "@removeItemNegative")
+public class SpecialTestRunner extends AbstractTestNGCucumberTests {
 }

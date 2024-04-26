@@ -13,4 +13,7 @@ public interface CucumberTestConfig extends Config{
     @DefaultValue("7890234122")
     String getNumber();
 
+    @Key("PRODUCT")
+    String getProductName();
+
 }

@@ -20,7 +20,15 @@ Feature: Add to cart functionality
 	@removeItemPositive
 	Scenario: Removing item from cart functionality
 		Given User already on homepage
+		When User search for Aviator
+		Then User selects a Product
+		Then User on product page
+		And User clicks on Buy Now
+		Then User will successfully add item to the Cart
 		When User clicks on cart link
+		Then User removes an Item from the cart
+		Then Item will be removed
+
 		
 		
 	
