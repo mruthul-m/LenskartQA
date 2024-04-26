@@ -4,7 +4,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(glue = "stepdefinitions",
-				features = "classpath:features")
+				features = "src/test/resources")
 public class TestRunner extends AbstractTestNGCucumberTests{
 
 }

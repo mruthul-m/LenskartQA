@@ -1,9 +1,12 @@
 package stepdefinitions;
 
+import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import java.util.Set;
 
+import com.ust.lenskart.utils.CucumberTestConfig;
+import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
@@ -17,6 +20,7 @@ import io.cucumber.java.en.When;
 public class BookAppointmentTest  {
 	
 	WebDriver driver = Hooks.driver;
+	protected static final CucumberTestConfig cucumberconfig = ConfigFactory.create(CucumberTestConfig.class);
 	private HomePage homepage;
 	private StorePage storepage;
 	String parentWindow;
@@ -26,14 +30,14 @@ public class BookAppointmentTest  {
 	public void user_already_on_homepage() {
 		homepage = PageFactory.initElements(driver, HomePage.class);
 		url = driver.getCurrentUrl();
-		assertTrue(url.equals("https://www.lenskart.com/"));
+        assertEquals(url, "https://www.lenskart.com/");
 	}
 
 	@When("User hover over store locator and clicks locate a store")
 	public void user_hover_over_store_locator_and_clicks_locate_a_store() {
 		homepage.hoverStoreLocator(driver).clickStoreLink();
 		String url = driver.getCurrentUrl();
-		assertTrue(url.equals("https://www.lenskart.com/stores"));
+        assertEquals(url, "https://www.lenskart.com/stores");
 	}
 
 	@Then("User on store page")
@@ -60,10 +64,11 @@ public class BookAppointmentTest  {
 	@Then("User book a free appointment from the top most list")
 	public void user_book_a_free_appointment_from_the_top_most_list() {
 		String output = 
-		storepage.clickBookAppointment().setDetails("8976552312", "Manu")
+		storepage.clickBookAppointment().setDetails(cucumberconfig.userName(),
+						cucumberconfig.getNumber())
 		.clickBooking().selectShift().getConfirmationText();
-		
-		assertTrue(output.equals("Appointment Confirmed"));
+
+        assertEquals(output, "Appointment Confirmed");
 	}
 
 }

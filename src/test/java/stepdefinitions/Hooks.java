@@ -10,11 +10,15 @@ import io.cucumber.java.Before;
 public class Hooks extends TestBase{
 	
 	public static WebDriver driver;
+
+
 	@Before
 	public static void setup() {
 		appInit();
 		driver = TestBase.driver;
 		navigateTo();
+
+
 	}
 	
 	@After

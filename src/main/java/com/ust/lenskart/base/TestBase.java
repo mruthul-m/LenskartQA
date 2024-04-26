@@ -2,6 +2,7 @@ package com.ust.lenskart.base;
 
 import java.time.Duration;
 
+import com.ust.lenskart.utils.CucumberTestConfig;
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -18,6 +19,8 @@ public class TestBase {
 
 	// Stores the configuration properties from TestConfig.class
 	protected static final TestConfig testconfig = ConfigFactory.create(TestConfig.class);
+
+
 
 	// WebDriver instance used for browser interaction
 	protected static WebDriver driver;

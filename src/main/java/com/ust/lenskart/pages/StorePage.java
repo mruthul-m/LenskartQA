@@ -22,7 +22,7 @@ public class StorePage extends TestBase{
 	@FindBy(xpath = "//div/child::a/following-sibling::div[contains(@id,'store-card-')]")
 	private List<WebElement> shops;
 	
-	@FindBy(xpath = "//div[@class='index_subcontainer__vOgEh']/div[contains(@id,'store-card')][1]/div/div[2]/div[5]/button")
+	@FindBy(xpath = "//div[@class='index_subcontainer__vOgEh']/div[contains(@id,'store-card')][1]/div/div[2]/div[4]/button")
 	private WebElement bookAppointment;
 	
 	@FindBy(css = "input[type='number']")
@@ -84,6 +84,7 @@ public class StorePage extends TestBase{
 	
 	public StorePage setDetails(String num, String name) {
 		delay(2);
+		setWait(driver,10).until(ExpectedConditions.visibilityOf(numberBox));
 		numberBox.sendKeys(num);
 		nameBox.sendKeys(name);
 		
@@ -97,6 +98,7 @@ public class StorePage extends TestBase{
 	
 	public StorePage selectShift() {
 		delay(3);
+		setWait(driver,10).until(ExpectedConditions.visibilityOf(shiftSlot));
 		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", shiftSlot);
 		shiftSlot.click();
 		slotBookingBtn.click();
