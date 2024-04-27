@@ -1,7 +1,11 @@
 package com.ust.lenskart.pages;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -120,6 +124,27 @@ public class HomePage extends TestBase {
 	@FindBy(linkText = "Locate a Store")
 	private WebElement storeLink;
 
+	@FindBy(xpath = "//div[starts-with(@class,'ActionLinksContainer')]/div[3]/span")
+	public WebElement wishList;
+	
+	@FindBy(xpath = "//div[@id='wishlistView']")
+	public WebElement wishListBox;
+	
+	@FindBy(xpath = "//div[starts-with(@class,'HeaderText')]/span")
+	public WebElement wishListProductCount;
+	
+	@FindBy(css = "svg[class='wishlist-icon']")
+	public List<WebElement> productWishList;
+	
+	@FindBy(xpath = "//h5[starts-with(@class,'BrandName')]")
+	public List<WebElement> wishListProductTitle;
+	
+	@FindBy(xpath = "//p[starts-with(@class,'ProductTitle')]")
+	public List<WebElement> productTitle;
+	
+	@FindBy(xpath = "//a[starts-with(@class,'Cross')]")
+	public List<WebElement> cross;
+	
 	public HomePage enterSearchBox(String itemtext) {
 		searchbox.sendKeys(itemtext, Keys.ENTER);
 		delay(1);
@@ -308,7 +333,7 @@ public class HomePage extends TestBase {
 		js.executeScript("window.scrollBy(0, 500);");
 		delay(2);
 	}
-
+	
 	public boolean checkSortAsc() {
 		int j = 0;
 		for (int i = 0; i < priceList.size() - 1; i++) {
@@ -345,5 +370,55 @@ public class HomePage extends TestBase {
 		storeLink.click();
 		delay(3);
 		return this;
+	}
+	
+	public HomePage clickWishList() {
+		wishList.click();
+		return this;
+	}
+	
+	public boolean isWishListBoxVisible()  {
+		if(wishListBox.isDisplayed()) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	
+	public int getWishListProductCount() {
+		String count = wishListProductCount.getText().replace("(","").replace(")","");
+		return Integer.parseInt(count);
+	}
+
+	public void addProductsToWishList(int num) {
+		for(int i =0;i<num;i++) {
+		productWishList.get(0).click();
+		delay(1);
+		}
+	}
+	public boolean checkProductTitle(int num) {
+//		Collections.sort(productTitle, Comparator.comparing(WebElement::getText).reversed());
+//		Collections.sort(wishListProductTitle, Comparator.comparing(WebElement::getText));
+		List<WebElement> tempList = new ArrayList<WebElement>();
+		for(int j =num-1;j>=0;j--) {
+			tempList.add(wishListProductTitle.get(j));
+		}
+		for(int i =0; i <num;i++) {
+			if(!(productTitle.get(i).getText().equals(tempList.get(i).getText()))) {
+				return false;
+			}
+		}
+		return true;
+	}
+	public void removeProductsFromWishList() {
+		setActions(driver).moveToElement(wishListProductTitle.get(0)).perform();
+		delay(1);
+		setActions(driver).moveToElement(cross.get(0)).click().perform();
+		delay(1);
+	}
+
+	public boolean checkEmptyWishList(int num) {
+		return false;
 	}
 }
