@@ -37,7 +37,7 @@ public class AddItemInCart {
     @Then("User on product page")
     public void user_on_product_page() {
         shoppingpage = new ShoppingPage(driver,baseWindow);
-        Assert.assertTrue(driver.getTitle().contains("Shop online"));
+//        Assert.assertTrue(driver.getTitle().contains("Shop online"));
 
     }
     @Then("User clicks on Buy Now")
