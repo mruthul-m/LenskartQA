@@ -38,4 +38,7 @@ public interface TestConfig extends Config {
 	@Key("SEARCH_URL")
 	String getSearchUrl();
 
+	@Key("SHEET_NAME")
+	String getSheetName();
+
 }

@@ -4,6 +4,7 @@ import java.time.Duration;
 
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -113,4 +114,8 @@ public class TestBase {
 
 		}
 	}
+	
+//	public static void switchToFrame(WebElement frame) {
+//		driver.switchTo().frame(frame);
+//	}
 }

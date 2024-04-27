@@ -1,8 +1,6 @@
 package com.ust.lenskart.pages;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -15,6 +13,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 
 import com.ust.lenskart.base.TestBase;
+import com.ust.lenskart.utils.Helper;
 
 public class HomePage extends TestBase {
 	JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -144,6 +143,27 @@ public class HomePage extends TestBase {
 	
 	@FindBy(xpath = "//a[starts-with(@class,'Cross')]")
 	public List<WebElement> cross;
+	
+	@FindBy(css = "iframe[name='spr-chat__box-frame']")
+	public WebElement chatBotFrame;
+	
+	@FindBy(className = "spr-chat-box-anim-enter-done")
+	public WebElement chatBotBox;
+	
+	@FindBy(id = "spr-chat__trigger-button")
+	public WebElement chatBotButton;
+	
+	@FindBy(css = "button[label='New Conversation']")
+	public WebElement chatBotNewConversation;
+	
+	@FindBy(css = "span[data-lucid-type='application/vnd.lucid.text']")
+	public WebElement chatBotWelcomeText;
+	
+	@FindBy(css = "button[aria-label='More actions']")
+	public WebElement moreActions;
+	
+	@FindBy(css = "div[data-testid='actionMenuList']>div")
+	public WebElement newConversation;
 	
 	public HomePage enterSearchBox(String itemtext) {
 		searchbox.sendKeys(itemtext, Keys.ENTER);
@@ -398,8 +418,6 @@ public class HomePage extends TestBase {
 		}
 	}
 	public boolean checkProductTitle(int num) {
-//		Collections.sort(productTitle, Comparator.comparing(WebElement::getText).reversed());
-//		Collections.sort(wishListProductTitle, Comparator.comparing(WebElement::getText));
 		List<WebElement> tempList = new ArrayList<WebElement>();
 		for(int j =num-1;j>=0;j--) {
 			tempList.add(wishListProductTitle.get(j));
@@ -417,8 +435,44 @@ public class HomePage extends TestBase {
 		setActions(driver).moveToElement(cross.get(0)).click().perform();
 		delay(1);
 	}
-
-	public boolean checkEmptyWishList(int num) {
-		return false;
+	
+	public void clickChatBotIcon() {	
+		wait.until(ExpectedConditions.visibilityOf(chatBotButton));
+		chatBotButton.click();
+	}
+	
+	public boolean isChatBotDisplayed() {
+		wait.until(ExpectedConditions.visibilityOf(chatBotBox));
+        return chatBotBox.isDisplayed();
+    }
+	
+	public void startNewChat() {
+		delay(2);
+		driver.switchTo().frame(chatBotFrame);
+		wait.until(ExpectedConditions.visibilityOf(chatBotNewConversation));
+        chatBotNewConversation.click();
+	}
+	public boolean checkChatBotWelcomeText() {
+		wait.until(ExpectedConditions.visibilityOf(chatBotWelcomeText));
+		return chatBotWelcomeText.getText().startsWith("Hello! Welcome to Lenskart");
+	}
+	
+	public void clickChatSuggestion(String option) {
+		delay(2);
+		Helper.clickSuggestion(option);
+	}
+	
+	public String getAssertionText(String assertionMessage) {
+		delay(3);
+		return Helper.checkAssertionText(assertionMessage);
+	}
+	
+	public void clickMoreActions() {
+		delay(2);
+        moreActions.click();
+	}
+	public void clickNewConversation() {
+		wait.until(ExpectedConditions.visibilityOf(newConversation));
+		newConversation.click();
 	}
 }
