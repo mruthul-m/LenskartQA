@@ -22,8 +22,6 @@ public class TestBase {
 	// Stores the configuration properties from TestConfig.class
 	protected static final TestConfig testconfig = ConfigFactory.create(TestConfig.class);
 
-
-
 	// WebDriver instance used for browser interaction
 	protected static WebDriver driver;
 
@@ -117,13 +115,12 @@ public class TestBase {
 
 		}
 	}
-<<<<<<< HEAD
 
 	public static WebDriver changeWindow(WebDriver driver, String parentWindow) throws DriverIsNotChanged {
 		Set<String> windows = driver.getWindowHandles();
 		System.out.println(windows);
-		for(String window: windows){
-			if (! window.equals(parentWindow)){
+		for (String window : windows) {
+			if (!window.equals(parentWindow)) {
 				driver.switchTo().window(window);
 				return driver;
 			}
@@ -131,13 +128,6 @@ public class TestBase {
 		}
 
 		throw new DriverIsNotChanged(String.format(
-				"Driver is not changed, still: %s",parentWindow
-		));
+				"Driver is not changed, still: %s", parentWindow));
 	}
-=======
-	
-//	public static void switchToFrame(WebElement frame) {
-//		driver.switchTo().frame(frame);
-//	}
->>>>>>> wishlist
 }
