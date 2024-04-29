@@ -1,6 +1,7 @@
 package com.ust.lenskart.pages;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import com.ust.lenskart.utils.DriverIsNotChanged;
@@ -432,12 +433,9 @@ public class HomePage extends TestBase {
 	}
 
 	public boolean checkProductTitle(int num) {
-		List<WebElement> tempList = new ArrayList<WebElement>();
-		for (int j = num - 1; j >= 0; j--) {
-			tempList.add(wishListProductTitle.get(j));
-		}
+		Collections.reverse(wishListProductTitle);
 		for (int i = 0; i < num; i++) {
-			if (!(productTitle.get(i).getText().equals(tempList.get(i).getText()))) {
+			if (!(productTitle.get(i).getText().equals(wishListProductTitle.get(i).getText()))) {
 				return false;
 			}
 		}

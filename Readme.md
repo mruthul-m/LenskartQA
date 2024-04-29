@@ -94,3 +94,10 @@ FEATURE 6:Cart
 	
 	SCENARIO 17:(Positive)
 		Adding an item to cart and validate if it is present
+
+
+FEATURE 7:ChatBot
+-----------------
+
+	SCENARIO 18:
+		Click Chatbot icon and perform the chat operations

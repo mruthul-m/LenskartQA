@@ -1,77 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-29T10:13:56 IST" name="Default suite" finished-at="2024-04-29T10:14:56 IST" duration-ms="59890">
+  <suite started-at="2024-04-29T11:40:13 IST" name="Default suite" finished-at="2024-04-29T11:41:23 IST" duration-ms="69983">
     <groups>
     </groups>
-    <test started-at="2024-04-29T10:13:56 IST" name="Default test" finished-at="2024-04-29T10:14:56 IST" duration-ms="59890">
-      <class name="com.ust.lenskart.testcases.TestChatBot">
-        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestChatBot@64b0598]" started-at="2024-04-29T10:13:56 IST" name="pageLoader" finished-at="2024-04-29T10:14:19 IST" duration-ms="23125" status="PASS">
+    <test started-at="2024-04-29T11:40:13 IST" name="Default test" finished-at="2024-04-29T11:41:23 IST" duration-ms="69983">
+      <class name="com.ust.lenskart.testcases.TestAddingtoWishList">
+        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestAddingtoWishList@311bf055]" started-at="2024-04-29T11:40:13 IST" name="pageLoader" finished-at="2024-04-29T11:40:58 IST" duration-ms="45126" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageLoader -->
-        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestChatBot@64b0598]" started-at="2024-04-29T10:14:19 IST" name="testEnterSearchBox" finished-at="2024-04-29T10:14:19 IST" duration-ms="165" status="PASS">
+        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestAddingtoWishList@311bf055]" started-at="2024-04-29T11:40:58 IST" name="testEnterSearchBox" finished-at="2024-04-29T11:41:17 IST" duration-ms="18574" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEnterSearchBox -->
-        <test-method signature="testChatBot()[pri:1, instance:com.ust.lenskart.testcases.TestChatBot@64b0598]" started-at="2024-04-29T10:14:19 IST" name="testChatBot" finished-at="2024-04-29T10:14:20 IST" duration-ms="971" status="PASS">
+        <test-method signature="testAssingToWishList()[pri:0, instance:com.ust.lenskart.testcases.TestAddingtoWishList@311bf055]" started-at="2024-04-29T11:41:17 IST" name="testAssingToWishList" finished-at="2024-04-29T11:41:23 IST" depends-on-methods="com.ust.lenskart.testcases.TestAddingtoWishList.testEnterSearchBox" duration-ms="5998" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testChatBot -->
-        <test-method signature="testChatNewConversation()[pri:2, instance:com.ust.lenskart.testcases.TestChatBot@64b0598]" started-at="2024-04-29T10:14:20 IST" name="testChatNewConversation" finished-at="2024-04-29T10:14:24 IST" depends-on-methods="com.ust.lenskart.testcases.TestChatBot.testChatBot" duration-ms="4038" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testChatNewConversation -->
-        <test-method signature="testChatBotSuggestion(java.lang.String,java.lang.String)[pri:3, instance:com.ust.lenskart.testcases.TestChatBot@64b0598]" started-at="2024-04-29T10:14:27 IST" name="testChatBotSuggestion" data-provider="chatBotSuggestions" finished-at="2024-04-29T10:14:37 IST" depends-on-methods="com.ust.lenskart.testcases.TestChatBot.testChatNewConversation" duration-ms="9920" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Buy Eyewear]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Thanks for choosing Lenskart, India’s largest online eyewear company.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testChatBotSuggestion -->
-        <test-method signature="testChatBotSuggestion(java.lang.String,java.lang.String)[pri:3, instance:com.ust.lenskart.testcases.TestChatBot@64b0598]" started-at="2024-04-29T10:14:37 IST" name="testChatBotSuggestion" data-provider="chatBotSuggestions" finished-at="2024-04-29T10:14:46 IST" depends-on-methods="com.ust.lenskart.testcases.TestChatBot.testChatNewConversation" duration-ms="9522" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Query about my order]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Please provide your phone number.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testChatBotSuggestion -->
-        <test-method signature="testChatBotSuggestion(java.lang.String,java.lang.String)[pri:3, instance:com.ust.lenskart.testcases.TestChatBot@64b0598]" started-at="2024-04-29T10:14:46 IST" name="testChatBotSuggestion" data-provider="chatBotSuggestions" finished-at="2024-04-29T10:14:56 IST" depends-on-methods="com.ust.lenskart.testcases.TestChatBot.testChatNewConversation" duration-ms="9425" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Locate Nearby Store]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[View Menu]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testChatBotSuggestion -->
-      </class> <!-- com.ust.lenskart.testcases.TestChatBot -->
+        </test-method> <!-- testAssingToWishList -->
+      </class> <!-- com.ust.lenskart.testcases.TestAddingtoWishList -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
