@@ -1,10 +1,8 @@
 package com.ust.lenskart.pages;
 
 import com.ust.lenskart.base.TestBase;
-import com.ust.lenskart.utils.DriverIsNotChanged;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class ProductPage extends TestBase {

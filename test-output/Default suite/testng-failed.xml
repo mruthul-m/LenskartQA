@@ -7,8 +7,14 @@
         <methods>
           <include name="TsetSortByHighToLow"/>
           <include name="pageLoader"/>
+<<<<<<< HEAD
           <include name="TsetSortByLowToHigh"/>
           <include name="testEnterSearchBox"/>
+=======
+          <include name="testChatBot"/>
+          <include name="testChatNewConversation"/>
+          <include name="testChatBotSuggestion"/>
+>>>>>>> 5f93f8c82aaee6a8a25a62c9791ab7bd79e958f2
         </methods>
       </class> <!-- com.ust.lenskart.testcases.TestSortBy -->
     </classes>

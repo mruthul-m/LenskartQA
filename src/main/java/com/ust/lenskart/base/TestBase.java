@@ -6,7 +6,6 @@ import java.util.Set;
 import com.ust.lenskart.utils.DriverIsNotChanged;
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -118,7 +117,6 @@ public class TestBase {
 
 	public static WebDriver changeWindow(WebDriver driver, String parentWindow) throws DriverIsNotChanged {
 		Set<String> windows = driver.getWindowHandles();
-		System.out.println(windows);
 		for (String window : windows) {
 			if (!window.equals(parentWindow)) {
 				driver.switchTo().window(window);

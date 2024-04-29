@@ -11,6 +11,12 @@ public class CartPage extends TestBase {
 
     @FindBy(css = "div[data-cy='cart-not-found-desktop'] > div > div:first-child")
     private WebElement emptyCart;
+    
+    @FindBy(xpath = "//div[@class='CartStyles__RemoveItemOverlay-sc-14bvp3n-27 bLIudg'][last()]//div//span[text()='Remove']")
+    private WebElement removeBtn;
+    
+    @FindBy(xpath = "//div[@class='CartStyles__RemoveItemOverlay-sc-14bvp3n-27 bLIudg'][last()]//div//div[@class='ItemTitle--h71f3c fzTWih']")
+    private WebElement productAtCartHeading;
 
     public String getEmptyCartText(){
         setWait(driver,10).until(ExpectedConditions.visibilityOf(emptyCart));
@@ -26,5 +32,10 @@ public class CartPage extends TestBase {
         }
         return driver;
 
+    }
+    
+    public String getModelFromCart() {
+    	delay(5);
+    	return productAtCartHeading.getText();
     }
 }
