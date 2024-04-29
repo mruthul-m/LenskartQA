@@ -13,10 +13,10 @@ public class Hooks extends TestBase {
 		navigateTo();
 	}
 
-//	@AfterClass
-//	public void quitDriver() {
-//		driver.quit();
-//	}
+	@AfterClass
+	public void quitDriver() {
+		driver.quit();
+	}
 
 
 }

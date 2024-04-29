@@ -20,7 +20,8 @@ public class TestChatBot extends Hooks {
 	int count=0;
 	@DataProvider (name = "chatBotSuggestions")
 	public String[][] getData() {
-		File f = new File(System.getProperty("user.dir")+"//Test Data//ChatBot Chat Suggestions.xlsx");
+		File f = new File(System.getProperty("user.dir")+"/src/main/java/com/ust/lenskart/testdata/ChatBot Chat Suggestions.xlsx");
+		System.out.println(f);
 		String Sheetname = testconfig.getSheetName();
 		try {
 			Workbook wb = new XSSFWorkbook(f);
@@ -35,10 +36,13 @@ public class TestChatBot extends Hooks {
 				arr[i-1][j] = df.formatCellValue(sheet.getRow(i).getCell(j));
 				}
 			}
+			wb.close();
 			return arr;
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		
+		
 		return null;
 	}
 	
