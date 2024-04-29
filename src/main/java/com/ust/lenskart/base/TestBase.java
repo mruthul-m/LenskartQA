@@ -6,6 +6,7 @@ import java.util.Set;
 import com.ust.lenskart.utils.DriverIsNotChanged;
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -116,6 +117,7 @@ public class TestBase {
 
 		}
 	}
+<<<<<<< HEAD
 
 	public static WebDriver changeWindow(WebDriver driver, String parentWindow) throws DriverIsNotChanged {
 		Set<String> windows = driver.getWindowHandles();
@@ -132,4 +134,10 @@ public class TestBase {
 				"Driver is not changed, still: %s",parentWindow
 		));
 	}
+=======
+	
+//	public static void switchToFrame(WebElement frame) {
+//		driver.switchTo().frame(frame);
+//	}
+>>>>>>> wishlist
 }

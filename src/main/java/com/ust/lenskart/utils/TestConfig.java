@@ -29,12 +29,16 @@ public interface TestConfig extends Config {
 	@Key("BASE_URL")
 	String getUrl();
 	
-	
+	@Key("NUMBER_OF_PRODUCTS_TO_BE_WISHLISTED")
+	String getNumberOfProductsToBeWishListed();
 	
 	@Key("VALID_SEARCH_ITEM")
 	String getValidSearchItem();
 	
 	@Key("SEARCH_URL")
 	String getSearchUrl();
+
+	@Key("SHEET_NAME")
+	String getSheetName();
 
 }
