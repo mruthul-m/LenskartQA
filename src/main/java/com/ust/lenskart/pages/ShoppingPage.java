@@ -17,20 +17,22 @@ public class ShoppingPage extends TestBase {
             throw new RuntimeException(e);
         }
     }
+    
     @FindBy(css = "div[data-cy='pdp-select-lens-button-desktop'] > button:first-child")
     private WebElement buyNow;
-
-    @FindBy(css = ".BasicDetailsWrapper--1hhncu9 > h1")
-    private WebElement productName;
+    
+    @FindBy(xpath = "//span[text()='Model No.']/following::span[1]")
+    private WebElement modelNo;
 
     public void clickBuyNow(){
         setWait(driver,10).until(ExpectedConditions.visibilityOf(buyNow));
         buyNow.click();
     }
 
-    public String getProductName(){
-        setWait(driver,10).until(ExpectedConditions.visibilityOf(productName));
-        return productName.getText();
+    public String getModelNo() {
+    	delay(2);
+    	return modelNo.getText();
+    	
     }
 
 }
