@@ -435,11 +435,12 @@ public class HomePage extends TestBase {
 		return Integer.parseInt(count);
 	}
 
-	public void addProductsToWishList(int num) {
+	public HomePage addProductsToWishList(int num) {
 		for(int i =0;i<num;i++) {
 		productWishList.get(0).click();
 		delay(1);
 		}
+		return this;
 	}
 	public boolean checkProductTitle(int num) {
 		List<WebElement> tempList = new ArrayList<WebElement>();
@@ -453,16 +454,18 @@ public class HomePage extends TestBase {
 		}
 		return true;
 	}
-	public void removeProductsFromWishList() {
+	public HomePage removeProductsFromWishList() {
 		setActions(driver).moveToElement(wishListProductTitle.get(0)).perform();
 		delay(1);
 		setActions(driver).moveToElement(cross.get(0)).click().perform();
 		delay(1);
+		return this;
 	}
 	
-	public void clickChatBotIcon() {	
+	public HomePage clickChatBotIcon() {	
 		wait.until(ExpectedConditions.visibilityOf(chatBotButton));
 		chatBotButton.click();
+		return this;
 	}
 	
 	public boolean isChatBotDisplayed() {
@@ -470,20 +473,22 @@ public class HomePage extends TestBase {
         return chatBotBox.isDisplayed();
     }
 	
-	public void startNewChat() {
+	public HomePage startNewChat() {
 		delay(2);
 		driver.switchTo().frame(chatBotFrame);
 		wait.until(ExpectedConditions.visibilityOf(chatBotNewConversation));
         chatBotNewConversation.click();
+        return this;
 	}
 	public boolean checkChatBotWelcomeText() {
 		wait.until(ExpectedConditions.visibilityOf(chatBotWelcomeText));
 		return chatBotWelcomeText.getText().startsWith("Hello! Welcome to Lenskart");
 	}
 	
-	public void clickChatSuggestion(String option) {
+	public HomePage clickChatSuggestion(String option) {
 		delay(2);
 		Helper.clickSuggestion(option);
+		return this;
 	}
 	
 	public String getAssertionText(String assertionMessage) {
@@ -491,13 +496,15 @@ public class HomePage extends TestBase {
 		return Helper.checkAssertionText(assertionMessage);
 	}
 	
-	public void clickMoreActions() {
+	public HomePage clickMoreActions() {
 		delay(2);
         moreActions.click();
+        return this;
 	}
-	public void clickNewConversation() {
+	public HomePage clickNewConversation() {
 		wait.until(ExpectedConditions.visibilityOf(newConversation));
 		newConversation.click();
+		return this;
 	}
 >>>>>>> wishlist
 }
