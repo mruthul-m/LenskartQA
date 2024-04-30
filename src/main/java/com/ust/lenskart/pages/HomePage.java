@@ -3,8 +3,7 @@ package com.ust.lenskart.pages;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.ust.lenskart.utils.DriverIsNotChanged;
-import org.openqa.selenium.By;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
