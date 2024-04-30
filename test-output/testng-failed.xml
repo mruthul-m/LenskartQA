@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ust.lenskart.testcases.TestChatBot">
+      <class name="com.ust.lenskart.testcases.TestResetFilters">
         <methods>
+          <include name="testEnterSearchBox"/>
           <include name="pageLoader"/>
-          <include name="testChatBot"/>
-          <include name="testChatNewConversation"/>
-          <include name="testChatBotSuggestion"/>
+          <include name="testSetFilters"/>
+          <include name="quitDriver"/>
         </methods>
-      </class> <!-- com.ust.lenskart.testcases.TestChatBot -->
+      </class> <!-- com.ust.lenskart.testcases.TestResetFilters -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

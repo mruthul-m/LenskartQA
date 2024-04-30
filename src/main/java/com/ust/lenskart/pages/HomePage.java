@@ -24,6 +24,12 @@ public class HomePage extends TestBase {
 	@FindBy(css = "input[placeholder='What are you looking for?']")
 	public WebElement searchbox;
 
+	@FindBy(xpath = "//div[@id='frametype_id']//label[@id='filter-item-image-0']/div")
+	public WebElement frametype;
+	
+	@FindBy(xpath = "//div[@id='frame_shape_id']//label[@id='filter-item-image-0']/div")
+	public WebElement frameshape;
+	
 	@FindBy(xpath = "//div[@id='frame_color_id']/div[1]")
 	public WebElement dropdown1;
 
@@ -105,6 +111,12 @@ public class HomePage extends TestBase {
 	@FindBy(xpath = "//div[starts-with(@class,'SelectedFiltersStyles__ActiveFiltersContainer')]")
 	public WebElement nofilters;
 
+	@FindBy(xpath = "//span[starts-with(@class,'Title')]")
+	public List <WebElement> filterTitles;
+	
+	@FindBy(xpath = "//span[starts-with(@class,'SelectedFiltersStyles')]/b")
+	public List <WebElement> filterNames;
+	
 	@FindBy(tagName = "aside")
 	public WebElement sidebar;
 
@@ -180,6 +192,16 @@ public class HomePage extends TestBase {
 		return this;
 	}
 
+	public HomePage setFrameType() {
+		frametype.click();
+		return this;
+	}
+	
+	public HomePage setFrameShape() {
+		frameshape.click();
+		return this;
+	}
+	
 	public HomePage setColour() {
 		wait.until(ExpectedConditions.visibilityOf(dropdown1));
 		dropdown1.click();
@@ -196,7 +218,8 @@ public class HomePage extends TestBase {
 		delay(1);
 		wait.until(ExpectedConditions.elementToBeClickable(brand));
 		brand.click();
-		delay(1);
+//		delay(3);
+		wait.until(ExpectedConditions.elementToBeClickable(dropdown2));
 		dropdown2.click();
 		return this;
 	}
@@ -207,7 +230,8 @@ public class HomePage extends TestBase {
 		delay(1);
 		wait.until(ExpectedConditions.elementToBeClickable(frameSize));
 		frameSize.click();
-		delay(1);
+//		delay(3);
+		wait.until(ExpectedConditions.elementToBeClickable(dropdown3));
 		dropdown3.click();
 		return this;
 	}
@@ -218,9 +242,9 @@ public class HomePage extends TestBase {
 		delay(1);
 		wait.until(ExpectedConditions.elementToBeClickable(price));
 		price.click();
-		delay(1);
+//		delay(3);
+		wait.until(ExpectedConditions.elementToBeClickable(dropdown4));
 		dropdown4.click();
-
 		return this;
 	}
 
@@ -230,7 +254,8 @@ public class HomePage extends TestBase {
 		delay(1);
 		wait.until(ExpectedConditions.elementToBeClickable(gender));
 		gender.click();
-		delay(1);
+//		delay(3);
+		wait.until(ExpectedConditions.elementToBeClickable(dropdown5));
 		dropdown5.click();
 		return this;
 	}
@@ -241,7 +266,8 @@ public class HomePage extends TestBase {
 		delay(1);
 		wait.until(ExpectedConditions.elementToBeClickable(glassColour));
 		glassColour.click();
-		delay(1);
+//		delay(3);
+		wait.until(ExpectedConditions.elementToBeClickable(dropdown6));
 		dropdown6.click();
 		return this;
 	}
@@ -252,7 +278,8 @@ public class HomePage extends TestBase {
 		delay(1);
 		wait.until(ExpectedConditions.elementToBeClickable(frameWeight));
 		frameWeight.click();
-		delay(1);
+//		delay(3);
+		wait.until(ExpectedConditions.elementToBeClickable(dropdown7));
 		dropdown7.click();
 		return this;
 	}
@@ -263,7 +290,8 @@ public class HomePage extends TestBase {
 		delay(1);
 		wait.until(ExpectedConditions.elementToBeClickable(prescriptionType));
 		prescriptionType.click();
-		delay(1);
+//		delay(3);
+		wait.until(ExpectedConditions.elementToBeClickable(dropdown8));
 		dropdown8.click();
 		return this;
 	}
@@ -276,7 +304,8 @@ public class HomePage extends TestBase {
 		supportedPower.click();
 		delay(1);
 		js.executeScript("window.scrollBy(0, 200);");
-		delay(1);
+//		delay(3);
+		wait.until(ExpectedConditions.elementToBeClickable(dropdown9));
 		dropdown9.click();
 		return this;
 	}
@@ -289,7 +318,8 @@ public class HomePage extends TestBase {
 		material.click();
 		delay(1);
 		js.executeScript("window.scrollBy(0, 200);");
-		delay(1);
+//		delay(3);
+		wait.until(ExpectedConditions.elementToBeClickable(dropdown10));
 		dropdown10.click();
 		return this;
 	}
@@ -302,7 +332,8 @@ public class HomePage extends TestBase {
 		subBrand.click();
 		delay(1);
 		js.executeScript("window.scrollBy(0, 300);");
-		delay(1);
+//		delay(3);
+		wait.until(ExpectedConditions.elementToBeClickable(dropdown11));
 		dropdown11.click();
 		return this;
 	}
@@ -316,8 +347,9 @@ public class HomePage extends TestBase {
 		frameWidth.click();
 		delay(1);
 		js.executeScript("window.scrollBy(0, 200);");
-		delay(1);
-		dropdown1.click();
+//		delay(3);
+		wait.until(ExpectedConditions.elementToBeClickable(dropdown12));
+		dropdown12.click();
 		return this;
 	}
 
@@ -329,7 +361,8 @@ public class HomePage extends TestBase {
 		productType.click();
 		delay(1);
 		js.executeScript("window.scrollBy(0, 200);");
-		delay(1);
+//		delay(3);
+		wait.until(ExpectedConditions.elementToBeClickable(dropdown13));
 		dropdown13.click();
 		return this;
 	}
@@ -338,6 +371,16 @@ public class HomePage extends TestBase {
 		wait.until(ExpectedConditions.visibilityOf(resetFilters));
 		resetFilters.click();
 		return this;
+	}
+	public boolean validateFilters() {
+		for(int i =0;i<filterTitles.size();i++) {
+			String title = filterTitles.get(i).getText().trim();
+			String names = filterNames.get(i).getText().replace(":", "").trim();
+			if(!(title.equalsIgnoreCase(names))) {
+				return false;
+			}
+		}
+		return true;
 	}
 
 	public String getUrl() {
@@ -496,4 +539,5 @@ public class HomePage extends TestBase {
 		newConversation.click();
 		return this;
 	}
+	
 }

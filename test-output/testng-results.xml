@@ -1,77 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-30T09:43:02 IST" name="Default suite" finished-at="2024-04-30T09:44:43 IST" duration-ms="100965">
+  <suite started-at="2024-04-30T13:11:20 IST" name="Default suite" finished-at="2024-04-30T13:14:07 IST" duration-ms="166988">
     <groups>
     </groups>
-    <test started-at="2024-04-30T09:43:02 IST" name="Default test" finished-at="2024-04-30T09:44:43 IST" duration-ms="100965">
-      <class name="com.ust.lenskart.testcases.TestChatBot">
-        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestChatBot@7d322cad]" started-at="2024-04-30T09:43:02 IST" name="pageLoader" finished-at="2024-04-30T09:43:41 IST" duration-ms="38308" status="PASS">
+    <test started-at="2024-04-30T13:11:20 IST" name="Default test" finished-at="2024-04-30T13:14:07 IST" duration-ms="166988">
+      <class name="com.ust.lenskart.testcases.TestResetFilters">
+        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestResetFilters@21be3395]" started-at="2024-04-30T13:11:20 IST" name="pageLoader" finished-at="2024-04-30T13:11:56 IST" duration-ms="35737" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageLoader -->
-        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestChatBot@7d322cad]" started-at="2024-04-30T09:43:41 IST" name="testEnterSearchBox" finished-at="2024-04-30T09:43:41 IST" duration-ms="603" status="PASS">
+        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestResetFilters@21be3395]" started-at="2024-04-30T13:11:56 IST" name="testEnterSearchBox" finished-at="2024-04-30T13:12:19 IST" duration-ms="23294" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEnterSearchBox -->
-        <test-method signature="testChatBot()[pri:1, instance:com.ust.lenskart.testcases.TestChatBot@7d322cad]" started-at="2024-04-30T09:43:42 IST" name="testChatBot" finished-at="2024-04-30T09:43:48 IST" duration-ms="6102" status="PASS">
+        <test-method signature="testSetFilters()[pri:1, instance:com.ust.lenskart.testcases.TestResetFilters@21be3395]" started-at="2024-04-30T13:12:19 IST" name="testSetFilters" finished-at="2024-04-30T13:13:59 IST" depends-on-methods="com.ust.lenskart.testcases.TestResetFilters.testEnterSearchBox" duration-ms="100129" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testChatBot -->
-        <test-method signature="testChatNewConversation()[pri:2, instance:com.ust.lenskart.testcases.TestChatBot@7d322cad]" started-at="2024-04-30T09:43:48 IST" name="testChatNewConversation" finished-at="2024-04-30T09:43:54 IST" depends-on-methods="com.ust.lenskart.testcases.TestChatBot.testChatBot" duration-ms="6474" status="PASS">
+        </test-method> <!-- testSetFilters -->
+        <test-method signature="testResetFilters()[pri:2, instance:com.ust.lenskart.testcases.TestResetFilters@21be3395]" started-at="2024-04-30T13:13:59 IST" name="testResetFilters" finished-at="2024-04-30T13:14:03 IST" duration-ms="3825" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testChatNewConversation -->
-        <test-method signature="testChatBotSuggestion(java.lang.String,java.lang.String)[pri:3, instance:com.ust.lenskart.testcases.TestChatBot@7d322cad]" started-at="2024-04-30T09:44:04 IST" name="testChatBotSuggestion" data-provider="chatBotSuggestion" finished-at="2024-04-30T09:44:17 IST" depends-on-methods="com.ust.lenskart.testcases.TestChatBot.testChatNewConversation" duration-ms="12675" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Buy Eyewear]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Thanks for choosing Lenskart, India’s largest online eyewear company.]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- testResetFilters -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.TestResetFilters@21be3395]" started-at="2024-04-30T13:14:03 IST" name="quitDriver" finished-at="2024-04-30T13:14:07 IST" duration-ms="3778" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testChatBotSuggestion -->
-        <test-method signature="testChatBotSuggestion(java.lang.String,java.lang.String)[pri:3, instance:com.ust.lenskart.testcases.TestChatBot@7d322cad]" started-at="2024-04-30T09:44:17 IST" name="testChatBotSuggestion" data-provider="chatBotSuggestion" finished-at="2024-04-30T09:44:29 IST" depends-on-methods="com.ust.lenskart.testcases.TestChatBot.testChatNewConversation" duration-ms="12582" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Query about my order]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Please provide your phone number.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testChatBotSuggestion -->
-        <test-method signature="testChatBotSuggestion(java.lang.String,java.lang.String)[pri:3, instance:com.ust.lenskart.testcases.TestChatBot@7d322cad]" started-at="2024-04-30T09:44:29 IST" name="testChatBotSuggestion" data-provider="chatBotSuggestion" finished-at="2024-04-30T09:44:43 IST" depends-on-methods="com.ust.lenskart.testcases.TestChatBot.testChatNewConversation" duration-ms="14038" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Locate Nearby Store]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[View Menu]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testChatBotSuggestion -->
-      </class> <!-- com.ust.lenskart.testcases.TestChatBot -->
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.ust.lenskart.testcases.TestResetFilters -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

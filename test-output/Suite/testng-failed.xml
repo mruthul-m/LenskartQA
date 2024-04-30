@@ -3,23 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.ust.lenskart.testcases.StoreLocatorTest">
+      <class name="com.ust.lenskart.testcases.TestResetFilters">
         <methods>
-          <include name="setup"/>
           <include name="pageLoader"/>
-          <include name="closeSetup"/>
-          <include name="gotoLocator"/>
-          <include name="searchCity"/>
+          <include name="testSetFilters"/>
+          <include name="quitDriver"/>
         </methods>
-      </class> <!-- com.ust.lenskart.testcases.StoreLocatorTest -->
-      <class name="com.ust.lenskart.testcases.Demo">
-        <methods>
-          <include name="setup"/>
-          <include name="pageLoader"/>
-          <include name="closeSetup"/>
-          <include name="demo"/>
-        </methods>
-      </class> <!-- com.ust.lenskart.testcases.Demo -->
+      </class> <!-- com.ust.lenskart.testcases.TestResetFilters -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
