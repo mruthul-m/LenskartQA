@@ -3,14 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ust.lenskart.testcases.TestResetFilters">
+      <class name="com.ust.lenskart.testcases.TestRemovingFromWishList">
         <methods>
-          <include name="testEnterSearchBox"/>
           <include name="pageLoader"/>
-          <include name="testSetFilters"/>
-          <include name="quitDriver"/>
+          <include name="testWishListAgain"/>
+          <include name="testAddingToWishListAgain"/>
+          <include name="testAddingToWishList"/>
+          <include name="testEnterSearchBox"/>
+          <include name="testWishList"/>
         </methods>
-      </class> <!-- com.ust.lenskart.testcases.TestResetFilters -->
+      </class> <!-- com.ust.lenskart.testcases.TestRemovingFromWishList -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

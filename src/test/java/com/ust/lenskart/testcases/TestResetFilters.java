@@ -25,7 +25,6 @@ public class TestResetFilters extends Hooks {
 				.setPrescriptionType().setSupportedPower().setMaterial().setSubBrand().setFrameWidth().setProductType();
 		assertTrue(homePage.isFiltersDisplayed());
 		assertTrue(homePage.validateFilters());
-//		homePage.validateFilters();
 	}
 
 	@Test(priority = 2)

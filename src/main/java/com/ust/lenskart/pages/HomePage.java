@@ -26,10 +26,10 @@ public class HomePage extends TestBase {
 
 	@FindBy(xpath = "//div[@id='frametype_id']//label[@id='filter-item-image-0']/div")
 	public WebElement frametype;
-	
+
 	@FindBy(xpath = "//div[@id='frame_shape_id']//label[@id='filter-item-image-0']/div")
 	public WebElement frameshape;
-	
+
 	@FindBy(xpath = "//div[@id='frame_color_id']/div[1]")
 	public WebElement dropdown1;
 
@@ -112,11 +112,11 @@ public class HomePage extends TestBase {
 	public WebElement nofilters;
 
 	@FindBy(xpath = "//span[starts-with(@class,'Title')]")
-	public List <WebElement> filterTitles;
-	
+	public List<WebElement> filterTitles;
+
 	@FindBy(xpath = "//span[starts-with(@class,'SelectedFiltersStyles')]/b")
-	public List <WebElement> filterNames;
-	
+	public List<WebElement> filterNames;
+
 	@FindBy(tagName = "aside")
 	public WebElement sidebar;
 
@@ -164,6 +164,9 @@ public class HomePage extends TestBase {
 
 	@FindBy(xpath = "//a[starts-with(@class,'Cross')]")
 	public List<WebElement> cross;
+	
+	@FindBy(xpath = "//a[starts-with(@class,'ClearButton')]")
+	public WebElement clearList;
 
 	@FindBy(css = "iframe[name='spr-chat__box-frame']")
 	public WebElement chatBotFrame;
@@ -196,12 +199,12 @@ public class HomePage extends TestBase {
 		frametype.click();
 		return this;
 	}
-	
+
 	public HomePage setFrameShape() {
 		frameshape.click();
 		return this;
 	}
-	
+
 	public HomePage setColour() {
 		wait.until(ExpectedConditions.visibilityOf(dropdown1));
 		dropdown1.click();
@@ -372,11 +375,12 @@ public class HomePage extends TestBase {
 		resetFilters.click();
 		return this;
 	}
+
 	public boolean validateFilters() {
-		for(int i =0;i<filterTitles.size();i++) {
+		for (int i = 0; i < filterTitles.size(); i++) {
 			String title = filterTitles.get(i).getText().trim();
 			String names = filterNames.get(i).getText().replace(":", "").trim();
-			if(!(title.equalsIgnoreCase(names))) {
+			if (!(title.equalsIgnoreCase(names))) {
 				return false;
 			}
 		}
@@ -463,12 +467,14 @@ public class HomePage extends TestBase {
 	}
 
 	public int getWishListProductCount() {
+		delay(1);
 		String count = wishListProductCount.getText().replace("(", "").replace(")", "");
 		return Integer.parseInt(count);
 	}
 
 	public HomePage addProductsToWishList(int num) {
 		for (int i = 0; i < num; i++) {
+			delay(1);
 			productWishList.get(0).click();
 			delay(1);
 		}
@@ -476,9 +482,12 @@ public class HomePage extends TestBase {
 	}
 
 	public boolean checkProductTitle(int num) {
-		Collections.reverse(wishListProductTitle);
+		List<WebElement> tempList = new ArrayList<WebElement>();
+		for(int i=wishListProductTitle.size()-1; i>=0;i--) {
+			tempList.add(wishListProductTitle.get(i));
+		}
 		for (int i = 0; i < num; i++) {
-			if (!(productTitle.get(i).getText().equals(wishListProductTitle.get(i).getText()))) {
+			if (!(productTitle.get(i).getText().equalsIgnoreCase(tempList.get(i).getText()))) {
 				return false;
 			}
 		}
@@ -493,6 +502,12 @@ public class HomePage extends TestBase {
 		return this;
 	}
 
+	public HomePage clickClearList() {
+		wait.until(ExpectedConditions.elementToBeClickable(clearList));
+		setActions(driver).moveToElement(clearList).click().perform();
+//        clearList.click();
+        return this;
+	}
 	public HomePage clickChatBotIcon() {
 		wait.until(ExpectedConditions.visibilityOf(chatBotButton));
 		chatBotButton.click();
@@ -539,5 +554,5 @@ public class HomePage extends TestBase {
 		newConversation.click();
 		return this;
 	}
-	
+
 }

@@ -1,33 +1,209 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="23" passed="23" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-30T13:11:20 IST" name="Default suite" finished-at="2024-04-30T13:14:07 IST" duration-ms="166988">
+  <suite started-at="2024-04-30T17:41:30 IST" name="Suite" finished-at="2024-04-30T17:57:39 IST" duration-ms="968649">
     <groups>
     </groups>
-    <test started-at="2024-04-30T13:11:20 IST" name="Default test" finished-at="2024-04-30T13:14:07 IST" duration-ms="166988">
-      <class name="com.ust.lenskart.testcases.TestResetFilters">
-        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestResetFilters@21be3395]" started-at="2024-04-30T13:11:20 IST" name="pageLoader" finished-at="2024-04-30T13:11:56 IST" duration-ms="35737" status="PASS">
+    <test started-at="2024-04-30T17:41:30 IST" name="Test" finished-at="2024-04-30T17:57:39 IST" duration-ms="968649">
+      <class name="com.ust.lenskart.testcases.TestRemovingFromWishList">
+        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestRemovingFromWishList@18f8cd79]" started-at="2024-04-30T17:54:22 IST" name="pageLoader" finished-at="2024-04-30T17:54:55 IST" duration-ms="32884" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageLoader -->
-        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestResetFilters@21be3395]" started-at="2024-04-30T13:11:56 IST" name="testEnterSearchBox" finished-at="2024-04-30T13:12:19 IST" duration-ms="23294" status="PASS">
+        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestRemovingFromWishList@18f8cd79]" started-at="2024-04-30T17:54:55 IST" name="testEnterSearchBox" finished-at="2024-04-30T17:55:20 IST" duration-ms="25724" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEnterSearchBox -->
-        <test-method signature="testSetFilters()[pri:1, instance:com.ust.lenskart.testcases.TestResetFilters@21be3395]" started-at="2024-04-30T13:12:19 IST" name="testSetFilters" finished-at="2024-04-30T13:13:59 IST" depends-on-methods="com.ust.lenskart.testcases.TestResetFilters.testEnterSearchBox" duration-ms="100129" status="PASS">
+        <test-method signature="testAddingToWishList()[pri:1, instance:com.ust.lenskart.testcases.TestRemovingFromWishList@18f8cd79]" started-at="2024-04-30T17:55:20 IST" name="testAddingToWishList" finished-at="2024-04-30T17:55:30 IST" depends-on-methods="com.ust.lenskart.testcases.TestRemovingFromWishList.testEnterSearchBox" duration-ms="9960" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddingToWishList -->
+        <test-method signature="testWishList()[pri:2, instance:com.ust.lenskart.testcases.TestRemovingFromWishList@18f8cd79]" started-at="2024-04-30T17:55:30 IST" name="testWishList" finished-at="2024-04-30T17:55:43 IST" depends-on-methods="com.ust.lenskart.testcases.TestRemovingFromWishList.testAddingToWishList" duration-ms="12284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWishList -->
+        <test-method signature="testAddingToWishListAgain()[pri:3, instance:com.ust.lenskart.testcases.TestRemovingFromWishList@18f8cd79]" started-at="2024-04-30T17:55:43 IST" name="testAddingToWishListAgain" finished-at="2024-04-30T17:55:51 IST" depends-on-methods="com.ust.lenskart.testcases.TestRemovingFromWishList.testEnterSearchBox" duration-ms="8403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddingToWishListAgain -->
+        <test-method signature="testWishListAgain()[pri:4, instance:com.ust.lenskart.testcases.TestRemovingFromWishList@18f8cd79]" started-at="2024-04-30T17:55:51 IST" name="testWishListAgain" finished-at="2024-04-30T17:55:53 IST" depends-on-methods="com.ust.lenskart.testcases.TestRemovingFromWishList.testAddingToWishListAgain" duration-ms="1887" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWishListAgain -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.TestRemovingFromWishList@18f8cd79]" started-at="2024-04-30T17:55:53 IST" name="quitDriver" finished-at="2024-04-30T17:55:57 IST" duration-ms="3837" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.ust.lenskart.testcases.TestRemovingFromWishList -->
+      <class name="com.ust.lenskart.testcases.TestChatBot">
+        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestChatBot@3e2055d6]" started-at="2024-04-30T17:55:57 IST" name="pageLoader" finished-at="2024-04-30T17:56:32 IST" duration-ms="34968" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageLoader -->
+        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestChatBot@3e2055d6]" started-at="2024-04-30T17:56:32 IST" name="testEnterSearchBox" finished-at="2024-04-30T17:56:33 IST" duration-ms="1159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEnterSearchBox -->
+        <test-method signature="testChatBot()[pri:1, instance:com.ust.lenskart.testcases.TestChatBot@3e2055d6]" started-at="2024-04-30T17:56:33 IST" name="testChatBot" finished-at="2024-04-30T17:56:40 IST" duration-ms="6950" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChatBot -->
+        <test-method signature="testChatNewConversation()[pri:2, instance:com.ust.lenskart.testcases.TestChatBot@3e2055d6]" started-at="2024-04-30T17:56:40 IST" name="testChatNewConversation" finished-at="2024-04-30T17:56:49 IST" depends-on-methods="com.ust.lenskart.testcases.TestChatBot.testChatBot" duration-ms="8841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChatNewConversation -->
+        <test-method signature="testChatBotSuggestion(java.lang.String,java.lang.String)[pri:3, instance:com.ust.lenskart.testcases.TestChatBot@3e2055d6]" started-at="2024-04-30T17:56:56 IST" name="testChatBotSuggestion" data-provider="chatBotSuggestion" finished-at="2024-04-30T17:57:08 IST" depends-on-methods="com.ust.lenskart.testcases.TestChatBot.testChatNewConversation" duration-ms="11949" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Buy Eyewear]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Thanks for choosing Lenskart, India’s largest online eyewear company.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChatBotSuggestion -->
+        <test-method signature="testChatBotSuggestion(java.lang.String,java.lang.String)[pri:3, instance:com.ust.lenskart.testcases.TestChatBot@3e2055d6]" started-at="2024-04-30T17:57:08 IST" name="testChatBotSuggestion" data-provider="chatBotSuggestion" finished-at="2024-04-30T17:57:20 IST" depends-on-methods="com.ust.lenskart.testcases.TestChatBot.testChatNewConversation" duration-ms="11404" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Query about my order]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Please provide your phone number.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChatBotSuggestion -->
+        <test-method signature="testChatBotSuggestion(java.lang.String,java.lang.String)[pri:3, instance:com.ust.lenskart.testcases.TestChatBot@3e2055d6]" started-at="2024-04-30T17:57:20 IST" name="testChatBotSuggestion" data-provider="chatBotSuggestion" finished-at="2024-04-30T17:57:35 IST" depends-on-methods="com.ust.lenskart.testcases.TestChatBot.testChatNewConversation" duration-ms="14872" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Locate Nearby Store]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[View Menu]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChatBotSuggestion -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.TestChatBot@3e2055d6]" started-at="2024-04-30T17:57:35 IST" name="quitDriver" finished-at="2024-04-30T17:57:39 IST" duration-ms="4362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.ust.lenskart.testcases.TestChatBot -->
+      <class name="com.ust.lenskart.testcases.TestSortBy">
+        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestSortBy@2438dcd]" started-at="2024-04-30T17:43:10 IST" name="pageLoader" finished-at="2024-04-30T17:43:50 IST" duration-ms="40151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageLoader -->
+        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestSortBy@2438dcd]" started-at="2024-04-30T17:43:50 IST" name="testEnterSearchBox" finished-at="2024-04-30T17:44:19 IST" duration-ms="29530" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEnterSearchBox -->
+        <test-method signature="TsetSortByLowToHigh()[pri:1, instance:com.ust.lenskart.testcases.TestSortBy@2438dcd]" started-at="2024-04-30T17:44:19 IST" name="TsetSortByLowToHigh" finished-at="2024-04-30T17:46:29 IST" duration-ms="130017" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TsetSortByLowToHigh -->
+        <test-method signature="TsetSortByHighToLow()[pri:2, instance:com.ust.lenskart.testcases.TestSortBy@2438dcd]" started-at="2024-04-30T17:46:29 IST" name="TsetSortByHighToLow" finished-at="2024-04-30T17:48:27 IST" duration-ms="117113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TsetSortByHighToLow -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.TestSortBy@2438dcd]" started-at="2024-04-30T17:48:27 IST" name="quitDriver" finished-at="2024-04-30T17:48:31 IST" duration-ms="4470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.ust.lenskart.testcases.TestSortBy -->
+      <class name="com.ust.lenskart.testcases.StoreLocatorTest">
+        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.StoreLocatorTest@461ad730]" started-at="2024-04-30T17:41:30 IST" name="pageLoader" finished-at="2024-04-30T17:41:54 IST" duration-ms="23154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageLoader -->
+        <test-method signature="gotoLocator()[pri:0, instance:com.ust.lenskart.testcases.StoreLocatorTest@461ad730]" started-at="2024-04-30T17:41:54 IST" name="gotoLocator" finished-at="2024-04-30T17:42:50 IST" duration-ms="55871" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gotoLocator -->
+        <test-method signature="searchCity()[pri:0, instance:com.ust.lenskart.testcases.StoreLocatorTest@461ad730]" started-at="2024-04-30T17:42:50 IST" name="searchCity" finished-at="2024-04-30T17:43:04 IST" depends-on-methods="com.ust.lenskart.testcases.StoreLocatorTest.gotoLocator" duration-ms="14149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchCity -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.StoreLocatorTest@461ad730]" started-at="2024-04-30T17:43:04 IST" name="quitDriver" finished-at="2024-04-30T17:43:10 IST" duration-ms="5775" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.ust.lenskart.testcases.StoreLocatorTest -->
+      <class name="com.ust.lenskart.testcases.TestAddingtoWishList">
+        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestAddingtoWishList@64b0598]" started-at="2024-04-30T17:53:08 IST" name="pageLoader" finished-at="2024-04-30T17:53:41 IST" duration-ms="32986" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageLoader -->
+        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestAddingtoWishList@64b0598]" started-at="2024-04-30T17:53:41 IST" name="testEnterSearchBox" finished-at="2024-04-30T17:54:08 IST" duration-ms="26552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEnterSearchBox -->
+        <test-method signature="testAssingToWishList()[pri:0, instance:com.ust.lenskart.testcases.TestAddingtoWishList@64b0598]" started-at="2024-04-30T17:54:08 IST" name="testAssingToWishList" finished-at="2024-04-30T17:54:19 IST" depends-on-methods="com.ust.lenskart.testcases.TestAddingtoWishList.testEnterSearchBox" duration-ms="10979" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAssingToWishList -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.TestAddingtoWishList@64b0598]" started-at="2024-04-30T17:54:19 IST" name="quitDriver" finished-at="2024-04-30T17:54:22 IST" duration-ms="3190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.ust.lenskart.testcases.TestAddingtoWishList -->
+      <class name="com.ust.lenskart.testcases.TestWishListEmpty">
+        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestWishListEmpty@5167f57d]" started-at="2024-04-30T17:51:45 IST" name="pageLoader" finished-at="2024-04-30T17:52:28 IST" duration-ms="43132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageLoader -->
+        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestWishListEmpty@5167f57d]" started-at="2024-04-30T17:52:28 IST" name="testEnterSearchBox" finished-at="2024-04-30T17:53:00 IST" duration-ms="31584" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEnterSearchBox -->
+        <test-method signature="testWishList()[pri:0, instance:com.ust.lenskart.testcases.TestWishListEmpty@5167f57d]" started-at="2024-04-30T17:53:00 IST" name="testWishList" finished-at="2024-04-30T17:53:04 IST" depends-on-methods="com.ust.lenskart.testcases.TestWishListEmpty.testEnterSearchBox" duration-ms="3937" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWishList -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.TestWishListEmpty@5167f57d]" started-at="2024-04-30T17:53:04 IST" name="quitDriver" finished-at="2024-04-30T17:53:08 IST" duration-ms="4498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.ust.lenskart.testcases.TestWishListEmpty -->
+      <class name="com.ust.lenskart.testcases.TestResetFilters">
+        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestResetFilters@24105dc5]" started-at="2024-04-30T17:48:31 IST" name="pageLoader" finished-at="2024-04-30T17:49:07 IST" duration-ms="36350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageLoader -->
+        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestResetFilters@24105dc5]" started-at="2024-04-30T17:49:07 IST" name="testEnterSearchBox" finished-at="2024-04-30T17:49:38 IST" duration-ms="30203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEnterSearchBox -->
+        <test-method signature="testSetFilters()[pri:1, instance:com.ust.lenskart.testcases.TestResetFilters@24105dc5]" started-at="2024-04-30T17:49:38 IST" name="testSetFilters" finished-at="2024-04-30T17:51:36 IST" depends-on-methods="com.ust.lenskart.testcases.TestResetFilters.testEnterSearchBox" duration-ms="118636" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetFilters -->
-        <test-method signature="testResetFilters()[pri:2, instance:com.ust.lenskart.testcases.TestResetFilters@21be3395]" started-at="2024-04-30T13:13:59 IST" name="testResetFilters" finished-at="2024-04-30T13:14:03 IST" duration-ms="3825" status="PASS">
+        <test-method signature="testResetFilters()[pri:2, instance:com.ust.lenskart.testcases.TestResetFilters@24105dc5]" started-at="2024-04-30T17:51:36 IST" name="testResetFilters" finished-at="2024-04-30T17:51:41 IST" duration-ms="4800" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testResetFilters -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.TestResetFilters@21be3395]" started-at="2024-04-30T13:14:03 IST" name="quitDriver" finished-at="2024-04-30T13:14:07 IST" duration-ms="3778" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.TestResetFilters@24105dc5]" started-at="2024-04-30T17:51:41 IST" name="quitDriver" finished-at="2024-04-30T17:51:45 IST" duration-ms="3975" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- com.ust.lenskart.testcases.TestResetFilters -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
