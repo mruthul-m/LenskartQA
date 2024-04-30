@@ -3,6 +3,7 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.ust.lenskart.testrunner.TestRunner">
         <methods>
           <include name="setUpClass"/>
@@ -10,6 +11,18 @@
           <include name="runScenario" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.ust.lenskart.testrunner.TestRunner -->
+=======
+      <class name="com.ust.lenskart.testcases.TestRemovingFromWishList">
+        <methods>
+          <include name="pageLoader"/>
+          <include name="testWishListAgain"/>
+          <include name="testAddingToWishListAgain"/>
+          <include name="testAddingToWishList"/>
+          <include name="testEnterSearchBox"/>
+          <include name="testWishList"/>
+        </methods>
+      </class> <!-- com.ust.lenskart.testcases.TestRemovingFromWishList -->
+>>>>>>> excel
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

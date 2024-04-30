@@ -10,7 +10,7 @@ import com.ust.lenskart.pages.HomePage;
 
 public class TestAddingtoWishList extends Hooks {
 	HomePage homePage;
-
+	
 	@Test()
 	public void testEnterSearchBox() {
 		homePage = PageFactory.initElements(driver, HomePage.class);

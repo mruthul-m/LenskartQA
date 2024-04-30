@@ -19,11 +19,12 @@ public class TestResetFilters extends Hooks {
 		assertEquals(testconfig.getSearchUrl(), homePage.getUrl());
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1,dependsOnMethods = "testEnterSearchBox")
 	public void testSetFilters() {
-		homePage.setColour().setBrand().setFrameSize().setPrice().setGender().setGlassColour().setFrameWeight()
+		homePage.setFrameType().setFrameShape().setColour().setBrand().setFrameSize().setPrice().setGender().setGlassColour().setFrameWeight()
 				.setPrescriptionType().setSupportedPower().setMaterial().setSubBrand().setFrameWidth().setProductType();
 		assertTrue(homePage.isFiltersDisplayed());
+		assertTrue(homePage.validateFilters());
 	}
 
 	@Test(priority = 2)

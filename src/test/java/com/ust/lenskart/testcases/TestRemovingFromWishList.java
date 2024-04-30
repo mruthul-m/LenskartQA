@@ -32,4 +32,15 @@ public class TestRemovingFromWishList extends Hooks{
         }
         assertEquals(homePage.getWishListProductCount(),0);
     }
+	@Test(priority=3,dependsOnMethods = "testEnterSearchBox")
+	public void testAddingToWishListAgain() {
+		int num = Integer.parseInt(testconfig.getNumberOfProductsToBeWishListed());
+		homePage.addProductsToWishList(num);
+		assertTrue(homePage.checkProductTitle(num));
+	}
+	@Test(priority=4,dependsOnMethods = "testAddingToWishListAgain")
+    public void testWishListAgain() {
+		homePage.clickClearList();
+		assertEquals(homePage.getWishListProductCount(),0);
+	}
 }
