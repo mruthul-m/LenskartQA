@@ -121,7 +121,6 @@ public class TestBase {
 
 	public static WebDriver changeWindow(WebDriver driver, String parentWindow) throws DriverIsNotChanged {
 		Set<String> windows = driver.getWindowHandles();
-		System.out.println(windows);
 		for(String window: windows){
 			if (! window.equals(parentWindow)){
 				driver.switchTo().window(window);

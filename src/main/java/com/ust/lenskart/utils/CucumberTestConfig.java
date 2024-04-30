@@ -15,5 +15,8 @@ public interface CucumberTestConfig extends Config{
 
     @Key("PRODUCT")
     String getProductName();
+    
+    @Key("BASE_URL")
+    String getUrl();
 
 }

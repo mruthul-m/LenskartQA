@@ -1,5 +1,6 @@
 package com.ust.lenskart.pages;
 
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -405,6 +406,7 @@ public class HomePage extends TestBase {
 
 
 	public CartPage cartLink(WebDriver driver){
+		
 		cartLink.click();
 		return PageFactory.initElements(driver,CartPage.class);
 	}
