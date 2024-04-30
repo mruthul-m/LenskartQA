@@ -1,5 +1,6 @@
 package com.ust.lenskart.pages;
 
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -124,11 +125,13 @@ public class HomePage extends TestBase {
 	@FindBy(linkText = "Locate a Store")
 	private WebElement storeLink;
 
+
 	@FindBy(css = ".ActionLinksContainer--5xj1y5.gKkoeY > div:last-child")
 	private WebElement cartLink;
 
 	@FindBy(xpath = "//div[@class='Buttons--15b7dyn jAmxXC']//span[text()='Remove']")
 	private WebElement removeItem;
+
 
 	@FindBy(xpath = "//div[starts-with(@class,'ActionLinksContainer')]/div[3]/span")
 	public WebElement wishList;
@@ -171,6 +174,7 @@ public class HomePage extends TestBase {
 
 	@FindBy(css = "div[data-testid='actionMenuList']>div")
 	public WebElement newConversation;
+
 
 	public HomePage enterSearchBox(String itemtext) {
 		searchbox.sendKeys(itemtext, Keys.ENTER);
@@ -399,10 +403,13 @@ public class HomePage extends TestBase {
 		return this;
 	}
 
-	public CartPage cartLink(WebDriver driver) {
+	public CartPage cartLink(WebDriver driver){
+		
+
 		cartLink.click();
 		return PageFactory.initElements(driver, CartPage.class);
 	}
+
 
 	public HomePage clickWishList() {
 		wishList.click();
@@ -497,4 +504,5 @@ public class HomePage extends TestBase {
 		newConversation.click();
 		return this;
 	}
+
 }

@@ -18,6 +18,7 @@ import com.ust.lenskart.utils.TestConfig;
 
 public class TestBase {
 
+
     // Load the configuration properties
     protected static final TestConfig testconfig = ConfigFactory.create(TestConfig.class);
 
@@ -107,4 +108,6 @@ public class TestBase {
         throw new DriverIsNotChanged(String.format(
                 "Driver is not changed, still: %s", parentWindow));
     }
+
+
 }

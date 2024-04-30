@@ -5,6 +5,7 @@ import com.ust.lenskart.utils.DriverIsNotChanged;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class CartPage extends TestBase {
@@ -13,13 +14,16 @@ public class CartPage extends TestBase {
     @FindBy(css = "div[data-cy='cart-not-found-desktop'] > div > div:first-child")
     private WebElement emptyCart;
     
-    // Element locator for the remove button of the last item in the cart
+
+    @FindBy(css = "img[alt='lenskart-logo']")
+    private WebElement homeLogo;
+    
     @FindBy(xpath = "//div[@class='CartStyles__RemoveItemOverlay-sc-14bvp3n-27 bLIudg'][last()]//div//span[text()='Remove']")
     private WebElement removeBtn;
     
-    // Element locator for the heading of the last item in the cart
-    @FindBy(xpath = "//div[@class='CartStyles__RemoveItemOverlay-sc-14bvp3n-27 bLIudg'][last()]//div//div[@class='ItemTitle--h71f3c fzTWih']")
-    private WebElement productAtCartHeading;
+    @FindBy(css = ".PopUpConfirm--1ykjvo8.gvkMrH")
+    private WebElement acceptRemove;
+
 
     // Method to get the text of the empty cart message
     public String getEmptyCartText(){
@@ -39,9 +43,32 @@ public class CartPage extends TestBase {
 
     }
     
+
     // Method to get the model of the last item in the cart
-    public String getModelFromCart() {
-    	delay(5);
-    	return productAtCartHeading.getText();
+//    public String getModelFromCart() {
+//    	delay(5);
+//    	return productAtCartHeading.getText();
+//}
+
+    public HomePage gotoHomePage() {
+    	setWait(driver, 10).until(ExpectedConditions.visibilityOf(homeLogo)).click();
+    	delay(3);
+    	return PageFactory.initElements(driver, HomePage.class);
+    }
+    
+    public void removeItemFromCart() {
+    	setWait(driver, 10).until(ExpectedConditions.visibilityOf(removeBtn)).click();
+    	acceptRemove.click();
+    	delay(2);
+    }
+    
+    public boolean ItemIsPresent() {
+    	try {
+			removeBtn.isDisplayed();
+			return true;
+		} catch (Exception e) {
+			return false;
+		}
+
     }
 }

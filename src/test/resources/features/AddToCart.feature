@@ -25,9 +25,10 @@ Feature: Add to cart functionality
 		Then User on product page
 		And User clicks on Buy Now
 		Then User will successfully add item to the Cart
-		Then User clicks the repeat to add again
+		Then User goto the homepage
+		When User clicks on cart link
 		Then User removes an Item from the cart
-		Then Item will be removed
+		Then User sees "Your shopping cart is empty! !"
 
 		
 		
