@@ -35,10 +35,16 @@ public interface TestConfig extends Config {
 	@Key("VALID_SEARCH_ITEM")
 	String getValidSearchItem();
 	
+	@Key("INVALID_SEARCH_MESSAGE")
+	String getInvalidSearchMessage();
+	
 	@Key("SEARCH_URL")
 	String getSearchUrl();
 
 	@Key("SHEET_NAME")
 	String getSheetName();
 
+	@Key("INVALID_SEARCH_ITEM")
+	String getInvalidSearchItem();
+	
 }

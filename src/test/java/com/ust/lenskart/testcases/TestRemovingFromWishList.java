@@ -7,40 +7,47 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
 import com.ust.lenskart.pages.HomePage;
+import com.ust.lenskart.pages.SearchItemPage;
 
 public class TestRemovingFromWishList extends Hooks{
 	HomePage homePage;
+	SearchItemPage searchItemPage;
 
 	@Test(priority=0)
 	public void testEnterSearchBox() {
 		homePage = PageFactory.initElements(driver, HomePage.class);
 		homePage.enterSearchBox(testconfig.getValidSearchItem());
-		assertEquals(testconfig.getSearchUrl(), homePage.getUrl());
+		assertEquals(homePage.getUrl(),testconfig.getSearchUrl());
 }
 	@Test(priority=1,dependsOnMethods = "testEnterSearchBox")
 	public void testAddingToWishList() {
+		searchItemPage = PageFactory.initElements(driver, SearchItemPage.class);
+		assertEquals(searchItemPage.getSearchItemText(),testconfig.getValidSearchItem().toUpperCase());
 		int num = Integer.parseInt(testconfig.getNumberOfProductsToBeWishListed());
-		homePage.addProductsToWishList(num);
-		assertTrue(homePage.checkProductTitle(num));
+		searchItemPage.addProductsToWishList(num);
+		assertTrue(searchItemPage.checkProductTitle(num));
 	}
 	@Test(priority=2,dependsOnMethods = "testAddingToWishList")
     public void testWishList() {
 		delay(1);
 		int num = Integer.parseInt(testconfig.getNumberOfProductsToBeWishListed());
         for(int i =1;i<=num;i++) {
-		homePage.removeProductsFromWishList();
+        searchItemPage.removeProductsFromWishList();
         }
-        assertEquals(homePage.getWishListProductCount(),0);
+        assertEquals(searchItemPage.getWishListProductCount(),0);
     }
 	@Test(priority=3,dependsOnMethods = "testEnterSearchBox")
 	public void testAddingToWishListAgain() {
 		int num = Integer.parseInt(testconfig.getNumberOfProductsToBeWishListed());
-		homePage.addProductsToWishList(num);
-		assertTrue(homePage.checkProductTitle(num));
+
+		assertEquals(searchItemPage.getSearchItemText(),testconfig.getValidSearchItem().toUpperCase());
+		searchItemPage.addProductsToWishList(num);
+		assertTrue(searchItemPage.checkProductTitle(num));
 	}
 	@Test(priority=4,dependsOnMethods = "testAddingToWishListAgain")
     public void testWishListAgain() {
-		homePage.clickClearList();
-		assertEquals(homePage.getWishListProductCount(),0);
+		searchItemPage.clickClearList();
+		assertEquals(searchItemPage.getWishListProductCount(),0);
+
 	}
 }

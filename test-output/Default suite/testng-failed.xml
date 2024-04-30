@@ -4,6 +4,7 @@
   <test thread-count="5" name="Default test(failed)">
     <classes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.ust.lenskart.testrunner.TestRunner">
         <methods>
           <include name="setUpClass"/>
@@ -23,6 +24,15 @@
         </methods>
       </class> <!-- com.ust.lenskart.testcases.TestRemovingFromWishList -->
 >>>>>>> excel
+=======
+      <class name="com.ust.lenskart.testcases.TestItemSearch">
+        <methods>
+          <include name="pageLoader"/>
+          <include name="testInvalidSearchItem"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- com.ust.lenskart.testcases.TestItemSearch -->
+>>>>>>> searchitempage
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
