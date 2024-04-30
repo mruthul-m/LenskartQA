@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ust.lenskart.testcases.TestSortBy">
+      <class name="com.ust.lenskart.testcases.TestChatBot">
         <methods>
-          <include name="TsetSortByHighToLow"/>
           <include name="pageLoader"/>
-          <include name="TsetSortByLowToHigh"/>
-          <include name="testEnterSearchBox"/>
+          <include name="testChatBot"/>
+          <include name="testChatNewConversation"/>
+          <include name="testChatBotSuggestion"/>
         </methods>
-      </class> <!-- com.ust.lenskart.testcases.TestSortBy -->
+      </class> <!-- com.ust.lenskart.testcases.TestChatBot -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
