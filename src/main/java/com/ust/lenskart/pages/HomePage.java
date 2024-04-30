@@ -3,11 +3,7 @@ package com.ust.lenskart.pages;
 import java.util.ArrayList;
 import java.util.List;
 
-<<<<<<< HEAD
-import com.ust.lenskart.utils.DriverIsNotChanged;
-=======
-import org.openqa.selenium.By;
->>>>>>> wishlist
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -127,7 +123,7 @@ public class HomePage extends TestBase {
 
 	@FindBy(linkText = "Locate a Store")
 	private WebElement storeLink;
-<<<<<<< HEAD
+
 	
 	@FindBy(css = ".ActionLinksContainer--5xj1y5.gKkoeY > div:last-child")
 	private WebElement cartLink;
@@ -135,7 +131,7 @@ public class HomePage extends TestBase {
 	@FindBy(xpath = "//div[@class='Buttons--15b7dyn jAmxXC']//span[text()='Remove']")
 	private WebElement removeItem;
 
-=======
+
 
 	@FindBy(xpath = "//div[starts-with(@class,'ActionLinksContainer')]/div[3]/span")
 	public WebElement wishList;
@@ -178,7 +174,7 @@ public class HomePage extends TestBase {
 	
 	@FindBy(css = "div[data-testid='actionMenuList']>div")
 	public WebElement newConversation;
->>>>>>> wishlist
+
 	
 	public HomePage enterSearchBox(String itemtext) {
 		searchbox.sendKeys(itemtext, Keys.ENTER);
@@ -406,7 +402,7 @@ public class HomePage extends TestBase {
 		delay(3);
 		return this;
 	}
-<<<<<<< HEAD
+
 
 	public CartPage cartLink(WebDriver driver){
 		cartLink.click();
@@ -414,7 +410,7 @@ public class HomePage extends TestBase {
 	}
 
 
-=======
+
 	
 	public HomePage clickWishList() {
 		wishList.click();
@@ -506,5 +502,5 @@ public class HomePage extends TestBase {
 		newConversation.click();
 		return this;
 	}
->>>>>>> wishlist
+
 }
