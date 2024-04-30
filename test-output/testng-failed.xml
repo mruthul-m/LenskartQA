@@ -5,16 +5,9 @@
     <classes>
       <class name="com.ust.lenskart.testrunner.TestRunner">
         <methods>
-<<<<<<< HEAD
-          <include name="pageLoader"/>
-          <include name="testChatBot"/>
-          <include name="testChatNewConversation"/>
-          <include name="testChatBotSuggestion"/>
-=======
           <include name="setUpClass"/>
           <include name="tearDownClass"/>
           <include name="runScenario" invocation-numbers="0"/>
->>>>>>> cartlist
         </methods>
       </class> <!-- com.ust.lenskart.testrunner.TestRunner -->
     </classes>

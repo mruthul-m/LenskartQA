@@ -64,8 +64,8 @@ public class BookAppointmentTest  {
 	@Then("User book a free appointment from the top most list")
 	public void user_book_a_free_appointment_from_the_top_most_list() {
 		String output = 
-		storepage.clickBookAppointment().setDetails(cucumberconfig.userName(),
-						cucumberconfig.getNumber())
+		storepage.clickBookAppointment().setDetails(cucumberconfig.getNumber(),
+					cucumberconfig.userName())
 		.clickBooking().selectShift().getConfirmationText();
 
         assertEquals(output, "Appointment Confirmed");
