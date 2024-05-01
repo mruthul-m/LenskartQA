@@ -1,96 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2024-04-30T23:09:00 IST" name="Default suite" finished-at="2024-04-30T23:10:15 IST" duration-ms="75327">
-=======
-<testng-results ignored="0" total="23" passed="23" failed="0" skipped="0">
-  <reporter-output>
-  </reporter-output>
-  <suite started-at="2024-04-30T17:41:30 IST" name="Suite" finished-at="2024-04-30T17:57:39 IST" duration-ms="968649">
->>>>>>> excel
-=======
-  <suite started-at="2024-04-30T22:41:34 IST" name="Default suite" finished-at="2024-04-30T22:42:15 IST" duration-ms="41456">
->>>>>>> searchitempage
+  <suite started-at="2024-05-01T15:31:15 IST" name="Default suite" finished-at="2024-05-01T15:34:04 IST" duration-ms="169436">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@609e8838]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <test started-at="2024-04-30T23:09:00 IST" name="Default test" finished-at="2024-04-30T23:10:15 IST" duration-ms="75327">
+    <test started-at="2024-05-01T15:31:15 IST" name="Default test" finished-at="2024-05-01T15:34:04 IST" duration-ms="169436">
       <class name="com.ust.lenskart.testrunner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@609e8838]" started-at="2024-04-30T23:09:00 IST" name="setUpClass" finished-at="2024-04-30T23:09:01 IST" duration-ms="1060" status="PASS">
-=======
-    <test started-at="2024-04-30T17:41:30 IST" name="Test" finished-at="2024-04-30T17:57:39 IST" duration-ms="968649">
-      <class name="com.ust.lenskart.testcases.TestRemovingFromWishList">
-        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestRemovingFromWishList@18f8cd79]" started-at="2024-04-30T17:54:22 IST" name="pageLoader" finished-at="2024-04-30T17:54:55 IST" duration-ms="32884" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pageLoader -->
-        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestRemovingFromWishList@18f8cd79]" started-at="2024-04-30T17:54:55 IST" name="testEnterSearchBox" finished-at="2024-04-30T17:55:20 IST" duration-ms="25724" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testEnterSearchBox -->
-        <test-method signature="testAddingToWishList()[pri:1, instance:com.ust.lenskart.testcases.TestRemovingFromWishList@18f8cd79]" started-at="2024-04-30T17:55:20 IST" name="testAddingToWishList" finished-at="2024-04-30T17:55:30 IST" depends-on-methods="com.ust.lenskart.testcases.TestRemovingFromWishList.testEnterSearchBox" duration-ms="9960" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAddingToWishList -->
-        <test-method signature="testWishList()[pri:2, instance:com.ust.lenskart.testcases.TestRemovingFromWishList@18f8cd79]" started-at="2024-04-30T17:55:30 IST" name="testWishList" finished-at="2024-04-30T17:55:43 IST" depends-on-methods="com.ust.lenskart.testcases.TestRemovingFromWishList.testAddingToWishList" duration-ms="12284" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testWishList -->
-        <test-method signature="testAddingToWishListAgain()[pri:3, instance:com.ust.lenskart.testcases.TestRemovingFromWishList@18f8cd79]" started-at="2024-04-30T17:55:43 IST" name="testAddingToWishListAgain" finished-at="2024-04-30T17:55:51 IST" depends-on-methods="com.ust.lenskart.testcases.TestRemovingFromWishList.testEnterSearchBox" duration-ms="8403" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAddingToWishListAgain -->
-        <test-method signature="testWishListAgain()[pri:4, instance:com.ust.lenskart.testcases.TestRemovingFromWishList@18f8cd79]" started-at="2024-04-30T17:55:51 IST" name="testWishListAgain" finished-at="2024-04-30T17:55:53 IST" depends-on-methods="com.ust.lenskart.testcases.TestRemovingFromWishList.testAddingToWishListAgain" duration-ms="1887" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testWishListAgain -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.TestRemovingFromWishList@18f8cd79]" started-at="2024-04-30T17:55:53 IST" name="quitDriver" finished-at="2024-04-30T17:55:57 IST" duration-ms="3837" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- com.ust.lenskart.testcases.TestRemovingFromWishList -->
-      <class name="com.ust.lenskart.testcases.TestChatBot">
-        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestChatBot@3e2055d6]" started-at="2024-04-30T17:55:57 IST" name="pageLoader" finished-at="2024-04-30T17:56:32 IST" duration-ms="34968" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pageLoader -->
-        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestChatBot@3e2055d6]" started-at="2024-04-30T17:56:32 IST" name="testEnterSearchBox" finished-at="2024-04-30T17:56:33 IST" duration-ms="1159" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testEnterSearchBox -->
-        <test-method signature="testChatBot()[pri:1, instance:com.ust.lenskart.testcases.TestChatBot@3e2055d6]" started-at="2024-04-30T17:56:33 IST" name="testChatBot" finished-at="2024-04-30T17:56:40 IST" duration-ms="6950" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testChatBot -->
-        <test-method signature="testChatNewConversation()[pri:2, instance:com.ust.lenskart.testcases.TestChatBot@3e2055d6]" started-at="2024-04-30T17:56:40 IST" name="testChatNewConversation" finished-at="2024-04-30T17:56:49 IST" depends-on-methods="com.ust.lenskart.testcases.TestChatBot.testChatBot" duration-ms="8841" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testChatNewConversation -->
-        <test-method signature="testChatBotSuggestion(java.lang.String,java.lang.String)[pri:3, instance:com.ust.lenskart.testcases.TestChatBot@3e2055d6]" started-at="2024-04-30T17:56:56 IST" name="testChatBotSuggestion" data-provider="chatBotSuggestion" finished-at="2024-04-30T17:57:08 IST" depends-on-methods="com.ust.lenskart.testcases.TestChatBot.testChatNewConversation" duration-ms="11949" status="PASS">
->>>>>>> excel
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@609e8838]" started-at="2024-05-01T15:31:15 IST" name="setUpClass" finished-at="2024-05-01T15:31:15 IST" duration-ms="368" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1abfe081]]>
+                <![CDATA[org.testng.TestRunner@3b5c665c]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@609e8838]" started-at="2024-04-30T23:09:01 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-30T23:10:15 IST" duration-ms="74123" status="FAIL">
-=======
-        </test-method> <!-- testChatBotSuggestion -->
-        <test-method signature="testChatBotSuggestion(java.lang.String,java.lang.String)[pri:3, instance:com.ust.lenskart.testcases.TestChatBot@3e2055d6]" started-at="2024-04-30T17:57:08 IST" name="testChatBotSuggestion" data-provider="chatBotSuggestion" finished-at="2024-04-30T17:57:20 IST" depends-on-methods="com.ust.lenskart.testcases.TestChatBot.testChatNewConversation" duration-ms="11404" status="PASS">
->>>>>>> excel
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@609e8838]" started-at="2024-05-01T15:31:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-01T15:31:56 IST" duration-ms="40910" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Adding item to the cart functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add to cart functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@609e8838]" started-at="2024-05-01T15:31:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-01T15:32:18 IST" duration-ms="22333" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Removing item from an empty cart functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add to cart functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@609e8838]" started-at="2024-05-01T15:32:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-01T15:33:05 IST" duration-ms="46395" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Removing item from cart functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add to cart functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@609e8838]" started-at="2024-05-01T15:33:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-01T15:34:04 IST" duration-ms="59365" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -105,24 +84,24 @@
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='Schedule_allShift___NPxw']/div[not(contains(@style, 'cursor: not-allowed'))][1]' (tried for 10 second(s) with 500 milliseconds interval)]]>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[text()='Appointment Confirmed']' (tried for 10 second(s) with 500 milliseconds interval)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='Schedule_allShift___NPxw']/div[not(contains(@style, 'cursor: not-allowed'))][1]' (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[text()='Appointment Confirmed']' (tried for 10 second(s) with 500 milliseconds interval)
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at com.ust.lenskart.pages.StorePage.selectShift(StorePage.java:114)
+at com.ust.lenskart.pages.StorePage.getConfirmationText(StorePage.java:110)
 at stepdefinitions.BookAppointmentTest.user_book_a_free_appointment_from_the_top_most_list(BookAppointmentTest.java:69)
 at ✽.User book a free appointment from the top most list(file:///C:/Users/268877/eclipse-workspace/LenskartQA/src/test/resources/features/Appointment.feature:10)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='Schedule_allShift___NPxw']/div[not(contains(@style, 'cursor: not-allowed'))][1]"}
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Appointment Confirmed']"}
   (Session info: chrome=124.0.6367.63)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.19.1', revision: 'abe0ee07dc'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [20f07aa0ca9a7b55c6de4bb0c2fb39f0, findElement {using=xpath, value=//div[@class='Schedule_allShift___NPxw']/div[not(contains(@style, 'cursor: not-allowed'))][1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.63, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\268877\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58415}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58415/devtoo..., se:cdpVersion: 124.0.6367.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 20f07aa0ca9a7b55c6de4bb0c2fb39f0
+Command: [5688ed115c31757d2bfc8e32542cc349, findElement {value=//div[text()='Appointment Confirmed'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.63, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\268877\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62978}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62978/devtoo..., se:cdpVersion: 124.0.6367.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5688ed115c31757d2bfc8e32542cc349
 at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
@@ -145,7 +124,7 @@ at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedCo
 at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
 at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-at com.ust.lenskart.pages.StorePage.selectShift(StorePage.java:114)
+at com.ust.lenskart.pages.StorePage.getConfirmationText(StorePage.java:110)
 at stepdefinitions.BookAppointmentTest.user_book_a_free_appointment_from_the_top_most_list(BookAppointmentTest.java:69)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -202,160 +181,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@609e8838]" started-at="2024-04-30T23:10:15 IST" name="tearDownClass" finished-at="2024-04-30T23:10:15 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@609e8838]" started-at="2024-05-01T15:34:04 IST" name="tearDownClass" finished-at="2024-05-01T15:34:04 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- com.ust.lenskart.testrunner.TestRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
-=======
-        </test-method> <!-- testChatBotSuggestion -->
-        <test-method signature="testChatBotSuggestion(java.lang.String,java.lang.String)[pri:3, instance:com.ust.lenskart.testcases.TestChatBot@3e2055d6]" started-at="2024-04-30T17:57:20 IST" name="testChatBotSuggestion" data-provider="chatBotSuggestion" finished-at="2024-04-30T17:57:35 IST" depends-on-methods="com.ust.lenskart.testcases.TestChatBot.testChatNewConversation" duration-ms="14872" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Locate Nearby Store]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[View Menu]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testChatBotSuggestion -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.TestChatBot@3e2055d6]" started-at="2024-04-30T17:57:35 IST" name="quitDriver" finished-at="2024-04-30T17:57:39 IST" duration-ms="4362" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- com.ust.lenskart.testcases.TestChatBot -->
-      <class name="com.ust.lenskart.testcases.TestSortBy">
-        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestSortBy@2438dcd]" started-at="2024-04-30T17:43:10 IST" name="pageLoader" finished-at="2024-04-30T17:43:50 IST" duration-ms="40151" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pageLoader -->
-        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestSortBy@2438dcd]" started-at="2024-04-30T17:43:50 IST" name="testEnterSearchBox" finished-at="2024-04-30T17:44:19 IST" duration-ms="29530" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testEnterSearchBox -->
-        <test-method signature="TsetSortByLowToHigh()[pri:1, instance:com.ust.lenskart.testcases.TestSortBy@2438dcd]" started-at="2024-04-30T17:44:19 IST" name="TsetSortByLowToHigh" finished-at="2024-04-30T17:46:29 IST" duration-ms="130017" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TsetSortByLowToHigh -->
-        <test-method signature="TsetSortByHighToLow()[pri:2, instance:com.ust.lenskart.testcases.TestSortBy@2438dcd]" started-at="2024-04-30T17:46:29 IST" name="TsetSortByHighToLow" finished-at="2024-04-30T17:48:27 IST" duration-ms="117113" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TsetSortByHighToLow -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.TestSortBy@2438dcd]" started-at="2024-04-30T17:48:27 IST" name="quitDriver" finished-at="2024-04-30T17:48:31 IST" duration-ms="4470" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- com.ust.lenskart.testcases.TestSortBy -->
-      <class name="com.ust.lenskart.testcases.StoreLocatorTest">
-        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.StoreLocatorTest@461ad730]" started-at="2024-04-30T17:41:30 IST" name="pageLoader" finished-at="2024-04-30T17:41:54 IST" duration-ms="23154" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pageLoader -->
-        <test-method signature="gotoLocator()[pri:0, instance:com.ust.lenskart.testcases.StoreLocatorTest@461ad730]" started-at="2024-04-30T17:41:54 IST" name="gotoLocator" finished-at="2024-04-30T17:42:50 IST" duration-ms="55871" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gotoLocator -->
-        <test-method signature="searchCity()[pri:0, instance:com.ust.lenskart.testcases.StoreLocatorTest@461ad730]" started-at="2024-04-30T17:42:50 IST" name="searchCity" finished-at="2024-04-30T17:43:04 IST" depends-on-methods="com.ust.lenskart.testcases.StoreLocatorTest.gotoLocator" duration-ms="14149" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchCity -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.StoreLocatorTest@461ad730]" started-at="2024-04-30T17:43:04 IST" name="quitDriver" finished-at="2024-04-30T17:43:10 IST" duration-ms="5775" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- com.ust.lenskart.testcases.StoreLocatorTest -->
-      <class name="com.ust.lenskart.testcases.TestAddingtoWishList">
-        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestAddingtoWishList@64b0598]" started-at="2024-04-30T17:53:08 IST" name="pageLoader" finished-at="2024-04-30T17:53:41 IST" duration-ms="32986" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pageLoader -->
-        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestAddingtoWishList@64b0598]" started-at="2024-04-30T17:53:41 IST" name="testEnterSearchBox" finished-at="2024-04-30T17:54:08 IST" duration-ms="26552" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testEnterSearchBox -->
-        <test-method signature="testAssingToWishList()[pri:0, instance:com.ust.lenskart.testcases.TestAddingtoWishList@64b0598]" started-at="2024-04-30T17:54:08 IST" name="testAssingToWishList" finished-at="2024-04-30T17:54:19 IST" depends-on-methods="com.ust.lenskart.testcases.TestAddingtoWishList.testEnterSearchBox" duration-ms="10979" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAssingToWishList -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.TestAddingtoWishList@64b0598]" started-at="2024-04-30T17:54:19 IST" name="quitDriver" finished-at="2024-04-30T17:54:22 IST" duration-ms="3190" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- com.ust.lenskart.testcases.TestAddingtoWishList -->
-      <class name="com.ust.lenskart.testcases.TestWishListEmpty">
-        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestWishListEmpty@5167f57d]" started-at="2024-04-30T17:51:45 IST" name="pageLoader" finished-at="2024-04-30T17:52:28 IST" duration-ms="43132" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pageLoader -->
-        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestWishListEmpty@5167f57d]" started-at="2024-04-30T17:52:28 IST" name="testEnterSearchBox" finished-at="2024-04-30T17:53:00 IST" duration-ms="31584" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testEnterSearchBox -->
-        <test-method signature="testWishList()[pri:0, instance:com.ust.lenskart.testcases.TestWishListEmpty@5167f57d]" started-at="2024-04-30T17:53:00 IST" name="testWishList" finished-at="2024-04-30T17:53:04 IST" depends-on-methods="com.ust.lenskart.testcases.TestWishListEmpty.testEnterSearchBox" duration-ms="3937" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testWishList -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.TestWishListEmpty@5167f57d]" started-at="2024-04-30T17:53:04 IST" name="quitDriver" finished-at="2024-04-30T17:53:08 IST" duration-ms="4498" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- com.ust.lenskart.testcases.TestWishListEmpty -->
-      <class name="com.ust.lenskart.testcases.TestResetFilters">
-        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestResetFilters@24105dc5]" started-at="2024-04-30T17:48:31 IST" name="pageLoader" finished-at="2024-04-30T17:49:07 IST" duration-ms="36350" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pageLoader -->
-        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestResetFilters@24105dc5]" started-at="2024-04-30T17:49:07 IST" name="testEnterSearchBox" finished-at="2024-04-30T17:49:38 IST" duration-ms="30203" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testEnterSearchBox -->
-        <test-method signature="testSetFilters()[pri:1, instance:com.ust.lenskart.testcases.TestResetFilters@24105dc5]" started-at="2024-04-30T17:49:38 IST" name="testSetFilters" finished-at="2024-04-30T17:51:36 IST" depends-on-methods="com.ust.lenskart.testcases.TestResetFilters.testEnterSearchBox" duration-ms="118636" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSetFilters -->
-        <test-method signature="testResetFilters()[pri:2, instance:com.ust.lenskart.testcases.TestResetFilters@24105dc5]" started-at="2024-04-30T17:51:36 IST" name="testResetFilters" finished-at="2024-04-30T17:51:41 IST" duration-ms="4800" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testResetFilters -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.TestResetFilters@24105dc5]" started-at="2024-04-30T17:51:41 IST" name="quitDriver" finished-at="2024-04-30T17:51:45 IST" duration-ms="3975" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- com.ust.lenskart.testcases.TestResetFilters -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
->>>>>>> excel
-=======
-    <test started-at="2024-04-30T22:41:34 IST" name="Default test" finished-at="2024-04-30T22:42:15 IST" duration-ms="41456">
-      <class name="com.ust.lenskart.testcases.TestItemSearch">
-        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestItemSearch@7d322cad]" started-at="2024-04-30T22:41:34 IST" name="pageLoader" finished-at="2024-04-30T22:41:53 IST" duration-ms="19147" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pageLoader -->
-        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestItemSearch@7d322cad]" started-at="2024-04-30T22:41:53 IST" name="testEnterSearchBox" finished-at="2024-04-30T22:42:05 IST" duration-ms="12146" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testEnterSearchBox -->
-        <test-method signature="testInvalidSearchItem()[pri:1, instance:com.ust.lenskart.testcases.TestItemSearch@7d322cad]" started-at="2024-04-30T22:42:05 IST" name="testInvalidSearchItem" finished-at="2024-04-30T22:42:13 IST" duration-ms="8120" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testInvalidSearchItem -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.TestItemSearch@7d322cad]" started-at="2024-04-30T22:42:13 IST" name="quitDriver" finished-at="2024-04-30T22:42:15 IST" duration-ms="1910" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- com.ust.lenskart.testcases.TestItemSearch -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
->>>>>>> searchitempage
 </testng-results>

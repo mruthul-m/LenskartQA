@@ -55,25 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<<<<<<< HEAD
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<<<<<<< HEAD
-<td>Started on:</td><td>Tue Apr 30 23:09:00 IST 2024</td>
+<td>Started on:</td><td>Wed May 01 15:31:15 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>75 seconds (75327 ms)</td>
-=======
-<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
-</tr><tr>
-<td>Started on:</td><td>Tue Apr 30 17:31:40 IST 2024</td>
-</tr>
-<tr><td>Total time:</td><td>140 seconds (140523 ms)</td>
->>>>>>> excel
-=======
-<td>Started on:</td><td>Tue Apr 30 22:41:34 IST 2024</td>
-</tr>
-<tr><td>Total time:</td><td>41 seconds (41456 ms)</td>
->>>>>>> searchitempage
+<tr><td>Total time:</td><td>169 seconds (169436 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -90,24 +76,22 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<<<<<<< HEAD
-<<<<<<< HEAD
 <td title='com.ust.lenskart.testrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.ust.lenskart.testrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Appointment booking functionality", "book an appointment"</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@class=&apos;Schedule_allShift___NPxw&apos;]/div[not(contains(@style, &apos;cursor: not-allowed&apos;))][1]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //div[text()=&apos;Appointment Confirmed&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.ust.lenskart.pages.StorePage.selectShift(StorePage.java:114)
+	at com.ust.lenskart.pages.StorePage.getConfirmationText(StorePage.java:110)
 	at stepdefinitions.BookAppointmentTest.user_book_a_free_appointment_from_the_top_most_list(BookAppointmentTest.java:69)
 	at ✽.User book a free appointment from the top most list(file:///C:/Users/268877/eclipse-workspace/LenskartQA/src/test/resources/features/Appointment.feature:10)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;Schedule_allShift___NPxw&apos;]/div[not(contains(@style, &apos;cursor: not-allowed&apos;))][1]&quot;}
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[text()=&apos;Appointment Confirmed&apos;]&quot;}
   (Session info: chrome=124.0.6367.63)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [20f07aa0ca9a7b55c6de4bb0c2fb39f0, findElement {using=xpath, value=//div[@class=&apos;Schedule_allShift___NPxw&apos;]/div[not(contains(@style, &apos;cursor: not-allowed&apos;))][1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.63, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\268877\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58415}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58415/devtoo..., se:cdpVersion: 124.0.6367.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 20f07aa0ca9a7b55c6de4bb0c2fb39f0
+Command: [5688ed115c31757d2bfc8e32542cc349, findElement {value=//div[text()=&apos;Appointment Confirmed&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.63, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\268877\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62978}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62978/devtoo..., se:cdpVersion: 124.0.6367.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5688ed115c31757d2bfc8e32542cc349
 	at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
@@ -130,7 +114,7 @@ Session ID: 20f07aa0ca9a7b55c6de4bb0c2fb39f0
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at com.ust.lenskart.pages.StorePage.selectShift(StorePage.java:114)
+	at com.ust.lenskart.pages.StorePage.getConfirmationText(StorePage.java:110)
 	at stepdefinitions.BookAppointmentTest.user_book_a_free_appointment_from_the_top_most_list(BookAppointmentTest.java:69)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -182,22 +166,22 @@ Session ID: 20f07aa0ca9a7b55c6de4bb0c2fb39f0
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace967643830", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace967643830'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@class=&apos;Schedule_allShift___NPxw&apos;]/div[not(contains(@style, &apos;cursor: not-allowed&apos;))][1]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+</pre></div><a href='#' onClick='toggleBox("stack-trace83210381", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace83210381'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //div[text()=&apos;Appointment Confirmed&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.ust.lenskart.pages.StorePage.selectShift(StorePage.java:114)
+	at com.ust.lenskart.pages.StorePage.getConfirmationText(StorePage.java:110)
 	at stepdefinitions.BookAppointmentTest.user_book_a_free_appointment_from_the_top_most_list(BookAppointmentTest.java:69)
 	at ✽.User book a free appointment from the top most list(file:///C:/Users/268877/eclipse-workspace/LenskartQA/src/test/resources/features/Appointment.feature:10)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;Schedule_allShift___NPxw&apos;]/div[not(contains(@style, &apos;cursor: not-allowed&apos;))][1]&quot;}
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[text()=&apos;Appointment Confirmed&apos;]&quot;}
   (Session info: chrome=124.0.6367.63)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [20f07aa0ca9a7b55c6de4bb0c2fb39f0, findElement {using=xpath, value=//div[@class=&apos;Schedule_allShift___NPxw&apos;]/div[not(contains(@style, &apos;cursor: not-allowed&apos;))][1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.63, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\268877\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58415}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58415/devtoo..., se:cdpVersion: 124.0.6367.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 20f07aa0ca9a7b55c6de4bb0c2fb39f0
+Command: [5688ed115c31757d2bfc8e32542cc349, findElement {value=//div[text()=&apos;Appointment Confirmed&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.63, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\268877\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62978}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62978/devtoo..., se:cdpVersion: 124.0.6367.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5688ed115c31757d2bfc8e32542cc349
 	at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
@@ -220,7 +204,7 @@ Session ID: 20f07aa0ca9a7b55c6de4bb0c2fb39f0
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at com.ust.lenskart.pages.StorePage.selectShift(StorePage.java:114)
+	at com.ust.lenskart.pages.StorePage.getConfirmationText(StorePage.java:110)
 	at stepdefinitions.BookAppointmentTest.user_book_a_free_appointment_from_the_top_most_list(BookAppointmentTest.java:69)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -273,45 +257,32 @@ Session ID: 20f07aa0ca9a7b55c6de4bb0c2fb39f0
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>74</td>
+<td>59</td>
 <td>com.ust.lenskart.testrunner.TestRunner@609e8838</td></tr>
-=======
-<td title='com.ust.lenskart.testcases.TestRemovingFromWishList.testWishList()'><b>testWishList</b><br>Test class: com.ust.lenskart.testcases.TestRemovingFromWishList</td>
-<td></td>
-<td>11</td>
-<td>com.ust.lenskart.testcases.TestRemovingFromWishList@21be3395</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='com.ust.lenskart.testcases.TestRemovingFromWishList.testWishListAgain()'><b>testWishListAgain</b><br>Test class: com.ust.lenskart.testcases.TestRemovingFromWishList</td>
+<td title='com.ust.lenskart.testrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.ust.lenskart.testrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Adding item to the cart functionality", "Add to cart functionality"</td>
 <td></td>
-<td>2</td>
-<td>com.ust.lenskart.testcases.TestRemovingFromWishList@21be3395</td></tr>
+<td>40</td>
+<td>com.ust.lenskart.testrunner.TestRunner@609e8838</td></tr>
 <tr>
-<td title='com.ust.lenskart.testcases.TestRemovingFromWishList.testEnterSearchBox()'><b>testEnterSearchBox</b><br>Test class: com.ust.lenskart.testcases.TestRemovingFromWishList</td>
+<td title='com.ust.lenskart.testrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.ust.lenskart.testrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Removing item from cart functionality", "Add to cart functionality"</td>
 <td></td>
-<td>30</td>
-<td>com.ust.lenskart.testcases.TestRemovingFromWishList@21be3395</td></tr>
+<td>46</td>
+<td>com.ust.lenskart.testrunner.TestRunner@609e8838</td></tr>
 <tr>
-<td title='com.ust.lenskart.testcases.TestRemovingFromWishList.testAddingToWishList()'><b>testAddingToWishList</b><br>Test class: com.ust.lenskart.testcases.TestRemovingFromWishList</td>
+<td title='com.ust.lenskart.testrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.ust.lenskart.testrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Removing item from an empty cart functionality", "Add to cart functionality"</td>
 <td></td>
-<td>10</td>
-<td>com.ust.lenskart.testcases.TestRemovingFromWishList@21be3395</td></tr>
-<tr>
-<td title='com.ust.lenskart.testcases.TestRemovingFromWishList.testAddingToWishListAgain()'><b>testAddingToWishListAgain</b><br>Test class: com.ust.lenskart.testcases.TestRemovingFromWishList</td>
-<td></td>
-<td>9</td>
-<td>com.ust.lenskart.testcases.TestRemovingFromWishList@21be3395</td></tr>
->>>>>>> excel
-=======
-<td title='com.ust.lenskart.testcases.TestItemSearch.testInvalidSearchItem()'><b>testInvalidSearchItem</b><br>Test class: com.ust.lenskart.testcases.TestItemSearch</td>
-<td></td>
-<td>8</td>
-<td>com.ust.lenskart.testcases.TestItemSearch@7d322cad</td></tr>
-<tr>
-<td title='com.ust.lenskart.testcases.TestItemSearch.testEnterSearchBox()'><b>testEnterSearchBox</b><br>Test class: com.ust.lenskart.testcases.TestItemSearch</td>
-<td></td>
-<td>12</td>
-<td>com.ust.lenskart.testcases.TestItemSearch@7d322cad</td></tr>
->>>>>>> searchitempage
+<td>22</td>
+<td>com.ust.lenskart.testrunner.TestRunner@609e8838</td></tr>
 </table><p>
 </body>
 </html>

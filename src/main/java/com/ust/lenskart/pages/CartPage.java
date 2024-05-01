@@ -24,7 +24,8 @@ public class CartPage extends TestBase {
     @FindBy(css = ".PopUpConfirm--1ykjvo8.gvkMrH")
     private WebElement acceptRemove;
 
-
+    @FindBy(xpath = "//div[@class='CartStyles__RemoveItemOverlay-sc-14bvp3n-27 bLIudg'][last()]//div//div//div//div[1]/div[1]")
+    private WebElement productAtCartHeading;
     // Method to get the text of the empty cart message
     public String getEmptyCartText(){
         setWait(driver,10).until(ExpectedConditions.visibilityOf(emptyCart));
@@ -45,10 +46,10 @@ public class CartPage extends TestBase {
     
 
     // Method to get the model of the last item in the cart
-//    public String getModelFromCart() {
-//    	delay(5);
-//    	return productAtCartHeading.getText();
-//}
+    public String getModelFromCart() {
+    	delay(5);
+    	return productAtCartHeading.getText();
+}
 
     public HomePage gotoHomePage() {
     	setWait(driver, 10).until(ExpectedConditions.visibilityOf(homeLogo)).click();

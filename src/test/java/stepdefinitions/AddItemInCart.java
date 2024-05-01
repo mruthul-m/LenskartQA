@@ -83,6 +83,6 @@ public class AddItemInCart {
         CartPage cartpage = PageFactory.initElements(driver,CartPage.class);
         
         // Assert that the model is present in the cart
-//        assertEquals(true, cartpage.getModelFromCart().contains(model));
+        assertEquals(true, cartpage.getModelFromCart().contains(model));
     }
 }

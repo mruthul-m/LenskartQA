@@ -3,36 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-<<<<<<< HEAD
       <class name="com.ust.lenskart.testrunner.TestRunner">
         <methods>
           <include name="setUpClass"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
+          <include name="runScenario" invocation-numbers="3"/>
         </methods>
       </class> <!-- com.ust.lenskart.testrunner.TestRunner -->
-=======
-      <class name="com.ust.lenskart.testcases.TestRemovingFromWishList">
-        <methods>
-          <include name="pageLoader"/>
-          <include name="testWishListAgain"/>
-          <include name="testAddingToWishListAgain"/>
-          <include name="testAddingToWishList"/>
-          <include name="testEnterSearchBox"/>
-          <include name="testWishList"/>
-        </methods>
-      </class> <!-- com.ust.lenskart.testcases.TestRemovingFromWishList -->
->>>>>>> excel
-=======
-      <class name="com.ust.lenskart.testcases.TestItemSearch">
-        <methods>
-          <include name="pageLoader"/>
-          <include name="testInvalidSearchItem"/>
-          <include name="quitDriver"/>
-        </methods>
-      </class> <!-- com.ust.lenskart.testcases.TestItemSearch -->
->>>>>>> searchitempage
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
