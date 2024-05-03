@@ -130,6 +130,12 @@ public class SearchItemPage extends TestBase{
 	@FindBy(css = "span[class='SpecialPriceSpan--1mh26ry gDbhuM']")
 	public List<WebElement> priceList;
 	
+	@FindBy(css = "div[data-cy='showing-result-desktop']>span:nth-child(2)")
+	public WebElement itemCountLHS;
+	
+	@FindBy(css = "div[data-cy='showing-result-desktop']>span:nth-child(4)")
+	public WebElement itemCountRHS;
+	
 	@FindBy(xpath = "//div[starts-with(@class,'ActionLinksContainer')]/div[3]/span")
 	public WebElement wishList;
 
@@ -378,8 +384,14 @@ public class SearchItemPage extends TestBase{
 	}
 
 	public SearchItemPage showAllProducts() {
+		for(int i =0;i<100;i++) {
 		js.executeScript("window.scrollBy(0, 500);");
 		delay(2);
+		if(Integer.parseInt(itemCountLHS.getText()) == Integer.parseInt(itemCountRHS.getText())) {
+			break;
+		}
+		}
+		delay(3);
 		return this;
 	}
 

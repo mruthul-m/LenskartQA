@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ust.lenskart.testcases.TestResetFilters">
+      <class name="com.ust.lenskart.testcases.TestSortBy">
         <methods>
-          <include name="testEnterSearchBox"/>
+          <include name="TsetSortByHighToLow"/>
           <include name="pageLoader"/>
-          <include name="testSetFilters"/>
+          <include name="TsetSortByLowToHigh"/>
         </methods>
-      </class> <!-- com.ust.lenskart.testcases.TestResetFilters -->
+      </class> <!-- com.ust.lenskart.testcases.TestSortBy -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -27,20 +27,14 @@ public class TestSortBy extends Hooks {
 		assertEquals(searchItemPage.getSearchItemText(),testconfig.getValidSearchItem().toUpperCase());
 		searchItemPage.setSortLowToHigh();
 		delay(2);
-		for(int i =0;i<25;i++) {
-			searchItemPage.showAllProducts();
-		}
-		delay(5);
+		searchItemPage.showAllProducts();
 		assertTrue(searchItemPage.checkSortAsc());
 	}
 	@Test(priority = 2)
 	public void TsetSortByHighToLow() {
 		searchItemPage.setSortHighToLow();
 		delay(2);
-		for(int i =0;i<25;i++) {
 		searchItemPage.showAllProducts();
-		}
-		delay(5);
 		assertTrue(searchItemPage.checkSortDesc());
 	}
 }
