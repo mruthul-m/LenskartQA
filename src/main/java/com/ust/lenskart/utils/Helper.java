@@ -1,6 +1,8 @@
 package com.ust.lenskart.utils;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import com.ust.lenskart.pages.HomePage;
@@ -13,4 +15,10 @@ public class Helper extends HomePage {
 		WebElement element = driver.findElement(By.xpath("//*[text()='"+text+"' and not(@data-testid='sr-brand-msg')]"));
 		return element.getText();
 }
+	public static void scrollThePage(WebDriver driver,WebElement element) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0, -500);");
+		js.executeScript("window.scrollBy(0, 200);");
+		js.executeScript("arguments[0].scrollTop = arguments[1];", element, 800);
+	}
 }

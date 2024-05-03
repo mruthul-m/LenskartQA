@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 
 import com.ust.lenskart.base.TestBase;
+import com.ust.lenskart.utils.Helper;
 
 public class SearchItemPage extends TestBase{
 	
@@ -92,15 +93,15 @@ public class SearchItemPage extends TestBase{
 
 	@FindBy(xpath = "//div[@id='sub_brand_id']/div[2]/div/div[1]/label")
 	public WebElement subBrand;
-
+	
 	@FindBy(xpath = "//div[@id='frame_width_id']/div[1]")
-	public WebElement dropdown12;
+	public WebElement dropdown13;
 
 	@FindBy(xpath = "//div[@id='frame_width_id']/div[2]/div/div[1]/label")
 	public WebElement frameWidth;
 
 	@FindBy(xpath = "//div[@id='product_type']/div[1]")
-	public WebElement dropdown13;
+	public WebElement dropdown14;
 
 	@FindBy(xpath = "//div[@id='product_type']/div[2]/div/div[1]/label")
 	public WebElement productType;
@@ -178,7 +179,7 @@ public class SearchItemPage extends TestBase{
 		wait.until(ExpectedConditions.elementToBeClickable(colour));
 		colour.click();
 		dropdown1.click();
-		delay(1);
+		delay(2);
 		return this;
 	}
 
@@ -190,7 +191,7 @@ public class SearchItemPage extends TestBase{
 		brand.click();
 		wait.until(ExpectedConditions.elementToBeClickable(dropdown2));
 		dropdown2.click();
-		delay(1);
+		delay(2);
 		return this;
 	}
 
@@ -202,7 +203,7 @@ public class SearchItemPage extends TestBase{
 		frameSize.click();
 		wait.until(ExpectedConditions.elementToBeClickable(dropdown3));
 		dropdown3.click();
-		delay(1);
+		delay(2);
 		return this;
 	}
 
@@ -214,7 +215,7 @@ public class SearchItemPage extends TestBase{
 		price.click();
 		wait.until(ExpectedConditions.elementToBeClickable(dropdown4));
 		dropdown4.click();
-		delay(1);
+		delay(2);
 		return this;
 	}
 
@@ -226,7 +227,7 @@ public class SearchItemPage extends TestBase{
 		gender.click();
 		wait.until(ExpectedConditions.elementToBeClickable(dropdown5));
 		dropdown5.click();
-		delay(1);
+		delay(2);
 		return this;
 	}
 
@@ -238,7 +239,7 @@ public class SearchItemPage extends TestBase{
 		glassColour.click();
 		wait.until(ExpectedConditions.elementToBeClickable(dropdown6));
 		dropdown6.click();
-		delay(1);
+		delay(2);
 		return this;
 	}
 
@@ -250,7 +251,7 @@ public class SearchItemPage extends TestBase{
 		frameWeight.click();
 		wait.until(ExpectedConditions.elementToBeClickable(dropdown7));
 		dropdown7.click();
-		delay(1);
+		delay(2);
 		return this;
 	}
 
@@ -260,9 +261,10 @@ public class SearchItemPage extends TestBase{
 		delay(1);
 		wait.until(ExpectedConditions.elementToBeClickable(prescriptionType));
 		prescriptionType.click();
+		Helper.scrollThePage(driver, sidebar);
 		wait.until(ExpectedConditions.elementToBeClickable(dropdown8));
 		dropdown8.click();
-		delay(1);
+		delay(2);
 		return this;
 	}
 
@@ -272,11 +274,11 @@ public class SearchItemPage extends TestBase{
 		delay(1);
 		wait.until(ExpectedConditions.elementToBeClickable(supportedPower));
 		supportedPower.click();
+		Helper.scrollThePage(driver, sidebar);
 		delay(1);
-		js.executeScript("window.scrollBy(0, 200);");
 		wait.until(ExpectedConditions.elementToBeClickable(dropdown9));
 		dropdown9.click();
-		delay(1);
+		delay(2);
 		return this;
 	}
 
@@ -287,10 +289,10 @@ public class SearchItemPage extends TestBase{
 		wait.until(ExpectedConditions.elementToBeClickable(material));
 		material.click();
 		delay(1);
-		js.executeScript("window.scrollBy(0, 200);");
+		Helper.scrollThePage(driver, sidebar);
 		wait.until(ExpectedConditions.elementToBeClickable(dropdown10));
 		dropdown10.click();
-		delay(1);
+		delay(2);
 		return this;
 	}
 
@@ -301,39 +303,40 @@ public class SearchItemPage extends TestBase{
 		wait.until(ExpectedConditions.elementToBeClickable(subBrand));
 		subBrand.click();
 		delay(1);
-		js.executeScript("window.scrollBy(0, 300);");
+		Helper.scrollThePage(driver, sidebar);
 		wait.until(ExpectedConditions.elementToBeClickable(dropdown11));
 		dropdown11.click();
-		delay(1);
+		delay(2);
 		return this;
 	}
 
+
+	
 	public SearchItemPage setFrameWidth() {
-		wait.until(ExpectedConditions.visibilityOf(dropdown12));
-		dropdown12.click();
+		wait.until(ExpectedConditions.visibilityOf(dropdown13));
+		dropdown13.click();
 		delay(1);
-		js.executeScript("arguments[0].scrollTop = arguments[1];", sidebar, 800);
 		wait.until(ExpectedConditions.elementToBeClickable(frameWidth));
 		frameWidth.click();
 		delay(1);
-		js.executeScript("window.scrollBy(0, 200);");
-		wait.until(ExpectedConditions.elementToBeClickable(dropdown12));
-		dropdown12.click();
-		delay(1);
+		Helper.scrollThePage(driver, sidebar);
+		wait.until(ExpectedConditions.elementToBeClickable(dropdown13));
+		dropdown13.click();
+		delay(2);
 		return this;
 	}
 
 	public SearchItemPage setProductType() {
-		wait.until(ExpectedConditions.visibilityOf(dropdown13));
-		dropdown13.click();
+		wait.until(ExpectedConditions.visibilityOf(dropdown14));
+		dropdown14.click();
 		delay(1);
 		wait.until(ExpectedConditions.elementToBeClickable(productType));
 		productType.click();
 		delay(1);
-		js.executeScript("window.scrollBy(0, 200);");
-		wait.until(ExpectedConditions.elementToBeClickable(dropdown13));
-		dropdown13.click();
-		delay(1);
+		Helper.scrollThePage(driver, sidebar);
+		wait.until(ExpectedConditions.elementToBeClickable(dropdown14));
+		dropdown14.click();
+		delay(2);
 		return this;
 	}
 

@@ -16,8 +16,7 @@ public class TestResetFilters extends Hooks {
 
 	@Test(priority = 0)
 	public void testEnterSearchBox() {
-		homePage = PageFactory.initElements(driver, HomePage.class);
-		homePage.enterSearchBox(testconfig.getValidSearchItem());
+		homePage = PageFactory.initElements(driver, HomePage.class).enterSearchBox(testconfig.getValidSearchItem());
 		assertEquals(homePage.getUrl(),testconfig.getSearchUrl());
 	}
 
@@ -26,8 +25,22 @@ public class TestResetFilters extends Hooks {
 
 		searchItemPage = PageFactory.initElements(driver, SearchItemPage.class);
 		assertEquals(searchItemPage.getSearchItemText(),testconfig.getValidSearchItem().toUpperCase());
-		searchItemPage.setFrameType().setFrameShape().setColour().setBrand().setFrameSize().setPrice().setGender().setGlassColour().setFrameWeight()
-				.setPrescriptionType().setSupportedPower().setMaterial().setSubBrand().setFrameWidth().setProductType();
+		searchItemPage.setFrameType()
+					.setFrameShape()
+					.setColour()
+					.setBrand()
+					.setFrameSize()
+					.setPrice()
+					.setGender()
+					.setGlassColour()
+					.setFrameWeight()
+					.setPrescriptionType()
+					.setSupportedPower()
+					.setMaterial()
+					.setSubBrand()
+//					.setSubCollection()
+					.setFrameWidth()
+					.setProductType();
 		assertTrue(searchItemPage.isFiltersDisplayed());
 		assertTrue(searchItemPage.validateFilters());
 

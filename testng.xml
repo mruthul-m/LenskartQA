@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+<suite name="Sequential Execution">
   <test thread-count="5" name="Test">
     <classes>
+      <class name="com.ust.lenskart.testcases.TestWishListEmpty"/>
+      <class name="com.ust.lenskart.testcases.TestChatBot"/>
+      <class name="com.ust.lenskart.testcases.TestRemovingFromWishList"/>
       <class name="com.ust.lenskart.testcases.StoreLocatorTest"/>
       <class name="com.ust.lenskart.testcases.TestSortBy"/>
-      <class name="com.ust.lenskart.testcases.TestResetFilters"/> 
-      <class name="com.ust.lenskart.testcases.TestWishListEmpty"/>
       <class name="com.ust.lenskart.testcases.TestAddingtoWishList"/>
-      <class name="com.ust.lenskart.testcases.TestRemovingFromWishList"/>
-      <class name="com.ust.lenskart.testcases.TestChatBot"/>
+      <class name="com.ust.lenskart.testcases.TestItemSearch"/>
+      <class name="com.ust.lenskart.testcases.TestResetFilters"/>
     </classes>
   </test> <!-- Test -->
-</suite> <!-- Suite -->
+</suite> <!-- Sequential Execution -->
