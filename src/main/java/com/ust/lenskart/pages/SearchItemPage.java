@@ -219,6 +219,7 @@ public class SearchItemPage extends TestBase{
 		delay(1);
 		wait.until(ExpectedConditions.elementToBeClickable(price));
 		price.click();
+		Helper.scrollThePage(driver, sidebar);
 		wait.until(ExpectedConditions.elementToBeClickable(dropdown4));
 		dropdown4.click();
 		delay(2);
@@ -231,6 +232,7 @@ public class SearchItemPage extends TestBase{
 		delay(1);
 		wait.until(ExpectedConditions.elementToBeClickable(gender));
 		gender.click();
+		Helper.scrollThePage(driver, sidebar);
 		wait.until(ExpectedConditions.elementToBeClickable(dropdown5));
 		dropdown5.click();
 		delay(2);
@@ -243,6 +245,7 @@ public class SearchItemPage extends TestBase{
 		delay(1);
 		wait.until(ExpectedConditions.elementToBeClickable(glassColour));
 		glassColour.click();
+		Helper.scrollThePage(driver, sidebar);
 		wait.until(ExpectedConditions.elementToBeClickable(dropdown6));
 		dropdown6.click();
 		delay(2);
@@ -255,6 +258,7 @@ public class SearchItemPage extends TestBase{
 		delay(1);
 		wait.until(ExpectedConditions.elementToBeClickable(frameWeight));
 		frameWeight.click();
+		Helper.scrollThePage(driver, sidebar);
 		wait.until(ExpectedConditions.elementToBeClickable(dropdown7));
 		dropdown7.click();
 		delay(2);
@@ -391,7 +395,7 @@ public class SearchItemPage extends TestBase{
 			break;
 		}
 		}
-		delay(3);
+		
 		return this;
 	}
 
