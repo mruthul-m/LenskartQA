@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-03T16:55:29 IST" name="Default suite" finished-at="2024-05-03T16:58:48 IST" duration-ms="199317">
+  <suite started-at="2024-05-03T17:13:58 IST" name="Default suite" finished-at="2024-05-03T17:15:51 IST" duration-ms="112640">
     <groups>
     </groups>
-    <test started-at="2024-05-03T16:55:29 IST" name="Default test" finished-at="2024-05-03T16:58:48 IST" duration-ms="199317">
-      <class name="com.ust.lenskart.testcases.TestSortBy">
-        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestSortBy@642a7222]" started-at="2024-05-03T16:55:29 IST" name="pageLoader" finished-at="2024-05-03T16:55:45 IST" duration-ms="15661" status="PASS">
+    <test started-at="2024-05-03T17:13:58 IST" name="Default test" finished-at="2024-05-03T17:15:51 IST" duration-ms="112640">
+      <class name="com.ust.lenskart.testcases.TestResetFilters">
+        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestResetFilters@21be3395]" started-at="2024-05-03T17:13:58 IST" name="pageLoader" finished-at="2024-05-03T17:14:22 IST" duration-ms="24262" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageLoader -->
-        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestSortBy@642a7222]" started-at="2024-05-03T16:55:45 IST" name="testEnterSearchBox" finished-at="2024-05-03T16:55:56 IST" duration-ms="10983" status="PASS">
+        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestResetFilters@21be3395]" started-at="2024-05-03T17:14:22 IST" name="testEnterSearchBox" finished-at="2024-05-03T17:14:32 IST" duration-ms="9891" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEnterSearchBox -->
-        <test-method signature="TsetSortByLowToHigh()[pri:1, instance:com.ust.lenskart.testcases.TestSortBy@642a7222]" started-at="2024-05-03T16:55:56 IST" name="TsetSortByLowToHigh" finished-at="2024-05-03T16:57:23 IST" duration-ms="87398" status="PASS">
+        <test-method signature="testSetFilters()[pri:1, instance:com.ust.lenskart.testcases.TestResetFilters@21be3395]" started-at="2024-05-03T17:14:32 IST" name="testSetFilters" finished-at="2024-05-03T17:15:49 IST" depends-on-methods="com.ust.lenskart.testcases.TestResetFilters.testEnterSearchBox" duration-ms="76605" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TsetSortByLowToHigh -->
-        <test-method signature="TsetSortByHighToLow()[pri:2, instance:com.ust.lenskart.testcases.TestSortBy@642a7222]" started-at="2024-05-03T16:57:23 IST" name="TsetSortByHighToLow" finished-at="2024-05-03T16:58:48 IST" duration-ms="85156" status="PASS">
+        </test-method> <!-- testSetFilters -->
+        <test-method signature="testResetFilters()[pri:2, instance:com.ust.lenskart.testcases.TestResetFilters@21be3395]" started-at="2024-05-03T17:15:49 IST" name="testResetFilters" finished-at="2024-05-03T17:15:51 IST" duration-ms="1759" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TsetSortByHighToLow -->
-      </class> <!-- com.ust.lenskart.testcases.TestSortBy -->
+        </test-method> <!-- testResetFilters -->
+      </class> <!-- com.ust.lenskart.testcases.TestResetFilters -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

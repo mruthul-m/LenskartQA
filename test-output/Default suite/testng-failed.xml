@@ -7,7 +7,6 @@
         <methods>
           <include name="TsetSortByHighToLow"/>
           <include name="pageLoader"/>
-          <include name="TsetSortByLowToHigh"/>
         </methods>
       </class> <!-- com.ust.lenskart.testcases.TestSortBy -->
     </classes>
