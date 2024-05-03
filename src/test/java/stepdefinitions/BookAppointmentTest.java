@@ -67,7 +67,6 @@ public class BookAppointmentTest  {
 		storepage.clickBookAppointment().setDetails(cucumberconfig.getNumber(),
 					cucumberconfig.userName())
 		.clickBooking().selectShift().getConfirmationText();
-
         assertEquals(output, "Appointment Confirmed");
 	}
 
