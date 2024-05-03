@@ -52,6 +52,61 @@ public class HomePage extends TestBase {
 
 	@FindBy(css = "div[data-testid='actionMenuList']>div")
 	public WebElement newConversation;
+	
+	@FindBy(xpath = "//span[text()='Sign Up']")
+	private WebElement signUpLink;
+	
+	@FindBy(css = "#sign-up-form")
+	private WebElement signUpForm;
+	
+	@FindBy(css = "input[placeholder='First Name*']")
+	private WebElement fname;
+	
+	@FindBy(css = "input[placeholder='Last Name']")
+	private WebElement lname;
+	
+	@FindBy(css = "input[placeholder='Mobile*']")
+	private WebElement mobile;
+	
+	@FindBy(css = "input[placeholder='Email*']")
+	private WebElement email;
+	
+	@FindBy(css = "input[placeholder='Password*']")
+	private WebElement password;
+	
+	@FindBy(xpath = "//button[text()='Create an Account']")
+	private WebElement createBtn;
+	
+	@FindBy(css = "#whatsapp-updates")
+	private WebElement waCheckbox;
+	
+	@FindBy(xpath = "//span[text()='Sign In']")
+	private WebElement SignInLink;
+	
+	
+	@FindBy(css = "#sign-in-form")
+	private WebElement signInForm;
+	
+	@FindBy(css = "input[name='emailOrPhone']")
+	private WebElement loginEmail;
+	
+	@FindBy(css = "input[placeholder='Enter Password']")
+	private WebElement loginPassword;
+	
+	@FindBy(css = "button[id='remove-button']")
+	private WebElement signInBtn;
+	
+	@FindBy(css = ".ActionLinksContainer--5xj1y5.gKkoeY > div:nth-child(2)")
+	private WebElement loginUserName;
+	
+	@FindBy(css = "div[subtext]")
+	private WebElement invalidEmailError;
+	
+	@FindBy(css = ".ErrorField--6thwyh.ihTbJV")
+	private WebElement emailExistsError;
+	
+	@FindBy(css = "#remove-button")
+	private WebElement createAccountBtn;
 
 
 	public HomePage enterSearchBox(String itemtext) {
@@ -64,6 +119,8 @@ public class HomePage extends TestBase {
 	public String getUrl() {
 		return driver.getCurrentUrl();
 	}
+	
+	
 
 	public HomePage hoverStoreLocator(WebDriver driver) {
 		setWait(driver, 10).until(ExpectedConditions.visibilityOf(storeLocator));
@@ -129,6 +186,118 @@ public class HomePage extends TestBase {
 	public HomePage clickNewConversation() {
 		wait.until(ExpectedConditions.visibilityOf(newConversation));
 		newConversation.click();
+		return this;
+	}
+	
+	public HomePage clickSignUp() {
+		wait.until(ExpectedConditions.visibilityOf(signUpLink)).click();
+		return this;
+	}
+	
+	public boolean signUpFormDisplayed() {
+		return
+		wait.until(ExpectedConditions.visibilityOf(signUpForm)).isDisplayed();
+	}
+	
+	public HomePage setFname(String fname) {
+		wait.until(ExpectedConditions.visibilityOf(this.fname)).sendKeys(fname);
+		return this;
+	}
+	
+	public HomePage setLname(String lname) {
+		wait.until(ExpectedConditions.visibilityOf(this.lname)).sendKeys(lname);
+		return this;
+	}
+	
+	public HomePage setMobile(String num) {
+		wait.until(ExpectedConditions.visibilityOf(mobile)).sendKeys(num);
+		return this;
+	}
+	
+	public HomePage setEmail(String email) {
+		wait.until(ExpectedConditions.visibilityOf(this.email)).sendKeys(email);
+		return this;
+	}
+	
+	public HomePage setPassword(String passwd) {
+		wait.until(ExpectedConditions.visibilityOf(password)).sendKeys(passwd);
+		return this;
+	}
+	
+	public HomePage clickCreateBtn() {
+		wait.until(ExpectedConditions.visibilityOf(createBtn)).click();
+		return this;
+	}
+	
+	public HomePage unCheckWaBox() {
+		wait.until(ExpectedConditions.visibilityOf(waCheckbox)).click();
+		return this;
+	}
+	
+	public String getFname() {
+		return this.fname.getAttribute("value");
+	}
+	
+	public String getLname() {
+		return this.lname.getAttribute("value");					
+	}
+	
+	public String getEmail() {
+		return this.email.getAttribute("value");
+	}
+	
+	public String getPassword() {
+		return this.password.getAttribute("value");
+	}
+	
+	public String getMobileNo() {
+		return this.mobile.getAttribute("value");				
+	}
+	
+	public HomePage clickSignInLink() {
+		wait.until(ExpectedConditions.visibilityOf(SignInLink)).click();
+		return this;
+	}
+	
+	public boolean isSignInFormDisplayed() {
+		return wait.until(ExpectedConditions.visibilityOf(signInForm)).isDisplayed();
+	}
+	
+	public HomePage setLoginEmail(String email) {
+		wait.until(ExpectedConditions.visibilityOf(loginEmail)).sendKeys(email);
+		return this;
+	}
+	
+	
+	
+	public HomePage setLoginPassword(String passwd) {
+		wait.until(ExpectedConditions.visibilityOf(loginPassword)).sendKeys(passwd);
+		return this;
+	}
+	
+	public HomePage clickLoginFormBtn() {
+		wait.until(ExpectedConditions.visibilityOf(signInBtn)).click();
+		return this;
+	}
+	
+	public String getLoginUserName() {
+		delay(3);
+		return
+				wait.until(ExpectedConditions.visibilityOf(loginUserName)).getText();
+	}
+	
+	public String getInvalidEmailError() {
+		delay(3);
+		return wait.until(ExpectedConditions.visibilityOf(invalidEmailError)).getText();
+	}
+	
+	public String getEmailExistsError() {
+		delay(2);
+		return wait.until(ExpectedConditions.visibilityOf(emailExistsError)).getText();
+	}
+	
+	public HomePage clickCreateAccountBtn() {
+		wait.until(ExpectedConditions.visibilityOf(createAccountBtn)).click();
 		return this;
 	}
 

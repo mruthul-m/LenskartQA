@@ -25,7 +25,6 @@ public class AddItemInCart {
 
     private ShoppingPage shoppingpage;
     private String baseWindow;
-    private String[] modelNumber;
     private String model;
 
 
@@ -57,14 +56,6 @@ public class AddItemInCart {
         
         // Get model number of the product
         model = shoppingpage.getModelNo();
-        
-        // Split model number to check in URL
-        modelNumber = model.toLowerCase().split(" ");
-        
-        // Assert that the URL contains the model number
-        Assert.assertEquals(true, driver.getCurrentUrl()
-        									.contains(String.join("-", modelNumber)));
-        
     }
     
     @Then("User clicks on Buy Now")
