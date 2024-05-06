@@ -11,15 +11,21 @@ import com.ust.lenskart.pages.HomePage;
 import com.ust.lenskart.pages.SearchItemPage;
 
 public class TestResetFilters extends Hooks {
+	
+	//declaring variable of type HomePage 
 	HomePage homePage;
+	
+	//declaring variable of type SearchItemPage 
 	SearchItemPage searchItemPage;
 
+	//Tests entering specified string into searchbox and validates the url
 	@Test(priority = 0)
 	public void testEnterSearchBox() {
 		homePage = PageFactory.initElements(driver, HomePage.class).enterSearchBox(testconfig.getValidSearchItem());
 		assertEquals(homePage.getUrl(), testconfig.getSearchUrl());
 	}
 
+	//Tests setting filters and validates the filters
 	@Test(priority = 1, dependsOnMethods = "testEnterSearchBox")
 	public void testSetFilters() {
 
@@ -35,6 +41,7 @@ public class TestResetFilters extends Hooks {
 
 	}
 
+	//Tests if the filters are displayed after clicking reset filters
 	@Test(priority = 2)
 	public void testResetFilters() {
 		searchItemPage.resetFilters();

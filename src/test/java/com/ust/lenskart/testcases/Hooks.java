@@ -9,8 +9,9 @@ import com.ust.lenskart.utils.ExtentReportsListener;
 
 @Listeners(ExtentReportsListener.class)
 public class Hooks extends TestBase {
-	
-	
+
+
+	//runs before each test class
 	@BeforeClass
 	public void pageLoader() {
 		
@@ -18,6 +19,7 @@ public class Hooks extends TestBase {
 		navigateTo();
 	}
 
+	//runs after each test class
 	@AfterClass
 	public void quitDriver() {
 		tearDown();

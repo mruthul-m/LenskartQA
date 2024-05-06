@@ -5,7 +5,7 @@ import com.ust.lenskart.base.TestBase;
 
 // This class provides data for TestNG tests from an Excel sheet
 public class DataProviders extends TestBase {
-	
+
     // DataProvider method named "chatBotSuggestion"
 	@DataProvider(name = "chatBotSuggestion")
 	public String[][] getData() {
