@@ -55,11 +55,19 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
+<<<<<<< HEAD
 <td>Tests passed/Failed/Skipped:</td><td>21/3/1</td>
 </tr><tr>
 <td>Started on:</td><td>Mon May 06 11:35:47 IST 2024</td>
 </tr>
 <tr><td>Total time:</td><td>502 seconds (502228 ms)</td>
+=======
+<td>Tests passed/Failed/Skipped:</td><td>24/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon May 06 15:00:22 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>716 seconds (716613 ms)</td>
+>>>>>>> finaltouch
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,6 +85,7 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.ust.lenskart.testcases.TestResetFilters.testSetFilters()'><b>testSetFilters</b><br>Test class: com.ust.lenskart.testcases.TestResetFilters</td>
+<<<<<<< HEAD
 <td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@id=&apos;supported_powers_id&apos;]/div[1]&apos; (tried for 10 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
@@ -84,14 +93,29 @@ function toggleAllBoxes() {
 	at com.ust.lenskart.testcases.TestResetFilters.testSetFilters(TestResetFilters.java:30)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;supported_powers_id&apos;]/div[1]&quot;}
+=======
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@id=&apos;sub_brand_id&apos;]/div[1]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.ust.lenskart.pages.SearchItemPage.setSubBrand(SearchItemPage.java:310)
+	at com.ust.lenskart.testcases.TestResetFilters.testSetFilters(TestResetFilters.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;sub_brand_id&apos;]/div[1]&quot;}
+>>>>>>> finaltouch
   (Session info: chrome=124.0.6367.119)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
+<<<<<<< HEAD
 Command: [5869e44022be5a6ef5320f5aadcd0758, findElement {using=xpath, value=//div[@id=&apos;supported_powers_id&apos;]/div[1]}]
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\268877\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59743}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59743/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
 Session ID: 5869e44022be5a6ef5320f5aadcd0758
+=======
+Command: [a96fda13100ae02ef8a8a38edac954f1, findElement {using=xpath, value=//div[@id=&apos;sub_brand_id&apos;]/div[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\268850\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52265}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52265/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a96fda13100ae02ef8a8a38edac954f1
+>>>>>>> finaltouch
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -105,18 +129,31 @@ Session ID: 5869e44022be5a6ef5320f5aadcd0758
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<<<<<<< HEAD
 	at jdk.proxy2/jdk.proxy2.$Proxy22.isDisplayed(Unknown Source)
+=======
+	at jdk.proxy2/jdk.proxy2.$Proxy20.isDisplayed(Unknown Source)
+>>>>>>> finaltouch
 	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
 	... 30 more
+<<<<<<< HEAD
 ... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1973179365", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
 <div class='stack-trace' id='stack-trace1973179365'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@id=&apos;supported_powers_id&apos;]/div[1]&apos; (tried for 10 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at com.ust.lenskart.pages.SearchItemPage.setSupportedPower(SearchItemPage.java:282)
 	at com.ust.lenskart.testcases.TestResetFilters.testSetFilters(TestResetFilters.java:30)
+=======
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace717278052", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace717278052'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@id=&apos;sub_brand_id&apos;]/div[1]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.ust.lenskart.pages.SearchItemPage.setSubBrand(SearchItemPage.java:310)
+	at com.ust.lenskart.testcases.TestResetFilters.testSetFilters(TestResetFilters.java:29)
+>>>>>>> finaltouch
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -145,16 +182,27 @@ Session ID: 5869e44022be5a6ef5320f5aadcd0758
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<<<<<<< HEAD
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;supported_powers_id&apos;]/div[1]&quot;}
+=======
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;sub_brand_id&apos;]/div[1]&quot;}
+>>>>>>> finaltouch
   (Session info: chrome=124.0.6367.119)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
+<<<<<<< HEAD
 Command: [5869e44022be5a6ef5320f5aadcd0758, findElement {using=xpath, value=//div[@id=&apos;supported_powers_id&apos;]/div[1]}]
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\268877\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59743}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59743/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
 Session ID: 5869e44022be5a6ef5320f5aadcd0758
 	at jdk.internal.reflect.GeneratedConstructorAccessor33.newInstance(Unknown Source)
+=======
+Command: [a96fda13100ae02ef8a8a38edac954f1, findElement {using=xpath, value=//div[@id=&apos;sub_brand_id&apos;]/div[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\268850\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52265}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52265/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a96fda13100ae02ef8a8a38edac954f1
+	at jdk.internal.reflect.GeneratedConstructorAccessor34.newInstance(Unknown Source)
+>>>>>>> finaltouch
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
@@ -171,13 +219,18 @@ Session ID: 5869e44022be5a6ef5320f5aadcd0758
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<<<<<<< HEAD
 	at jdk.proxy2/jdk.proxy2.$Proxy22.isDisplayed(Unknown Source)
+=======
+	at jdk.proxy2/jdk.proxy2.$Proxy20.isDisplayed(Unknown Source)
+>>>>>>> finaltouch
 	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
 	... 30 more
 </pre></div></td>
+<<<<<<< HEAD
 <td>45</td>
 <td>com.ust.lenskart.testcases.TestResetFilters@32115b28</td></tr>
 <tr>
@@ -340,6 +393,10 @@ Session ID: 8b476ea7eeb9215c01f558f732b3bcd9
 </pre></div></td>
 <td>7</td>
 <td>com.ust.lenskart.testcases.TestRemovingFromWishList@6cc4cdb9</td></tr>
+=======
+<td>74</td>
+<td>com.ust.lenskart.testcases.TestResetFilters@614df0a4</td></tr>
+>>>>>>> finaltouch
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -350,6 +407,7 @@ Session ID: 8b476ea7eeb9215c01f558f732b3bcd9
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<<<<<<< HEAD
 <td title='com.ust.lenskart.testcases.TestSortBy.testEnterSearchBox()'><b>testEnterSearchBox</b><br>Test class: com.ust.lenskart.testcases.TestSortBy</td>
 <td></td>
 <td>8</td>
@@ -439,10 +497,72 @@ Session ID: 8b476ea7eeb9215c01f558f732b3bcd9
 <td></td>
 <td>57</td>
 <td>com.ust.lenskart.testcases.TestSortBy@7f2cfe3f</td></tr>
+=======
+<td title='com.ust.lenskart.testcases.TestRemovingFromWishList.testEnterSearchBox()'><b>testEnterSearchBox</b><br>Test class: com.ust.lenskart.testcases.TestRemovingFromWishList</td>
+<td></td>
+<td>20</td>
+<td>com.ust.lenskart.testcases.TestRemovingFromWishList@5cde6747</td></tr>
+<tr>
+<td title='com.ust.lenskart.testcases.TestRemovingFromWishList.testAddingToWishListAgain()'><b>testAddingToWishListAgain</b><br>Test class: com.ust.lenskart.testcases.TestRemovingFromWishList</td>
+<td></td>
+<td>15</td>
+<td>com.ust.lenskart.testcases.TestRemovingFromWishList@5cde6747</td></tr>
+<tr>
+<td title='com.ust.lenskart.testcases.TestChatBot.testChatNewConversation()'><b>testChatNewConversation</b><br>Test class: com.ust.lenskart.testcases.TestChatBot</td>
+<td></td>
+<td>8</td>
+<td>com.ust.lenskart.testcases.TestChatBot@3e30646a</td></tr>
+<tr>
+<td title='com.ust.lenskart.testcases.TestAddingtoWishList.testAssingToWishList()'><b>testAssingToWishList</b><br>Test class: com.ust.lenskart.testcases.TestAddingtoWishList</td>
+<td></td>
+<td>15</td>
+<td>com.ust.lenskart.testcases.TestAddingtoWishList@1199fe66</td></tr>
+<tr>
+<td title='com.ust.lenskart.testcases.TestSortBy.TsetSortByHighToLow()'><b>TsetSortByHighToLow</b><br>Test class: com.ust.lenskart.testcases.TestSortBy</td>
+<td></td>
+<td>57</td>
+<td>com.ust.lenskart.testcases.TestSortBy@37c7595</td></tr>
+<tr>
+<td title='com.ust.lenskart.testcases.TestItemSearch.testEnterSearchBox()'><b>testEnterSearchBox</b><br>Test class: com.ust.lenskart.testcases.TestItemSearch</td>
+<td></td>
+<td>17</td>
+<td>com.ust.lenskart.testcases.TestItemSearch@3ed242a4</td></tr>
+<tr>
+<td title='com.ust.lenskart.testcases.TestChatBot.testChatBotSuggestion()'><b>testChatBotSuggestion</b><br>Test class: com.ust.lenskart.testcases.TestChatBot<br>Parameters: Buy Eyewear, Thanks for choosing Lenskart, India’s largest online eyewear company.</td>
+<td></td>
+<td>10</td>
+<td>com.ust.lenskart.testcases.TestChatBot@3e30646a</td></tr>
+<tr>
+<td title='com.ust.lenskart.testcases.TestResetFilters.testResetFilters()'><b>testResetFilters</b><br>Test class: com.ust.lenskart.testcases.TestResetFilters</td>
+<td></td>
+<td>3</td>
+<td>com.ust.lenskart.testcases.TestResetFilters@614df0a4</td></tr>
+<tr>
+<td title='com.ust.lenskart.testcases.TestChatBot.testChatBotSuggestion()'><b>testChatBotSuggestion</b><br>Test class: com.ust.lenskart.testcases.TestChatBot<br>Parameters: Query about my order, Please provide your phone number.</td>
+<td></td>
+<td>9</td>
+<td>com.ust.lenskart.testcases.TestChatBot@3e30646a</td></tr>
+<tr>
+<td title='com.ust.lenskart.testcases.TestRemovingFromWishList.testAddingToWishList()'><b>testAddingToWishList</b><br>Test class: com.ust.lenskart.testcases.TestRemovingFromWishList</td>
+<td></td>
+<td>15</td>
+<td>com.ust.lenskart.testcases.TestRemovingFromWishList@5cde6747</td></tr>
+<tr>
+<td title='com.ust.lenskart.testcases.TestSortBy.testEnterSearchBox()'><b>testEnterSearchBox</b><br>Test class: com.ust.lenskart.testcases.TestSortBy</td>
+<td></td>
+<td>16</td>
+<td>com.ust.lenskart.testcases.TestSortBy@37c7595</td></tr>
+<tr>
+<td title='com.ust.lenskart.testcases.TestSortBy.TsetSortByLowToHigh()'><b>TsetSortByLowToHigh</b><br>Test class: com.ust.lenskart.testcases.TestSortBy</td>
+<td></td>
+<td>66</td>
+<td>com.ust.lenskart.testcases.TestSortBy@37c7595</td></tr>
+>>>>>>> finaltouch
 <tr>
 <td title='com.ust.lenskart.testcases.StoreLocatorTest.searchCity()'><b>searchCity</b><br>Test class: com.ust.lenskart.testcases.StoreLocatorTest</td>
 <td></td>
 <td>5</td>
+<<<<<<< HEAD
 <td>com.ust.lenskart.testcases.StoreLocatorTest@28194a50</td></tr>
 <tr>
 <td title='com.ust.lenskart.testcases.TestWishListEmpty.testWishList()'><b>testWishList</b><br>Test class: com.ust.lenskart.testcases.TestWishListEmpty</td>
@@ -493,6 +613,64 @@ Session ID: 8b476ea7eeb9215c01f558f732b3bcd9
 </pre></div></td>
 <td>0</td>
 <td>com.ust.lenskart.testcases.TestRemovingFromWishList@6cc4cdb9</td></tr>
+=======
+<td>com.ust.lenskart.testcases.StoreLocatorTest@63a270c9</td></tr>
+<tr>
+<td title='com.ust.lenskart.testcases.TestRemovingFromWishList.testWishListAgain()'><b>testWishListAgain</b><br>Test class: com.ust.lenskart.testcases.TestRemovingFromWishList</td>
+<td></td>
+<td>7</td>
+<td>com.ust.lenskart.testcases.TestRemovingFromWishList@5cde6747</td></tr>
+<tr>
+<td title='com.ust.lenskart.testcases.TestItemSearch.testInvalidSearchItem()'><b>testInvalidSearchItem</b><br>Test class: com.ust.lenskart.testcases.TestItemSearch</td>
+<td></td>
+<td>11</td>
+<td>com.ust.lenskart.testcases.TestItemSearch@3ed242a4</td></tr>
+<tr>
+<td title='com.ust.lenskart.testcases.TestChatBot.testChatBotSuggestion()'><b>testChatBotSuggestion</b><br>Test class: com.ust.lenskart.testcases.TestChatBot<br>Parameters: Locate Nearby Store, View Menu</td>
+<td></td>
+<td>9</td>
+<td>com.ust.lenskart.testcases.TestChatBot@3e30646a</td></tr>
+<tr>
+<td title='com.ust.lenskart.testcases.TestRemovingFromWishList.testWishList()'><b>testWishList</b><br>Test class: com.ust.lenskart.testcases.TestRemovingFromWishList</td>
+<td></td>
+<td>17</td>
+<td>com.ust.lenskart.testcases.TestRemovingFromWishList@5cde6747</td></tr>
+<tr>
+<td title='com.ust.lenskart.testcases.StoreLocatorTest.gotoLocator()'><b>gotoLocator</b><br>Test class: com.ust.lenskart.testcases.StoreLocatorTest</td>
+<td></td>
+<td>14</td>
+<td>com.ust.lenskart.testcases.StoreLocatorTest@63a270c9</td></tr>
+<tr>
+<td title='com.ust.lenskart.testcases.TestWishListEmpty.testWishList()'><b>testWishList</b><br>Test class: com.ust.lenskart.testcases.TestWishListEmpty</td>
+<td></td>
+<td>3</td>
+<td>com.ust.lenskart.testcases.TestWishListEmpty@1c32386d</td></tr>
+<tr>
+<td title='com.ust.lenskart.testcases.TestAddingtoWishList.testEnterSearchBox()'><b>testEnterSearchBox</b><br>Test class: com.ust.lenskart.testcases.TestAddingtoWishList</td>
+<td></td>
+<td>18</td>
+<td>com.ust.lenskart.testcases.TestAddingtoWishList@1199fe66</td></tr>
+<tr>
+<td title='com.ust.lenskart.testcases.TestChatBot.testEnterSearchBox()'><b>testEnterSearchBox</b><br>Test class: com.ust.lenskart.testcases.TestChatBot</td>
+<td></td>
+<td>1</td>
+<td>com.ust.lenskart.testcases.TestChatBot@3e30646a</td></tr>
+<tr>
+<td title='com.ust.lenskart.testcases.TestChatBot.testChatBot()'><b>testChatBot</b><br>Test class: com.ust.lenskart.testcases.TestChatBot</td>
+<td></td>
+<td>2</td>
+<td>com.ust.lenskart.testcases.TestChatBot@3e30646a</td></tr>
+<tr>
+<td title='com.ust.lenskart.testcases.TestResetFilters.testEnterSearchBox()'><b>testEnterSearchBox</b><br>Test class: com.ust.lenskart.testcases.TestResetFilters</td>
+<td></td>
+<td>17</td>
+<td>com.ust.lenskart.testcases.TestResetFilters@614df0a4</td></tr>
+<tr>
+<td title='com.ust.lenskart.testcases.TestWishListEmpty.testEnterSearchBox()'><b>testEnterSearchBox</b><br>Test class: com.ust.lenskart.testcases.TestWishListEmpty</td>
+<td></td>
+<td>26</td>
+<td>com.ust.lenskart.testcases.TestWishListEmpty@1c32386d</td></tr>
+>>>>>>> finaltouch
 </table><p>
 </body>
 </html>

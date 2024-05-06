@@ -55,11 +55,19 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
+<<<<<<< HEAD
 <td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
 </tr><tr>
 <td>Started on:</td><td>Mon May 06 14:25:04 IST 2024</td>
 </tr>
 <tr><td>Total time:</td><td>263 seconds (263613 ms)</td>
+=======
+<td>Tests passed/Failed/Skipped:</td><td>0/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon May 06 15:52:53 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>77 seconds (77676 ms)</td>
+>>>>>>> finaltouch
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,6 +84,7 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<<<<<<< HEAD
 <td title='com.ust.lenskart.testrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.ust.lenskart.testrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Creating a new Account", "Sign Up functionality"</td>
 <td></td>
 <td>16</td>
@@ -120,6 +129,79 @@ function toggleAllBoxes() {
 <td></td>
 <td>23</td>
 <td>com.ust.lenskart.testrunner.TestRunner@609e8838</td></tr>
+=======
+<td title='com.ust.lenskart.testrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.ust.lenskart.testrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Removing item from an empty cart functionality", "Add to cart functionality"</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:1063)
+	at com.ust.lenskart.base.TestBase.navigateTo(TestBase.java:59)
+	at stepdefinitions.Hooks.setup(Hooks.java:22)
+</pre></div><a href='#' onClick='toggleBox("stack-trace279963418", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace279963418'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:1063)
+	at com.ust.lenskart.base.TestBase.navigateTo(TestBase.java:59)
+	at stepdefinitions.Hooks.setup(Hooks.java:22)
+</pre></div></td>
+<td>19</td>
+<td>com.ust.lenskart.testrunner.TestRunner@6ed3f258</td></tr>
+<tr>
+<td title='com.ust.lenskart.testrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.ust.lenskart.testrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Adding item to the cart functionality", "Add to cart functionality"</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:1063)
+	at com.ust.lenskart.base.TestBase.navigateTo(TestBase.java:59)
+	at stepdefinitions.Hooks.setup(Hooks.java:22)
+</pre></div><a href='#' onClick='toggleBox("stack-trace178575564", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace178575564'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:1063)
+	at com.ust.lenskart.base.TestBase.navigateTo(TestBase.java:59)
+	at stepdefinitions.Hooks.setup(Hooks.java:22)
+</pre></div></td>
+<td>15</td>
+<td>com.ust.lenskart.testrunner.TestRunner@6ed3f258</td></tr>
+<tr>
+<td title='com.ust.lenskart.testrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.ust.lenskart.testrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Removing item from cart functionality", "Add to cart functionality"</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:1063)
+	at com.ust.lenskart.base.TestBase.navigateTo(TestBase.java:59)
+	at stepdefinitions.Hooks.setup(Hooks.java:22)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2122252822", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2122252822'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:1063)
+	at com.ust.lenskart.base.TestBase.navigateTo(TestBase.java:59)
+	at stepdefinitions.Hooks.setup(Hooks.java:22)
+</pre></div></td>
+<td>41</td>
+<td>com.ust.lenskart.testrunner.TestRunner@6ed3f258</td></tr>
+>>>>>>> finaltouch
 </table><p>
 </body>
 </html>

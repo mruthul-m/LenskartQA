@@ -5,10 +5,16 @@
     <classes>
       <class name="com.ust.lenskart.testcases.StoreLocatorTest">
         <methods>
+<<<<<<< HEAD
           <include name="pageLoader"/>
           <include name="gotoLocator"/>
           <include name="quitDriver"/>
           <include name="searchCity"/>
+=======
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0 1 2"/>
+          <include name="tearDownClass"/>
+>>>>>>> finaltouch
         </methods>
       </class> <!-- com.ust.lenskart.testcases.StoreLocatorTest -->
     </classes>

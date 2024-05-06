@@ -11,6 +11,7 @@
           <include name="quitDriver"/>
         </methods>
       </class> <!-- com.ust.lenskart.testcases.TestResetFilters -->
+<<<<<<< HEAD
       <class name="com.ust.lenskart.testcases.TestRemovingFromWishList">
         <methods>
           <include name="pageLoader"/>
@@ -22,6 +23,8 @@
           <include name="testWishList"/>
         </methods>
       </class> <!-- com.ust.lenskart.testcases.TestRemovingFromWishList -->
+=======
+>>>>>>> finaltouch
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

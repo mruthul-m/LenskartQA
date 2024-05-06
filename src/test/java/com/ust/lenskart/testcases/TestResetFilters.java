@@ -27,8 +27,8 @@ public class TestResetFilters extends Hooks {
 
 		assertEquals(searchItemPage.getSearchItemText(), testconfig.getValidSearchItem().toUpperCase());
 		searchItemPage.setFrameType().setFrameShape().setColour().setBrand().setFrameSize().setPrice().setGender()
-		.setGlassColour().setFrameWeight().setPrescriptionType().setSupportedPower().setMaterial().setSubBrand()
-		.setFrameWidth().setProductType();
+
+		.setGlassColour().setFrameWeight().setPrescriptionType().setMaterial().setFrameWidth().setProductType();
 
 		assertTrue(searchItemPage.isFiltersDisplayed());
 		assertTrue(searchItemPage.validateFilters());

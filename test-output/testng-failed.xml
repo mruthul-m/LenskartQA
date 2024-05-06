@@ -5,10 +5,16 @@
     <classes>
       <class name="com.ust.lenskart.testcases.TestResetFilters">
         <methods>
+<<<<<<< HEAD
           <include name="testEnterSearchBox"/>
           <include name="pageLoader"/>
           <include name="testSetFilters"/>
           <include name="quitDriver"/>
+=======
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0 1 2"/>
+          <include name="tearDownClass"/>
+>>>>>>> finaltouch
         </methods>
       </class> <!-- com.ust.lenskart.testcases.TestResetFilters -->
       <class name="com.ust.lenskart.testcases.TestRemovingFromWishList">

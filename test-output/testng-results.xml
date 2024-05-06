@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
   <suite started-at="2024-05-06T14:25:04 IST" name="Default suite" finished-at="2024-05-06T14:29:27 IST" duration-ms="263613">
+=======
+<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-06T15:52:53 IST" name="Default suite" finished-at="2024-05-06T15:54:11 IST" duration-ms="77676">
+>>>>>>> finaltouch
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@609e8838]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@6ed3f258]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
+<<<<<<< HEAD
     <test started-at="2024-05-06T14:25:04 IST" name="Default test" finished-at="2024-05-06T14:29:27 IST" duration-ms="263613">
       <class name="com.ust.lenskart.testrunner.TestRunner">
         <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@609e8838]" started-at="2024-05-06T14:25:04 IST" name="setUpClass" finished-at="2024-05-06T14:25:05 IST" duration-ms="1037" status="PASS">
@@ -15,13 +23,26 @@
             <param index="0">
               <value>
                 <![CDATA[org.testng.TestRunner@4cddc036]]>
+=======
+    <test started-at="2024-05-06T15:52:53 IST" name="Default test" finished-at="2024-05-06T15:54:11 IST" duration-ms="77676">
+      <class name="com.ust.lenskart.testrunner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@6ed3f258]" started-at="2024-05-06T15:52:54 IST" name="setUpClass" finished-at="2024-05-06T15:52:55 IST" duration-ms="936" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@337bbfdf]]>
+>>>>>>> finaltouch
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@609e8838]" started-at="2024-05-06T14:25:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-06T14:25:45 IST" duration-ms="39859" status="PASS">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@6ed3f258]" started-at="2024-05-06T15:52:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-06T15:53:10 IST" duration-ms="15830" status="FAIL">
+>>>>>>> finaltouch
           <params>
             <param index="0">
               <value>
@@ -34,10 +55,31 @@
               </value>
             </param>
           </params>
+<<<<<<< HEAD
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@609e8838]" started-at="2024-05-06T14:25:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-06T14:26:06 IST" duration-ms="21457" status="PASS">
+=======
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1105)
+at java.base/java.util.Map.of(Map.java:1353)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:1063)
+at com.ust.lenskart.base.TestBase.navigateTo(TestBase.java:59)
+at stepdefinitions.Hooks.setup(Hooks.java:22)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@6ed3f258]" started-at="2024-05-06T15:53:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-06T15:53:30 IST" duration-ms="19008" status="FAIL">
+>>>>>>> finaltouch
           <params>
             <param index="0">
               <value>
@@ -50,10 +92,28 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1105)
+at java.base/java.util.Map.of(Map.java:1353)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:1063)
+at com.ust.lenskart.base.TestBase.navigateTo(TestBase.java:59)
+at stepdefinitions.Hooks.setup(Hooks.java:22)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@609e8838]" started-at="2024-05-06T14:26:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-06T14:26:52 IST" duration-ms="45823" status="PASS">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@6ed3f258]" started-at="2024-05-06T15:53:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-06T15:54:11 IST" duration-ms="41220" status="FAIL">
+>>>>>>> finaltouch
           <params>
             <param index="0">
               <value>
@@ -66,6 +126,7 @@
               </value>
             </param>
           </params>
+<<<<<<< HEAD
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
@@ -166,6 +227,26 @@
           </reporter-output>
         </test-method> <!-- runScenario -->
         <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@609e8838]" started-at="2024-05-06T14:29:25 IST" name="tearDownClass" finished-at="2024-05-06T14:29:27 IST" duration-ms="2687" status="PASS">
+=======
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1105)
+at java.base/java.util.Map.of(Map.java:1353)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:1063)
+at com.ust.lenskart.base.TestBase.navigateTo(TestBase.java:59)
+at stepdefinitions.Hooks.setup(Hooks.java:22)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@6ed3f258]" started-at="2024-05-06T15:54:11 IST" name="tearDownClass" finished-at="2024-05-06T15:54:11 IST" duration-ms="18" status="PASS">
+>>>>>>> finaltouch
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
