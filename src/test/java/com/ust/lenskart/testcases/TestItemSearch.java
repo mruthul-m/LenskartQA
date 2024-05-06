@@ -9,15 +9,23 @@ import com.ust.lenskart.pages.HomePage;
 import com.ust.lenskart.pages.SearchItemPage;
 
 public class TestItemSearch extends Hooks {
+	
+	//declaring variable of type HomePage 
 	HomePage homePage;
+	
+	//declaring variable of type SearchItemPage 
 	SearchItemPage searchItemPage;
 	
+	
+	//Tests entering specified string into searchbox and validates the url
 	@Test(priority =0)
 	public void testEnterSearchBox() {
 		homePage = PageFactory.initElements(driver, HomePage.class);
 		homePage.enterSearchBox(testconfig.getValidSearchItem());
 		assertEquals(homePage.getUrl(),testconfig.getSearchUrl());
 	}
+	
+	//Tests entering invalid string into searchbox and validates the search text and the error message
 	@Test(priority =1)
 	public void testInvalidSearchItem() {
         homePage.enterSearchBox(testconfig.getInvalidSearchItem());

@@ -165,7 +165,7 @@ public class HomePage extends TestBase {
 		wait.until(ExpectedConditions.visibilityOf(chatBotBox));
 		return chatBotBox.isDisplayed();
 	}
-	//method to start new conversation
+	//method to switch to new frame and to start new conversation
 	public HomePage startNewChat() {
 		delay(2);
 		driver.switchTo().frame(chatBotFrame);
