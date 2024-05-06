@@ -8,7 +8,7 @@ import com.ust.lenskart.base.TestBase;
 public class DataProviders extends TestBase {
 	@DataProvider(name = "chatBotSuggestion")
 	public String[][] getData() {
-		String path = System.getProperty("user.dir")+"/src/main/java/resources/ChatBot Chat Suggestions.xlsx";
+		String path = System.getProperty("user.dir")+"\\src\\main\\resources\\testdata\\ChatBot Chat Suggestions.xlsx";
 		String Sheetname = testconfig.getSheetName();
 		XLutility xl = new XLutility(path,Sheetname);
 		int rownum=xl.getRowCount();
