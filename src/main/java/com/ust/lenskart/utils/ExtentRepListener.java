@@ -14,7 +14,7 @@ import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.Markup;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 
-import base.ReusableFunctions;
+//import base.ReusableFunctions;
 
 public class ExtentRepListener implements ITestListener {
 	
@@ -23,7 +23,7 @@ public class ExtentRepListener implements ITestListener {
 	public ExtentReports extent;
 	public ExtentTest test;
 	String timestamp= new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
-	ReusableFunctions re=new ReusableFunctions(driver);
+//	ReusableFunctions re=new ReusableFunctions(driver);
 
 	public void onStart(ITestContext context) {
 		try {
@@ -44,7 +44,7 @@ public class ExtentRepListener implements ITestListener {
 		String filepath=System.getProperty("user.dir")+"//TestResult//Screenshots"+folder+"//"+
 				nameoftest+"//"+nameoftest+timestamp+"_passed.png";
 		try {
-			ReusableFunctions.takeScreenshot(filepath);
+//			ReusableFunctions.takeScreenshot(filepath);
 			test.log(Status.PASS, (Markup) test.addScreenCaptureFromPath(filepath));
 		}catch (Exception e) {
 			e.printStackTrace();
@@ -59,7 +59,7 @@ public class ExtentRepListener implements ITestListener {
 		String filepath=System.getProperty("user.dir")+"//TestOutput//Screenshots"+folder+"//"+
 				nameoftest+"//"+nameoftest+timestamp+"_failed.png";
 		try {
-			ReusableFunctions.takeScreenshot(filepath);
+//			ReusableFunctions.takeScreenshot(filepath);
 			test.log(Status.PASS, (Markup) test.addScreenCaptureFromPath(filepath));
 		}catch (Exception e) {
 			e.printStackTrace();

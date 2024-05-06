@@ -470,8 +470,9 @@ public class SearchItemPage extends TestBase{
 
 	public SearchItemPage removeProductsFromWishList(int num) {
 		for(int i =1;i<=num;i++) {
-		setActions(driver).moveToElement(wishListProductTitle.get(0)).perform();
 		delay(1);
+		setActions(driver).moveToElement(wishListProductTitle.get(0)).perform();
+		delay(2);
 		setActions(driver).moveToElement(cross.get(0)).click().perform();
 		delay(1);
 		 }
