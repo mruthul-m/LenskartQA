@@ -1,11 +1,9 @@
 package com.ust.lenskart.utils;
 
-import java.io.File;
+
 import java.io.IOException;
 
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -47,7 +45,7 @@ public class ExtentReportsListener extends TestBase implements ITestListener {
         String testName = result.getName();
         String filepath = System.getProperty("user.dir") + "//ScreenShots/" + className + "/" + testName + "//" + testName + "_passed.png";
         try {
-            ExtentReportsListener.takeScreenshot(filepath);
+            takeScreenshot(filepath);
             test.log(Status.PASS, (Markup) test.addScreenCaptureFromPath(filepath));
         } catch (Exception e) {
             e.printStackTrace();
@@ -63,7 +61,7 @@ public class ExtentReportsListener extends TestBase implements ITestListener {
         String testName = result.getName();
         String filepath = System.getProperty("user.dir") + "//ScreenShots/" + className + "/" + testName + "//" + testName + "_failed.png";
         try {
-            ExtentReportsListener.takeScreenshot(filepath);
+            takeScreenshot(filepath);
             test.log(Status.PASS, (Markup) test.addScreenCaptureFromPath(filepath));
         } catch (Exception e) {
             e.printStackTrace();
@@ -81,15 +79,5 @@ public class ExtentReportsListener extends TestBase implements ITestListener {
         extent.flush();
     }
     
-    // Method to capture screenshot
-    public static void takeScreenshot(String filepath) {
-        TakesScreenshot takeScreenShot = (TakesScreenshot) driver;
-        File srcFile = takeScreenShot.getScreenshotAs(OutputType.FILE);
-        File destFile = new File(filepath);
-        try {
-            FileUtils.copyFile(srcFile, destFile);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+   
 }

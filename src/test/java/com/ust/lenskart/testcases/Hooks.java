@@ -9,16 +9,18 @@ import com.ust.lenskart.utils.ExtentReportsListener;
 
 @Listeners(ExtentReportsListener.class)
 public class Hooks extends TestBase {
-
+	
+	
 	@BeforeClass
 	public void pageLoader() {
+		
 		appInit();
 		navigateTo();
 	}
 
 	@AfterClass
 	public void quitDriver() {
-		driver.quit();
+		tearDown();
 	}
 
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+<suite name="TestNg-Suite">
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.ust.lenskart.testcases.TestWishListEmpty"/>
@@ -14,3 +14,12 @@
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
+<!--
+<Suite name="Cucumber-suite">
+	<test name="Test2" thread-count="5"></test>
+	<classes>
+		<class name="com.ust.lenskart.testrunner.TestRunner"/>
+	</classes>
+	</test>
+</Suite>
+-->
