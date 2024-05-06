@@ -6,6 +6,7 @@ import org.testng.annotations.DataProvider;
 import com.ust.lenskart.base.TestBase;
 
 public class DataProviders extends TestBase {
+	//DataProvider used by TestChatBot
 	@DataProvider(name = "chatBotSuggestion")
 	public String[][] getData() {
 		String path = System.getProperty("user.dir")+"\\src\\main\\resources\\testdata\\ChatBot Chat Suggestions.xlsx";

@@ -1,8 +1,6 @@
 package com.ust.lenskart.pages;
 
-
-
-
+//All necessary imports
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -15,44 +13,58 @@ import com.ust.lenskart.base.TestBase;
 import com.ust.lenskart.utils.Helper;
 
 public class HomePage extends TestBase {
+	
+	//initializes a JavascriptExecutor object named js
 	JavascriptExecutor js = (JavascriptExecutor) driver;
-
+	
+	//identifies the searchbox webelement
 	@FindBy(css = "input[placeholder='What are you looking for?']")
 	public WebElement searchbox;
 
+	//identifies the storelocator tab webelement
 	@FindBy(id = "lrd9")
 	private WebElement storeLocator;
-
+	
+	//identifies the Locate a store anchor tag
 	@FindBy(linkText = "Locate a Store")
 	private WebElement storeLink;
 
+	
 	@FindBy(css = ".ActionLinksContainer--5xj1y5.gKkoeY > div:last-child")
 	private WebElement cartLink;
 
 	@FindBy(xpath = "//div[@class='Buttons--15b7dyn jAmxXC']//span[text()='Remove']")
 	private WebElement removeItem;
 
+	//identfies frame tag for the chatbot tab
 	@FindBy(css = "iframe[name='spr-chat__box-frame']")
 	public WebElement chatBotFrame;
-
+	
+	//identifies chatbot box
 	@FindBy(className = "spr-chat-box-anim-enter-done")
 	public WebElement chatBotBox;
 
+	//identifies chatbot button
 	@FindBy(id = "spr-chat__trigger-button")
 	public WebElement chatBotButton;
 
+	//identifies new conversation button
 	@FindBy(css = "button[label='New Conversation']")
 	public WebElement chatBotNewConversation;
 
+	//identifies welcome text
 	@FindBy(css = "span[data-lucid-type='application/vnd.lucid.text']")
 	public WebElement chatBotWelcomeText;
 
+	//identifies more actions button
 	@FindBy(css = "button[aria-label='More actions']")
 	public WebElement moreActions;
 
+	//identifies new conversation from dropdown
 	@FindBy(css = "div[data-testid='actionMenuList']>div")
 	public WebElement newConversation;
 	
+	//identifies 
 	@FindBy(xpath = "//span[text()='Sign Up']")
 	private WebElement signUpLink;
 	
@@ -108,21 +120,21 @@ public class HomePage extends TestBase {
 	@FindBy(css = "#remove-button")
 	private WebElement createAccountBtn;
 
-
+	//enters the necessary text into the searchbox inputfield
 	public HomePage enterSearchBox(String itemtext) {
 		searchbox.sendKeys(itemtext, Keys.ENTER);
 		delay(1);
 		return this;
 	}
 
-
+	//method to return the current url as string
 	public String getUrl() {
 		delay(1);
 		return driver.getCurrentUrl();
 	}
 	
 	
-
+	
 	public HomePage hoverStoreLocator(WebDriver driver) {
 		setWait(driver, 10).until(ExpectedConditions.visibilityOf(storeLocator));
 		setActions(driver).moveToElement(storeLocator).build().perform();
@@ -142,18 +154,18 @@ public class HomePage extends TestBase {
 		return PageFactory.initElements(driver, CartPage.class);
 	}
 
-
+	//method that clicks chatbot button
 	public HomePage clickChatBotIcon() {
 		wait.until(ExpectedConditions.visibilityOf(chatBotButton));
 		chatBotButton.click();
 		return this;
 	}
-
+	//method to check whether chatbot box is displayed or not
 	public boolean isChatBotDisplayed() {
 		wait.until(ExpectedConditions.visibilityOf(chatBotBox));
 		return chatBotBox.isDisplayed();
 	}
-
+	//method to start new conversation
 	public HomePage startNewChat() {
 		delay(2);
 		driver.switchTo().frame(chatBotFrame);
@@ -161,29 +173,29 @@ public class HomePage extends TestBase {
 		chatBotNewConversation.click();
 		return this;
 	}
-
+	//method to check whether the welcome text starts with the specified string
 	public boolean checkChatBotWelcomeText() {
 		wait.until(ExpectedConditions.visibilityOf(chatBotWelcomeText));
 		return chatBotWelcomeText.getText().startsWith("Hello! Welcome to Lenskart");
 	}
-
+	//method to click chatbot suggestions
 	public HomePage clickChatSuggestion(String option) {
 		delay(2);
 		Helper.clickSuggestion(option);
 		return this;
 	}
-
+	//method that returns the string displayed for assertion
 	public String getAssertionText(String assertionMessage) {
 		delay(3);
 		return Helper.checkAssertionText(assertionMessage);
 	}
-
+	//method to click more actions button
 	public HomePage clickMoreActions() {
 		delay(2);
 		moreActions.click();
 		return this;
 	}
-
+	//method to click new conversation from dropdown
 	public HomePage clickNewConversation() {
 		wait.until(ExpectedConditions.visibilityOf(newConversation));
 		newConversation.click();
