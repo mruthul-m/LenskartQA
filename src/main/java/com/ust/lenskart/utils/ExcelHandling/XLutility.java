@@ -16,10 +16,13 @@ public class XLutility {
 	String path;
 	String Sheetname;
 	
+	//Parameterized constructor
 	public XLutility(String path, String Sheetname){
 		this.path = path;
         this.Sheetname = Sheetname;
 	}
+	
+	//method to return rowcount
 	public int getRowCount() {
 		try {
 			f1=new FileInputStream(path);
@@ -35,6 +38,8 @@ public class XLutility {
 		}
 		return 0;
 	}
+	
+	//method to return cell count
 	public int getCellCount(int rowNum) {
 		try {
 			f1=new FileInputStream(path);
@@ -51,6 +56,8 @@ public class XLutility {
 		}
 		return 0;
 	}
+	
+	//method to return cell data
 	public String getCellData(int rowNum, int colNum) {
         try {
         	f1=new FileInputStream(path);
