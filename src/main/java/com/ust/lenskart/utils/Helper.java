@@ -7,18 +7,25 @@ import org.openqa.selenium.WebElement;
 
 import com.ust.lenskart.pages.HomePage;
 
+// Helper class for common Selenium operations
 public class Helper extends HomePage {
-	public static void clickSuggestion(String option) {
-		driver.findElement(By.xpath("//div[text()='"+option+"']")).click();
-	}
-	public static String checkAssertionText(String text) {
-		WebElement element = driver.findElement(By.xpath("//*[text()='"+text+"' and not(@data-testid='sr-brand-msg')]"));
-		return element.getText();
-}
-	public static void scrollThePage(WebDriver driver,WebElement element) {
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(0, -500);");
-		js.executeScript("window.scrollBy(0, 200);");
-		js.executeScript("arguments[0].scrollTop = arguments[1];", element, 800);
-	}
+    
+    // Clicks on the provided suggestion option.
+    public static void clickSuggestion(String option) {
+        driver.findElement(By.xpath("//div[text()='"+option+"']")).click();
+    }
+    
+    // Checks for the presence of assertion text on the page.
+    public static String checkAssertionText(String text) {
+        WebElement element = driver.findElement(By.xpath("//*[text()='"+text+"' and not(@data-testid='sr-brand-msg')]"));
+        return element.getText();
+    }
+    
+    // Scrolls the page to the specified element.
+    public static void scrollThePage(WebDriver driver, WebElement element) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0, -500);");
+        js.executeScript("window.scrollBy(0, 200);");
+        js.executeScript("arguments[0].scrollTop = arguments[1];", element, 800);
+    }
 }

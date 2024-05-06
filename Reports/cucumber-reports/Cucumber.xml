@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="259.962" tests="9" skipped="0" failures="0" errors="0">
+<testcase classname="Add to cart functionality" name="Adding item to the cart functionality" time="39.782">
+<system-out><![CDATA[
+Given User already on homepage..............................................passed
+When User search for Aviator................................................passed
+Then User selects a Product.................................................passed
+Then User on product page...................................................passed
+And User clicks on Buy Now..................................................passed
+Then User will successfully add item to the Cart............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Add to cart functionality" name="Removing item from an empty cart functionality" time="21.43">
+<system-out><![CDATA[
+Given User already on homepage..............................................passed
+When User clicks on cart link...............................................passed
+Then User sees "Your shopping cart is empty! !".............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Add to cart functionality" name="Removing item from cart functionality" time="45.807">
+<system-out><![CDATA[
+Given User already on homepage..............................................passed
+When User search for Aviator................................................passed
+Then User selects a Product.................................................passed
+Then User on product page...................................................passed
+And User clicks on Buy Now..................................................passed
+Then User will successfully add item to the Cart............................passed
+Then User goto the homepage.................................................passed
+When User clicks on cart link...............................................passed
+Then User removes an Item from the cart.....................................passed
+Then User sees "Your shopping cart is empty! !".............................passed
+]]></system-out>
+</testcase>
+<testcase classname="book an appointment" name="Appointment booking functionality" time="39.798">
+<system-out><![CDATA[
+Given User already on homepage..............................................passed
+When User hover over store locator and clicks locate a store................passed
+Then User on store page.....................................................passed
+And User searches "Murinjapalam" and selects the first suggestion...........passed
+Then User book a free appointment from the top most list....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login functionality" name="Login to existing account" time="26.265">
+<system-out><![CDATA[
+Given User already on homepage..............................................passed
+When User clicks on signIn Link.............................................passed
+Then User enters email and password and logins..............................passed
+And 'Vivek' will be loggedIn to their homepage..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login functionality" name="User tries to login with Invalid Email" time="22.324">
+<system-out><![CDATA[
+Given User already on homepage..............................................passed
+When User clicks on signIn Link.............................................passed
+Then User enters wrong email 'fakeusertest@gmail.com'.......................passed
+And User get "Account doesn't exist. Use different phone number or email." as error.passed
+]]></system-out>
+</testcase>
+<testcase classname="Login functionality" name="User tries to login with Invalid password" time="24.921">
+<system-out><![CDATA[
+Given User already on homepage..............................................passed
+When User clicks on signIn Link.............................................passed
+Then User enters email and password and logins..............................passed
+And User get "Either Email or Password is Incorrect" as error...............passed
+]]></system-out>
+</testcase>
+<testcase classname="Sign Up functionality" name="Creating a new Account" time="16.175">
+<system-out><![CDATA[
+Given User already on homepage..............................................passed
+When User clicks on the signup Link.........................................passed
+Then new window pop ups.....................................................passed
+And User fills all required feilds..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Sign Up functionality" name="Creating a new account with already existing email" time="23.158">
+<system-out><![CDATA[
+Given User already on homepage..............................................passed
+When User clicks on the signup Link.........................................passed
+Then new window pop ups.....................................................passed
+And User fills all required feilds..........................................passed
+And User clicks on Create an Account........................................passed
+Then User gets "Email Id already exists: " as error.........................passed
+]]></system-out>
+</testcase>
+</testsuite>

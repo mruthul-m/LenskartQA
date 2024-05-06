@@ -3,20 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ust.lenskart.testrunner.TestRunner">
+      <class name="com.ust.lenskart.testcases.StoreLocatorTest">
         <methods>
-<<<<<<< HEAD
-          <include name="testEnterSearchBox"/>
           <include name="pageLoader"/>
-          <include name="testSetFilters"/>
+          <include name="gotoLocator"/>
           <include name="quitDriver"/>
-=======
-          <include name="setUpClass"/>
-          <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="0 2"/>
->>>>>>> finaltouch
+          <include name="searchCity"/>
         </methods>
-      </class> <!-- com.ust.lenskart.testrunner.TestRunner -->
+      </class> <!-- com.ust.lenskart.testcases.StoreLocatorTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
