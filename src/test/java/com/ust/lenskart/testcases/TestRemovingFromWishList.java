@@ -29,11 +29,8 @@ public class TestRemovingFromWishList extends Hooks{
 	}
 	@Test(priority=2,dependsOnMethods = "testAddingToWishList")
     public void testWishList() {
-		delay(1);
 		int num = Integer.parseInt(testconfig.getNumberOfProductsToBeWishListed());
-        for(int i =1;i<=num;i++) {
-        searchItemPage.removeProductsFromWishList();
-        }
+        searchItemPage.removeProductsFromWishList(num);
         assertEquals(searchItemPage.getWishListProductCount(),0);
     }
 	@Test(priority=3,dependsOnMethods = "testEnterSearchBox")
@@ -48,6 +45,5 @@ public class TestRemovingFromWishList extends Hooks{
     public void testWishListAgain() {
 		searchItemPage.clickClearList();
 		assertEquals(searchItemPage.getWishListProductCount(),0);
-
 	}
 }

@@ -6,7 +6,8 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(glue = "stepdefinitions",
-				features = "src/test/resources")
+				features = "src/test/resources"
+				,tags = "@AddToCart")
 public class TestRunner extends AbstractTestNGCucumberTests{
 	
 //	 	@Override

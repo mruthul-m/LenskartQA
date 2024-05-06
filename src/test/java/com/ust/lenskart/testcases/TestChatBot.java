@@ -17,10 +17,10 @@ public class TestChatBot extends Hooks {
 	@Test(priority=0)
 	public void testEnterSearchBox() {
 		homePage = PageFactory.initElements(driver, HomePage.class);
-		assertEquals(testconfig.getUrl(), homePage.getUrl());
+		assertEquals(homePage.getUrl(),testconfig.getUrl());
 	}
 	
-    @Test(priority=1)
+    @Test(priority=1,dependsOnMethods ="testEnterSearchBox" )
     public void testChatBot() {
     	homePage.clickChatBotIcon();
     	assertTrue(homePage.isChatBotDisplayed());

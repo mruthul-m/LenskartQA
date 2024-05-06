@@ -117,6 +117,7 @@ public class HomePage extends TestBase {
 
 
 	public String getUrl() {
+		delay(1);
 		return driver.getCurrentUrl();
 	}
 	

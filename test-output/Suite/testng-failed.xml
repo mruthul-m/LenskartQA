@@ -3,10 +3,73 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="com.ust.lenskart.testcases.TestItemSearch">
+        <methods>
+          <include name="pageLoader"/>
+          <include name="testEnterSearchBox"/>
+          <include name="testInvalidSearchItem"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- com.ust.lenskart.testcases.TestItemSearch -->
+      <class name="com.ust.lenskart.testcases.StoreLocatorTest">
+        <methods>
+          <include name="pageLoader"/>
+          <include name="gotoLocator"/>
+          <include name="searchCity"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- com.ust.lenskart.testcases.StoreLocatorTest -->
+      <class name="com.ust.lenskart.testcases.TestResetFilters">
+        <methods>
+          <include name="testEnterSearchBox"/>
+          <include name="pageLoader"/>
+          <include name="testSetFilters"/>
+          <include name="testResetFilters"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- com.ust.lenskart.testcases.TestResetFilters -->
+      <class name="com.ust.lenskart.testcases.TestRemovingFromWishList">
+        <methods>
+          <include name="pageLoader"/>
+          <include name="testWishListAgain"/>
+          <include name="testAddingToWishListAgain"/>
+          <include name="testAddingToWishList"/>
+          <include name="testEnterSearchBox"/>
+          <include name="testWishList"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- com.ust.lenskart.testcases.TestRemovingFromWishList -->
+      <class name="com.ust.lenskart.testcases.TestWishListEmpty">
+        <methods>
+          <include name="pageLoader"/>
+          <include name="testEnterSearchBox"/>
+          <include name="testWishList"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- com.ust.lenskart.testcases.TestWishListEmpty -->
+      <class name="com.ust.lenskart.testcases.TestSortBy">
+        <methods>
+          <include name="TsetSortByHighToLow"/>
+          <include name="pageLoader"/>
+          <include name="TsetSortByLowToHigh"/>
+          <include name="testEnterSearchBox"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- com.ust.lenskart.testcases.TestSortBy -->
+      <class name="com.ust.lenskart.testcases.TestChatBot">
+        <methods>
+          <include name="pageLoader"/>
+          <include name="testEnterSearchBox"/>
+          <include name="testChatBot"/>
+          <include name="testChatBotSuggestion"/>
+          <include name="testChatNewConversation"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- com.ust.lenskart.testcases.TestChatBot -->
       <class name="com.ust.lenskart.testcases.TestAddingtoWishList">
         <methods>
-          <include name="testAssingToWishList"/>
           <include name="pageLoader"/>
+          <include name="testAssingToWishList"/>
           <include name="testEnterSearchBox"/>
           <include name="quitDriver"/>
         </methods>

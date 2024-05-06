@@ -441,14 +441,15 @@ public class SearchItemPage extends TestBase{
 	public int getWishListProductCount() {
 		delay(1);
 		String count = wishListProductCount.getText().replace("(", "").replace(")", "");
+		delay(1);
 		return Integer.parseInt(count);
 	}
 
 	public SearchItemPage addProductsToWishList(int num) {
 		for (int i = 0; i < num; i++) {
-			delay(1);
+			delay(2);
 			productWishList.get(0).click();
-			delay(1);
+			delay(2);
 		}
 		return this;
 	}
@@ -467,11 +468,14 @@ public class SearchItemPage extends TestBase{
 		return true;
 	}
 
-	public SearchItemPage removeProductsFromWishList() {
+	public SearchItemPage removeProductsFromWishList(int num) {
+		for(int i =1;i<=num;i++) {
 		setActions(driver).moveToElement(wishListProductTitle.get(0)).perform();
 		delay(1);
 		setActions(driver).moveToElement(cross.get(0)).click().perform();
 		delay(1);
+		 }
+		delay(2);
 		return this;
 	}
 
@@ -479,6 +483,7 @@ public class SearchItemPage extends TestBase{
 		delay(2);
 		wait.until(ExpectedConditions.elementToBeClickable(clearList));
 		setActions(driver).moveToElement(clearList).click().perform();
+		delay(3);
         return this;
 	}
 	
