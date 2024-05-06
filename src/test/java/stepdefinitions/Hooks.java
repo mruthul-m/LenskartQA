@@ -1,11 +1,13 @@
 package stepdefinitions;
 
+
 import org.openqa.selenium.WebDriver;
 
 import com.ust.lenskart.base.TestBase;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 
 // Hooks class to manage setup and teardown operations for scenarios
 public class Hooks extends TestBase {
@@ -24,8 +26,13 @@ public class Hooks extends TestBase {
 	
 	// Method to execute after each scenario
 	@After
-	public void quitDriver() {
-		// Quit the WebDriver instance
-		driver.quit();
+	public static void tearDown(Scenario scenario) {
+		String filePath = 					System.getProperty("user.dir")+"/Screenshots/Feature/"+scenario.getName();
+		//validate if scenario has failed
+		if(scenario.isFailed()) {
+			takeScreenshot(filePath+"_failed.png");
+		}	
+		
+		tearDown();
 	}
 }

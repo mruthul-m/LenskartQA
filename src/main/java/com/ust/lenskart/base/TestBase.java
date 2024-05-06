@@ -1,10 +1,15 @@
 package com.ust.lenskart.base;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.Set;
 
 import com.ust.lenskart.utils.DriverIsNotChanged;
 import org.aeonbits.owner.ConfigFactory;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -107,6 +112,23 @@ public class TestBase {
         }
         throw new DriverIsNotChanged(String.format(
                 "Driver is not changed, still: %s", parentWindow));
+    }
+    
+    //driver teardown
+    public static void tearDown() {
+    	driver.quit();
+    }
+    
+    // Method to capture screenshot
+    public static void takeScreenshot(String filepath) {
+    	TakesScreenshot takeScreenShot = (TakesScreenshot) driver;
+        File srcFile = takeScreenShot.getScreenshotAs(OutputType.FILE);
+        File destFile = new File(filepath);
+        try {
+            FileUtils.copyFile(srcFile, destFile);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 
