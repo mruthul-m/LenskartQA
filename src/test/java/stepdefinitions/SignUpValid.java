@@ -32,6 +32,7 @@ public class SignUpValid {
 
 	@Then("User fills all required feilds")
 	public void user_fills_all_required_feilds(DataTable dataTable) {
+	
 		Map<String, String> formValues = dataTable.asMap();
 		
 		homepage.setFname(formValues.get("firstname"))

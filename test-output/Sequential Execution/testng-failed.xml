@@ -8,21 +8,9 @@
           <include name="testEnterSearchBox"/>
           <include name="pageLoader"/>
           <include name="testSetFilters"/>
-          <include name="testResetFilters"/>
           <include name="quitDriver"/>
         </methods>
       </class> <!-- com.ust.lenskart.testcases.TestResetFilters -->
-      <class name="com.ust.lenskart.testcases.TestRemovingFromWishList">
-        <methods>
-          <include name="pageLoader"/>
-          <include name="testWishListAgain"/>
-          <include name="testAddingToWishListAgain"/>
-          <include name="testAddingToWishList"/>
-          <include name="testEnterSearchBox"/>
-          <include name="testWishList"/>
-          <include name="quitDriver"/>
-        </methods>
-      </class> <!-- com.ust.lenskart.testcases.TestRemovingFromWishList -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Sequential Execution] -->

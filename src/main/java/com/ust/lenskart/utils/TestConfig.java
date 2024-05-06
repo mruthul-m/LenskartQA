@@ -8,7 +8,7 @@ import org.aeonbits.owner.Config;
  * 
  * The configuration values are loaded from a file named `config.properties` located in the classpath.
  */
-@Config.Sources("classpath:config.properties")
+@Config.Sources("classpath:config/config.properties")
 public interface TestConfig extends Config {
 
 	/**

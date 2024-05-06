@@ -2,7 +2,7 @@ package com.ust.lenskart.utils;
 
 import org.aeonbits.owner.Config;
 
-@Config.Sources("classpath:cucumberconfig.properties")
+@Config.Sources("classpath:config/cucumberconfig.properties")
 public interface CucumberTestConfig extends Config{
 
     @Key("BOOKING_NAME")

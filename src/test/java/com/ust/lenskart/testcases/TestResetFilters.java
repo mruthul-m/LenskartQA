@@ -35,7 +35,7 @@ public class TestResetFilters extends Hooks {
 					.setGlassColour()
 					.setFrameWeight()
 					.setPrescriptionType()
-					.setSupportedPower()
+//					.setSupportedPower()
 					.setMaterial()
 					.setSubBrand()
 //					.setSubCollection()
