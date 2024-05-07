@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite2]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test2(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="com.ust.lenskart.testrunner.TestRunner">
         <methods>
           <include name="setUpClass"/>
+<<<<<<< HEAD
           <include name="tearDownClass"/>
           <include name="runScenario" invocation-numbers="8"/>
+=======
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+>>>>>>> 2ac5b96fbf21ee993d811c4b9c44bde109e96de5
         </methods>
       </class> <!-- com.ust.lenskart.testrunner.TestRunner -->
     </classes>
-  </test> <!-- Test2(failed) -->
-</suite> <!-- Failed suite [Suite2] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
