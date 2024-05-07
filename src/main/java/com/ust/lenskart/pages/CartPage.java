@@ -2,6 +2,9 @@ package com.ust.lenskart.pages;
 
 import com.ust.lenskart.base.TestBase;
 import com.ust.lenskart.utils.DriverIsNotChanged;
+
+
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -28,7 +31,8 @@ public class CartPage extends TestBase {
     private WebElement productAtCartHeading;
     // Method to get the text of the empty cart message
     public String getEmptyCartText(){
-        setWait(driver,10).until(ExpectedConditions.visibilityOf(emptyCart));
+//        setWait(driver,10).until(ExpectedConditions.visibilityOf(emptyCart));
+    	setImplicitWait(10);
         return emptyCart.getText();
     }
 

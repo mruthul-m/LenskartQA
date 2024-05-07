@@ -5,22 +5,9 @@
     <classes>
       <class name="com.ust.lenskart.testrunner.TestRunner">
         <methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-          <include name="pageLoader"/>
-          <include name="gotoLocator"/>
-          <include name="quitDriver"/>
-          <include name="searchCity"/>
-=======
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0 1 2"/>
+          <include name="runScenario" invocation-numbers="0"/>
           <include name="tearDownClass"/>
->>>>>>> finaltouch
-=======
-          <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="1 2 3"/>
-          <include name="tearDownClass"/>
->>>>>>> allure-report
         </methods>
       </class> <!-- com.ust.lenskart.testrunner.TestRunner -->
     </classes>

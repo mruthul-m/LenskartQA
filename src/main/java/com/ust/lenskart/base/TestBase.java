@@ -48,14 +48,14 @@ public class TestBase {
 
     // Create a WebDriverWait object with a specified wait timeout
     public static WebDriverWait setWait(WebDriver driver, int seconds) {
-        wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
-        return wait;
+    	return
+    		new WebDriverWait(driver, Duration.ofSeconds(seconds));
+         
     }
 
     // Create an Actions object to perform user interactions on the web page
     public static Actions setActions(WebDriver driver) {
-        actions = new Actions(driver);
-        return actions;
+        return new Actions(driver);
     }
 
     // Navigate to the specified URL
@@ -129,6 +129,11 @@ public class TestBase {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+    
+    //Method to set implicit wait
+    public static void setImplicitWait(int seconds) {
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(seconds));
     }
 
 
