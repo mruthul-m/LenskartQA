@@ -3,26 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ust.lenskart.testrunner.TestRunner">
+      <class name="com.ust.lenskart.testcases.TestChatBot">
         <methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
           <include name="pageLoader"/>
-          <include name="gotoLocator"/>
+          <include name="testEnterSearchBox"/>
+          <include name="testChatBot"/>
+          <include name="testChatBotSuggestion"/>
+          <include name="testChatNewConversation"/>
           <include name="quitDriver"/>
-          <include name="searchCity"/>
-=======
-          <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0 1 2"/>
-          <include name="tearDownClass"/>
->>>>>>> finaltouch
-=======
-          <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="1 2 3"/>
-          <include name="tearDownClass"/>
->>>>>>> allure-report
         </methods>
-      </class> <!-- com.ust.lenskart.testrunner.TestRunner -->
+      </class> <!-- com.ust.lenskart.testcases.TestChatBot -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

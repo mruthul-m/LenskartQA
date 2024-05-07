@@ -46,7 +46,8 @@ public class ExtentReportsListener extends TestBase implements ITestListener {
         String filepath = System.getProperty("user.dir") + "//ScreenShots/" + className + "/" + testName + "//" + testName + "_passed.png";
         try {
             takeScreenshot(filepath);
-            test.log(Status.PASS, (Markup) test.addScreenCaptureFromPath(filepath));
+            test.log(Status.PASS, "Adding screenshot...");
+            test.addScreenCaptureFromPath(filepath);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -62,7 +63,8 @@ public class ExtentReportsListener extends TestBase implements ITestListener {
         String filepath = System.getProperty("user.dir") + "//ScreenShots/" + className + "/" + testName + "//" + testName + "_failed.png";
         try {
             takeScreenshot(filepath);
-            test.log(Status.PASS, (Markup) test.addScreenCaptureFromPath(filepath));
+            test.log(Status.FAIL, "Adding screenshot...");
+            test.addScreenCaptureFromPath(filepath);
         } catch (Exception e) {
             e.printStackTrace();
         }

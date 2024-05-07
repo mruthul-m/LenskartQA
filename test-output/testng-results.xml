@@ -1,79 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="34" passed="33" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-06T14:25:04 IST" name="Default suite" finished-at="2024-05-06T14:29:27 IST" duration-ms="263613">
-=======
-<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
-  <reporter-output>
-  </reporter-output>
-  <suite started-at="2024-05-06T15:52:53 IST" name="Default suite" finished-at="2024-05-06T15:54:11 IST" duration-ms="77676">
->>>>>>> finaltouch
-    <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@6ed3f258]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
-    </groups>
-<<<<<<< HEAD
-    <test started-at="2024-05-06T14:25:04 IST" name="Default test" finished-at="2024-05-06T14:29:27 IST" duration-ms="263613">
-=======
-<testng-results ignored="0" total="34" passed="31" failed="3" skipped="0">
-  <reporter-output>
-  </reporter-output>
-  <suite started-at="2024-05-06T21:05:13 IST" name="TestNg-Suite" finished-at="2024-05-06T21:13:48 IST" duration-ms="515019">
+  <suite started-at="2024-05-07T08:25:42 IST" name="TestNg-Suite" finished-at="2024-05-07T08:38:47 IST" duration-ms="785363">
     <groups>
     </groups>
-    <test started-at="2024-05-06T21:05:13 IST" name="Test" finished-at="2024-05-06T21:13:48 IST" duration-ms="515019">
+    <test started-at="2024-05-07T08:25:42 IST" name="Test" finished-at="2024-05-07T08:38:47 IST" duration-ms="785363">
       <class name="com.ust.lenskart.testcases.TestRemovingFromWishList">
-        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestRemovingFromWishList@ebaa6cb]" started-at="2024-05-06T21:06:50 IST" name="pageLoader" finished-at="2024-05-06T21:07:06 IST" duration-ms="15436" status="PASS">
+        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestRemovingFromWishList@69653e16]" started-at="2024-05-07T08:28:21 IST" name="pageLoader" finished-at="2024-05-07T08:28:45 IST" duration-ms="24071" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageLoader -->
-        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestRemovingFromWishList@ebaa6cb]" started-at="2024-05-06T21:07:06 IST" name="testEnterSearchBox" finished-at="2024-05-06T21:07:17 IST" duration-ms="11431" status="PASS">
+        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestRemovingFromWishList@69653e16]" started-at="2024-05-07T08:28:45 IST" name="testEnterSearchBox" finished-at="2024-05-07T08:29:04 IST" duration-ms="18688" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEnterSearchBox -->
-        <test-method signature="testAddingToWishList()[pri:1, instance:com.ust.lenskart.testcases.TestRemovingFromWishList@ebaa6cb]" started-at="2024-05-06T21:07:17 IST" name="testAddingToWishList" finished-at="2024-05-06T21:07:32 IST" depends-on-methods="com.ust.lenskart.testcases.TestRemovingFromWishList.testEnterSearchBox" duration-ms="14669" status="PASS">
+        <test-method signature="testAddingToWishList()[pri:1, instance:com.ust.lenskart.testcases.TestRemovingFromWishList@69653e16]" started-at="2024-05-07T08:29:04 IST" name="testAddingToWishList" finished-at="2024-05-07T08:29:23 IST" depends-on-methods="com.ust.lenskart.testcases.TestRemovingFromWishList.testEnterSearchBox" duration-ms="19058" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddingToWishList -->
-        <test-method signature="testWishList()[pri:2, instance:com.ust.lenskart.testcases.TestRemovingFromWishList@ebaa6cb]" started-at="2024-05-06T21:07:32 IST" name="testWishList" finished-at="2024-05-06T21:07:43 IST" depends-on-methods="com.ust.lenskart.testcases.TestRemovingFromWishList.testAddingToWishList" duration-ms="11132" status="PASS">
+        <test-method signature="testWishList()[pri:2, instance:com.ust.lenskart.testcases.TestRemovingFromWishList@69653e16]" started-at="2024-05-07T08:29:24 IST" name="testWishList" finished-at="2024-05-07T08:29:43 IST" depends-on-methods="com.ust.lenskart.testcases.TestRemovingFromWishList.testAddingToWishList" duration-ms="18347" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testWishList -->
-        <test-method signature="testAddingToWishListAgain()[pri:3, instance:com.ust.lenskart.testcases.TestRemovingFromWishList@ebaa6cb]" started-at="2024-05-06T21:07:44 IST" name="testAddingToWishListAgain" finished-at="2024-05-06T21:07:58 IST" depends-on-methods="com.ust.lenskart.testcases.TestRemovingFromWishList.testEnterSearchBox" duration-ms="14571" status="PASS">
+        <test-method signature="testAddingToWishListAgain()[pri:3, instance:com.ust.lenskart.testcases.TestRemovingFromWishList@69653e16]" started-at="2024-05-07T08:29:43 IST" name="testAddingToWishListAgain" finished-at="2024-05-07T08:29:58 IST" depends-on-methods="com.ust.lenskart.testcases.TestRemovingFromWishList.testEnterSearchBox" duration-ms="14895" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddingToWishListAgain -->
-        <test-method signature="testWishListAgain()[pri:4, instance:com.ust.lenskart.testcases.TestRemovingFromWishList@ebaa6cb]" started-at="2024-05-06T21:07:58 IST" name="testWishListAgain" finished-at="2024-05-06T21:08:06 IST" depends-on-methods="com.ust.lenskart.testcases.TestRemovingFromWishList.testAddingToWishListAgain" duration-ms="7295" status="PASS">
+        <test-method signature="testWishListAgain()[pri:4, instance:com.ust.lenskart.testcases.TestRemovingFromWishList@69653e16]" started-at="2024-05-07T08:29:58 IST" name="testWishListAgain" finished-at="2024-05-07T08:30:06 IST" depends-on-methods="com.ust.lenskart.testcases.TestRemovingFromWishList.testAddingToWishListAgain" duration-ms="7527" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testWishListAgain -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.TestRemovingFromWishList@ebaa6cb]" started-at="2024-05-06T21:08:06 IST" name="quitDriver" finished-at="2024-05-06T21:08:06 IST" duration-ms="351" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.TestRemovingFromWishList@69653e16]" started-at="2024-05-07T08:30:06 IST" name="quitDriver" finished-at="2024-05-07T08:30:08 IST" duration-ms="1864" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- com.ust.lenskart.testcases.TestRemovingFromWishList -->
       <class name="com.ust.lenskart.testcases.TestChatBot">
-        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestChatBot@758705fa]" started-at="2024-05-06T21:05:50 IST" name="pageLoader" finished-at="2024-05-06T21:06:13 IST" duration-ms="23159" status="PASS">
+        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestChatBot@6b8d96d9]" started-at="2024-05-07T08:27:00 IST" name="pageLoader" finished-at="2024-05-07T08:27:27 IST" duration-ms="27639" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageLoader -->
-        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestChatBot@758705fa]" started-at="2024-05-06T21:06:13 IST" name="testEnterSearchBox" finished-at="2024-05-06T21:06:14 IST" duration-ms="1029" status="PASS">
+        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestChatBot@6b8d96d9]" started-at="2024-05-07T08:27:27 IST" name="testEnterSearchBox" finished-at="2024-05-07T08:27:28 IST" duration-ms="1076" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEnterSearchBox -->
-        <test-method signature="testChatBot()[pri:1, instance:com.ust.lenskart.testcases.TestChatBot@758705fa]" started-at="2024-05-06T21:06:14 IST" name="testChatBot" finished-at="2024-05-06T21:06:15 IST" depends-on-methods="com.ust.lenskart.testcases.TestChatBot.testEnterSearchBox" duration-ms="728" status="PASS">
+        <test-method signature="testChatBot()[pri:1, instance:com.ust.lenskart.testcases.TestChatBot@6b8d96d9]" started-at="2024-05-07T08:27:29 IST" name="testChatBot" finished-at="2024-05-07T08:27:31 IST" depends-on-methods="com.ust.lenskart.testcases.TestChatBot.testEnterSearchBox" duration-ms="1148" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testChatBot -->
-        <test-method signature="testChatNewConversation()[pri:2, instance:com.ust.lenskart.testcases.TestChatBot@758705fa]" started-at="2024-05-06T21:06:15 IST" name="testChatNewConversation" finished-at="2024-05-06T21:06:19 IST" depends-on-methods="com.ust.lenskart.testcases.TestChatBot.testChatBot" duration-ms="3278" status="PASS">
+        <test-method signature="testChatNewConversation()[pri:2, instance:com.ust.lenskart.testcases.TestChatBot@6b8d96d9]" started-at="2024-05-07T08:27:32 IST" name="testChatNewConversation" finished-at="2024-05-07T08:27:38 IST" depends-on-methods="com.ust.lenskart.testcases.TestChatBot.testChatBot" duration-ms="5324" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testChatNewConversation -->
-        <test-method signature="testChatBotSuggestion(java.lang.String,java.lang.String)[pri:3, instance:com.ust.lenskart.testcases.TestChatBot@758705fa]" started-at="2024-05-06T21:06:20 IST" name="testChatBotSuggestion" data-provider="chatBotSuggestion" finished-at="2024-05-06T21:06:30 IST" depends-on-methods="com.ust.lenskart.testcases.TestChatBot.testChatNewConversation" duration-ms="9498" status="PASS">
+        <test-method signature="testChatBotSuggestion(java.lang.String,java.lang.String)[pri:3, instance:com.ust.lenskart.testcases.TestChatBot@6b8d96d9]" started-at="2024-05-07T08:27:44 IST" name="testChatBotSuggestion" data-provider="chatBotSuggestion" finished-at="2024-05-07T08:27:57 IST" depends-on-methods="com.ust.lenskart.testcases.TestChatBot.testChatNewConversation" duration-ms="12296" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -89,7 +69,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testChatBotSuggestion -->
-        <test-method signature="testChatBotSuggestion(java.lang.String,java.lang.String)[pri:3, instance:com.ust.lenskart.testcases.TestChatBot@758705fa]" started-at="2024-05-06T21:06:30 IST" name="testChatBotSuggestion" data-provider="chatBotSuggestion" finished-at="2024-05-06T21:06:40 IST" depends-on-methods="com.ust.lenskart.testcases.TestChatBot.testChatNewConversation" duration-ms="9493" status="PASS">
+        <test-method signature="testChatBotSuggestion(java.lang.String,java.lang.String)[pri:3, instance:com.ust.lenskart.testcases.TestChatBot@6b8d96d9]" started-at="2024-05-07T08:27:58 IST" name="testChatBotSuggestion" data-provider="chatBotSuggestion" finished-at="2024-05-07T08:28:08 IST" depends-on-methods="com.ust.lenskart.testcases.TestChatBot.testChatNewConversation" duration-ms="9968" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -105,7 +85,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testChatBotSuggestion -->
-        <test-method signature="testChatBotSuggestion(java.lang.String,java.lang.String)[pri:3, instance:com.ust.lenskart.testcases.TestChatBot@758705fa]" started-at="2024-05-06T21:06:40 IST" name="testChatBotSuggestion" data-provider="chatBotSuggestion" finished-at="2024-05-06T21:06:49 IST" depends-on-methods="com.ust.lenskart.testcases.TestChatBot.testChatNewConversation" duration-ms="9409" status="PASS">
+        <test-method signature="testChatBotSuggestion(java.lang.String,java.lang.String)[pri:3, instance:com.ust.lenskart.testcases.TestChatBot@6b8d96d9]" started-at="2024-05-07T08:28:09 IST" name="testChatBotSuggestion" data-provider="chatBotSuggestion" finished-at="2024-05-07T08:28:19 IST" depends-on-methods="com.ust.lenskart.testcases.TestChatBot.testChatNewConversation" duration-ms="9682" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -121,249 +101,153 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testChatBotSuggestion -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.TestChatBot@758705fa]" started-at="2024-05-06T21:06:50 IST" name="quitDriver" finished-at="2024-05-06T21:06:50 IST" duration-ms="454" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.TestChatBot@6b8d96d9]" started-at="2024-05-07T08:28:19 IST" name="quitDriver" finished-at="2024-05-07T08:28:21 IST" duration-ms="1460" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- com.ust.lenskart.testcases.TestChatBot -->
       <class name="com.ust.lenskart.testcases.TestSortBy">
-        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestSortBy@49d3c823]" started-at="2024-05-06T21:08:50 IST" name="pageLoader" finished-at="2024-05-06T21:09:03 IST" duration-ms="13093" status="PASS">
+        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestSortBy@ebaa6cb]" started-at="2024-05-07T08:30:57 IST" name="pageLoader" finished-at="2024-05-07T08:31:23 IST" duration-ms="25660" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageLoader -->
-        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestSortBy@49d3c823]" started-at="2024-05-06T21:09:03 IST" name="testEnterSearchBox" finished-at="2024-05-06T21:09:11 IST" duration-ms="8629" status="PASS">
+        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestSortBy@ebaa6cb]" started-at="2024-05-07T08:31:23 IST" name="testEnterSearchBox" finished-at="2024-05-07T08:31:40 IST" duration-ms="17215" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEnterSearchBox -->
-        <test-method signature="TsetSortByLowToHigh()[pri:1, instance:com.ust.lenskart.testcases.TestSortBy@49d3c823]" started-at="2024-05-06T21:09:12 IST" name="TsetSortByLowToHigh" finished-at="2024-05-06T21:10:12 IST" duration-ms="60723" status="PASS">
+        <test-method signature="TsetSortByLowToHigh()[pri:1, instance:com.ust.lenskart.testcases.TestSortBy@ebaa6cb]" started-at="2024-05-07T08:31:41 IST" name="TsetSortByLowToHigh" finished-at="2024-05-07T08:32:58 IST" duration-ms="77143" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TsetSortByLowToHigh -->
-        <test-method signature="TsetSortByHighToLow()[pri:2, instance:com.ust.lenskart.testcases.TestSortBy@49d3c823]" started-at="2024-05-06T21:10:13 IST" name="TsetSortByHighToLow" finished-at="2024-05-06T21:11:13 IST" duration-ms="59999" status="PASS">
+        <test-method signature="TsetSortByHighToLow()[pri:2, instance:com.ust.lenskart.testcases.TestSortBy@ebaa6cb]" started-at="2024-05-07T08:32:58 IST" name="TsetSortByHighToLow" finished-at="2024-05-07T08:34:07 IST" duration-ms="68661" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TsetSortByHighToLow -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.TestSortBy@49d3c823]" started-at="2024-05-06T21:11:13 IST" name="quitDriver" finished-at="2024-05-06T21:11:13 IST" duration-ms="374" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.TestSortBy@ebaa6cb]" started-at="2024-05-07T08:34:07 IST" name="quitDriver" finished-at="2024-05-07T08:34:08 IST" duration-ms="1217" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- com.ust.lenskart.testcases.TestSortBy -->
       <class name="com.ust.lenskart.testcases.StoreLocatorTest">
-        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.StoreLocatorTest@906d29b]" started-at="2024-05-06T21:08:06 IST" name="pageLoader" finished-at="2024-05-06T21:08:32 IST" duration-ms="25976" status="PASS">
+        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.StoreLocatorTest@758705fa]" started-at="2024-05-07T08:30:08 IST" name="pageLoader" finished-at="2024-05-07T08:30:33 IST" duration-ms="24763" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageLoader -->
-        <test-method signature="gotoLocator()[pri:0, instance:com.ust.lenskart.testcases.StoreLocatorTest@906d29b]" started-at="2024-05-06T21:08:32 IST" name="gotoLocator" finished-at="2024-05-06T21:08:40 IST" duration-ms="8341" status="PASS">
+        <test-method signature="gotoLocator()[pri:0, instance:com.ust.lenskart.testcases.StoreLocatorTest@758705fa]" started-at="2024-05-07T08:30:33 IST" name="gotoLocator" finished-at="2024-05-07T08:30:48 IST" duration-ms="15190" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- gotoLocator -->
-        <test-method signature="searchCity()[pri:0, instance:com.ust.lenskart.testcases.StoreLocatorTest@906d29b]" started-at="2024-05-06T21:08:41 IST" name="searchCity" finished-at="2024-05-06T21:08:46 IST" depends-on-methods="com.ust.lenskart.testcases.StoreLocatorTest.gotoLocator" duration-ms="5512" status="PASS">
+        <test-method signature="searchCity()[pri:0, instance:com.ust.lenskart.testcases.StoreLocatorTest@758705fa]" started-at="2024-05-07T08:30:49 IST" name="searchCity" finished-at="2024-05-07T08:30:55 IST" depends-on-methods="com.ust.lenskart.testcases.StoreLocatorTest.gotoLocator" duration-ms="6452" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchCity -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.StoreLocatorTest@906d29b]" started-at="2024-05-06T21:08:47 IST" name="quitDriver" finished-at="2024-05-06T21:08:50 IST" duration-ms="2276" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.StoreLocatorTest@758705fa]" started-at="2024-05-07T08:30:56 IST" name="quitDriver" finished-at="2024-05-07T08:30:57 IST" duration-ms="901" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- com.ust.lenskart.testcases.StoreLocatorTest -->
       <class name="com.ust.lenskart.testcases.TestAddingtoWishList">
-        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestAddingtoWishList@5fe1ce85]" started-at="2024-05-06T21:12:03 IST" name="pageLoader" finished-at="2024-05-06T21:12:14 IST" duration-ms="11216" status="PASS">
+        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestAddingtoWishList@49d3c823]" started-at="2024-05-07T08:35:06 IST" name="pageLoader" finished-at="2024-05-07T08:35:32 IST" duration-ms="25651" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageLoader -->
-        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestAddingtoWishList@5fe1ce85]" started-at="2024-05-06T21:12:14 IST" name="testEnterSearchBox" finished-at="2024-05-06T21:12:21 IST" duration-ms="7210" status="PASS">
+        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestAddingtoWishList@49d3c823]" started-at="2024-05-07T08:35:32 IST" name="testEnterSearchBox" finished-at="2024-05-07T08:35:52 IST" duration-ms="19855" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEnterSearchBox -->
-        <test-method signature="testAssingToWishList()[pri:0, instance:com.ust.lenskart.testcases.TestAddingtoWishList@5fe1ce85]" started-at="2024-05-06T21:12:21 IST" name="testAssingToWishList" finished-at="2024-05-06T21:12:36 IST" depends-on-methods="com.ust.lenskart.testcases.TestAddingtoWishList.testEnterSearchBox" duration-ms="14786" status="PASS">
+        <test-method signature="testAddingToWishList()[pri:0, instance:com.ust.lenskart.testcases.TestAddingtoWishList@49d3c823]" started-at="2024-05-07T08:35:52 IST" name="testAddingToWishList" finished-at="2024-05-07T08:36:13 IST" depends-on-methods="com.ust.lenskart.testcases.TestAddingtoWishList.testEnterSearchBox" duration-ms="20652" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAssingToWishList -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.TestAddingtoWishList@5fe1ce85]" started-at="2024-05-06T21:12:36 IST" name="quitDriver" finished-at="2024-05-06T21:12:37 IST" duration-ms="363" status="PASS">
+        </test-method> <!-- testAddingToWishList -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.TestAddingtoWishList@49d3c823]" started-at="2024-05-07T08:36:14 IST" name="quitDriver" finished-at="2024-05-07T08:36:16 IST" duration-ms="2326" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- com.ust.lenskart.testcases.TestAddingtoWishList -->
       <class name="com.ust.lenskart.testcases.TestItemSearch">
-        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestItemSearch@436bc36]" started-at="2024-05-06T21:11:13 IST" name="pageLoader" finished-at="2024-05-06T21:11:31 IST" duration-ms="18123" status="PASS">
+        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestItemSearch@906d29b]" started-at="2024-05-07T08:34:08 IST" name="pageLoader" finished-at="2024-05-07T08:34:34 IST" duration-ms="25958" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageLoader -->
-        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestItemSearch@436bc36]" started-at="2024-05-06T21:11:31 IST" name="testEnterSearchBox" finished-at="2024-05-06T21:11:41 IST" duration-ms="9214" status="PASS">
+        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestItemSearch@906d29b]" started-at="2024-05-07T08:34:34 IST" name="testEnterSearchBox" finished-at="2024-05-07T08:34:51 IST" duration-ms="17065" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEnterSearchBox -->
-        <test-method signature="testInvalidSearchItem()[pri:1, instance:com.ust.lenskart.testcases.TestItemSearch@436bc36]" started-at="2024-05-06T21:11:41 IST" name="testInvalidSearchItem" finished-at="2024-05-06T21:12:02 IST" duration-ms="21527" status="PASS">
+        <test-method signature="testInvalidSearchItem()[pri:1, instance:com.ust.lenskart.testcases.TestItemSearch@906d29b]" started-at="2024-05-07T08:34:52 IST" name="testInvalidSearchItem" finished-at="2024-05-07T08:35:04 IST" duration-ms="12253" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidSearchItem -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.TestItemSearch@436bc36]" started-at="2024-05-06T21:12:02 IST" name="quitDriver" finished-at="2024-05-06T21:12:03 IST" duration-ms="393" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.TestItemSearch@906d29b]" started-at="2024-05-07T08:35:05 IST" name="quitDriver" finished-at="2024-05-07T08:35:06 IST" duration-ms="1539" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- com.ust.lenskart.testcases.TestItemSearch -->
       <class name="com.ust.lenskart.testcases.TestWishListEmpty">
-        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestWishListEmpty@2d96543c]" started-at="2024-05-06T21:05:13 IST" name="pageLoader" finished-at="2024-05-06T21:05:39 IST" duration-ms="26126" status="PASS">
+        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestWishListEmpty@614df0a4]" started-at="2024-05-07T08:25:45 IST" name="pageLoader" finished-at="2024-05-07T08:26:23 IST" duration-ms="37909" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageLoader -->
-        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestWishListEmpty@2d96543c]" started-at="2024-05-06T21:05:39 IST" name="testEnterSearchBox" finished-at="2024-05-06T21:05:47 IST" duration-ms="7866" status="PASS">
+        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestWishListEmpty@614df0a4]" started-at="2024-05-07T08:26:23 IST" name="testEnterSearchBox" finished-at="2024-05-07T08:26:52 IST" duration-ms="29549" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEnterSearchBox -->
-        <test-method signature="testWishList()[pri:0, instance:com.ust.lenskart.testcases.TestWishListEmpty@2d96543c]" started-at="2024-05-06T21:05:47 IST" name="testWishList" finished-at="2024-05-06T21:05:49 IST" depends-on-methods="com.ust.lenskart.testcases.TestWishListEmpty.testEnterSearchBox" duration-ms="2278" status="PASS">
+        <test-method signature="testWishList()[pri:0, instance:com.ust.lenskart.testcases.TestWishListEmpty@614df0a4]" started-at="2024-05-07T08:26:53 IST" name="testWishList" finished-at="2024-05-07T08:26:57 IST" depends-on-methods="com.ust.lenskart.testcases.TestWishListEmpty.testEnterSearchBox" duration-ms="3528" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testWishList -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.TestWishListEmpty@2d96543c]" started-at="2024-05-06T21:05:50 IST" name="quitDriver" finished-at="2024-05-06T21:05:50 IST" duration-ms="327" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.TestWishListEmpty@614df0a4]" started-at="2024-05-07T08:26:58 IST" name="quitDriver" finished-at="2024-05-07T08:27:00 IST" duration-ms="1945" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- com.ust.lenskart.testcases.TestWishListEmpty -->
       <class name="com.ust.lenskart.testcases.TestResetFilters">
-        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestResetFilters@604c5de8]" started-at="2024-05-06T21:12:37 IST" name="pageLoader" finished-at="2024-05-06T21:12:49 IST" duration-ms="12673" status="PASS">
+        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestResetFilters@436bc36]" started-at="2024-05-07T08:36:16 IST" name="pageLoader" finished-at="2024-05-07T08:36:45 IST" duration-ms="28328" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageLoader -->
-        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestResetFilters@604c5de8]" started-at="2024-05-06T21:12:49 IST" name="testEnterSearchBox" finished-at="2024-05-06T21:13:00 IST" duration-ms="10777" status="PASS">
+        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestResetFilters@436bc36]" started-at="2024-05-07T08:36:45 IST" name="testEnterSearchBox" finished-at="2024-05-07T08:37:09 IST" duration-ms="24420" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEnterSearchBox -->
-        <test-method signature="testSetFilters()[pri:1, instance:com.ust.lenskart.testcases.TestResetFilters@604c5de8]" started-at="2024-05-06T21:13:00 IST" name="testSetFilters" finished-at="2024-05-06T21:13:46 IST" depends-on-methods="com.ust.lenskart.testcases.TestResetFilters.testEnterSearchBox" duration-ms="45430" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@id='supported_powers_id']/div[1]' (tried for 10 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@id='supported_powers_id']/div[1]' (tried for 10 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at com.ust.lenskart.pages.SearchItemPage.setSupportedPower(SearchItemPage.java:282)
-at com.ust.lenskart.testcases.TestResetFilters.testSetFilters(TestResetFilters.java:30)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1296)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='supported_powers_id']/div[1]"}
-  (Session info: chrome=124.0.6367.119)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.19.1', revision: 'abe0ee07dc'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6a29764913e1970ee236521913a02bad, findElement {value=//div[@id='supported_powers_id']/div[1], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\268877\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57137}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57137/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6a29764913e1970ee236521913a02bad
-at jdk.internal.reflect.GeneratedConstructorAccessor34.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy27.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-... 31 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="testSetFilters()[pri:1, instance:com.ust.lenskart.testcases.TestResetFilters@436bc36]" started-at="2024-05-07T08:37:09 IST" name="testSetFilters" finished-at="2024-05-07T08:38:43 IST" depends-on-methods="com.ust.lenskart.testcases.TestResetFilters.testEnterSearchBox" duration-ms="93287" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetFilters -->
-        <test-method signature="testResetFilters()[pri:2, instance:com.ust.lenskart.testcases.TestResetFilters@604c5de8]" started-at="2024-05-06T21:13:46 IST" name="testResetFilters" finished-at="2024-05-06T21:13:47 IST" duration-ms="767" status="PASS">
+        <test-method signature="testResetFilters()[pri:2, instance:com.ust.lenskart.testcases.TestResetFilters@436bc36]" started-at="2024-05-07T08:38:43 IST" name="testResetFilters" finished-at="2024-05-07T08:38:45 IST" duration-ms="2105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testResetFilters -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.TestResetFilters@604c5de8]" started-at="2024-05-06T21:13:47 IST" name="quitDriver" finished-at="2024-05-06T21:13:48 IST" duration-ms="389" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.TestResetFilters@436bc36]" started-at="2024-05-07T08:38:46 IST" name="quitDriver" finished-at="2024-05-07T08:38:47 IST" duration-ms="1218" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- com.ust.lenskart.testcases.TestResetFilters -->
     </test> <!-- Test -->
   </suite> <!-- TestNg-Suite -->
-  <suite started-at="2024-05-06T21:18:04 IST" name="AllSuites" finished-at="2024-05-06T21:18:04 IST" duration-ms="0">
+  <suite started-at="2024-05-07T08:45:27 IST" name="AllSuites" finished-at="2024-05-07T08:45:27 IST" duration-ms="0">
     <groups>
     </groups>
   </suite> <!-- AllSuites -->
-  <suite started-at="2024-05-06T21:13:48 IST" name="Suite2" finished-at="2024-05-06T21:18:04 IST" duration-ms="255754">
+  <suite started-at="2024-05-07T08:38:48 IST" name="Suite2" finished-at="2024-05-07T08:45:27 IST" duration-ms="398404">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@4fce136b]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@615091b8]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-05-06T21:13:48 IST" name="Test2" finished-at="2024-05-06T21:18:04 IST" duration-ms="255754">
->>>>>>> allure-report
+    <test started-at="2024-05-07T08:38:48 IST" name="Test2" finished-at="2024-05-07T08:45:27 IST" duration-ms="398404">
       <class name="com.ust.lenskart.testrunner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@4fce136b]" started-at="2024-05-06T21:13:48 IST" name="setUpClass" finished-at="2024-05-06T21:13:49 IST" duration-ms="562" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@615091b8]" started-at="2024-05-07T08:38:48 IST" name="setUpClass" finished-at="2024-05-07T08:38:50 IST" duration-ms="1862" status="PASS">
           <params>
             <param index="0">
               <value>
-<<<<<<< HEAD
-                <![CDATA[org.testng.TestRunner@4cddc036]]>
-=======
-    <test started-at="2024-05-06T15:52:53 IST" name="Default test" finished-at="2024-05-06T15:54:11 IST" duration-ms="77676">
-      <class name="com.ust.lenskart.testrunner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@6ed3f258]" started-at="2024-05-06T15:52:54 IST" name="setUpClass" finished-at="2024-05-06T15:52:55 IST" duration-ms="936" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@337bbfdf]]>
->>>>>>> finaltouch
-=======
-                <![CDATA[org.testng.TestRunner@e6522bd]]>
->>>>>>> allure-report
+                <![CDATA[org.testng.TestRunner@35da9f7f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@609e8838]" started-at="2024-05-06T14:25:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-06T14:25:45 IST" duration-ms="39859" status="PASS">
-=======
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@6ed3f258]" started-at="2024-05-06T15:52:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-06T15:53:10 IST" duration-ms="15830" status="FAIL">
->>>>>>> finaltouch
-=======
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@4fce136b]" started-at="2024-05-06T21:13:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-06T21:14:20 IST" duration-ms="31016" status="PASS">
->>>>>>> allure-report
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@615091b8]" started-at="2024-05-07T08:38:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-07T08:39:48 IST" duration-ms="57452" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -376,35 +260,10 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
               </value>
             </param>
           </params>
-<<<<<<< HEAD
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-<<<<<<< HEAD
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@609e8838]" started-at="2024-05-06T14:25:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-06T14:26:06 IST" duration-ms="21457" status="PASS">
-=======
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at java.base/java.util.Objects.requireNonNull(Objects.java:209)
-at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1105)
-at java.base/java.util.Map.of(Map.java:1353)
-at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:1063)
-at com.ust.lenskart.base.TestBase.navigateTo(TestBase.java:59)
-at stepdefinitions.Hooks.setup(Hooks.java:22)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@6ed3f258]" started-at="2024-05-06T15:53:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-06T15:53:30 IST" duration-ms="19008" status="FAIL">
->>>>>>> finaltouch
-=======
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@4fce136b]" started-at="2024-05-06T21:14:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-06T21:14:35 IST" duration-ms="15569" status="PASS">
->>>>>>> allure-report
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@615091b8]" started-at="2024-05-07T08:39:48 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-07T08:40:20 IST" duration-ms="32289" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -417,32 +276,10 @@ at stepdefinitions.Hooks.setup(Hooks.java:22)
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at java.base/java.util.Objects.requireNonNull(Objects.java:209)
-at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1105)
-at java.base/java.util.Map.of(Map.java:1353)
-at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:1063)
-at com.ust.lenskart.base.TestBase.navigateTo(TestBase.java:59)
-at stepdefinitions.Hooks.setup(Hooks.java:22)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@609e8838]" started-at="2024-05-06T14:26:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-06T14:26:52 IST" duration-ms="45823" status="PASS">
-=======
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@6ed3f258]" started-at="2024-05-06T15:53:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-06T15:54:11 IST" duration-ms="41220" status="FAIL">
->>>>>>> finaltouch
-=======
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@4fce136b]" started-at="2024-05-06T21:14:35 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-06T21:15:23 IST" duration-ms="47757" status="PASS">
->>>>>>> allure-report
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@615091b8]" started-at="2024-05-07T08:40:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-07T08:41:33 IST" duration-ms="73187" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -455,11 +292,10 @@ at stepdefinitions.Hooks.setup(Hooks.java:22)
               </value>
             </param>
           </params>
-<<<<<<< HEAD
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@4fce136b]" started-at="2024-05-06T21:15:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-06T21:16:06 IST" duration-ms="43361" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@615091b8]" started-at="2024-05-07T08:41:33 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-07T08:42:34 IST" duration-ms="61089" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -472,108 +308,10 @@ at stepdefinitions.Hooks.setup(Hooks.java:22)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='Schedule_allShift___NPxw']/div[not(contains(@style, 'cursor: not-allowed'))][1]' (tried for 10 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='Schedule_allShift___NPxw']/div[not(contains(@style, 'cursor: not-allowed'))][1]' (tried for 10 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at com.ust.lenskart.pages.StorePage.selectShift(StorePage.java:101)
-at stepdefinitions.BookAppointmentTest.user_book_a_free_appointment_from_the_top_most_list(BookAppointmentTest.java:69)
-at ✽.User book a free appointment from the top most list(file:///C:/Users/268877/eclipse-workspace/LenskartQA/src/test/resources/features/Appointment.feature:11)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='Schedule_allShift___NPxw']/div[not(contains(@style, 'cursor: not-allowed'))][1]"}
-  (Session info: chrome=124.0.6367.119)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.19.1', revision: 'abe0ee07dc'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ddc670680777b2f2615f51d728bb731c, findElement {value=//div[@class='Schedule_allShift___NPxw']/div[not(contains(@style, 'cursor: not-allowed'))][1], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\268877\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58980}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58980/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ddc670680777b2f2615f51d728bb731c
-at jdk.internal.reflect.GeneratedConstructorAccessor34.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy27.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-at com.ust.lenskart.pages.StorePage.selectShift(StorePage.java:101)
-at stepdefinitions.BookAppointmentTest.user_book_a_free_appointment_from_the_top_most_list(BookAppointmentTest.java:69)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
-at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
-at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
-at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1296)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@4fce136b]" started-at="2024-05-06T21:16:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-06T21:16:31 IST" duration-ms="24939" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@615091b8]" started-at="2024-05-07T08:42:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-07T08:43:08 IST" duration-ms="33375" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -589,7 +327,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@4fce136b]" started-at="2024-05-06T21:16:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-06T21:16:59 IST" duration-ms="27888" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@615091b8]" started-at="2024-05-07T08:43:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-07T08:43:39 IST" duration-ms="31303" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -602,27 +340,75 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@615091b8]" started-at="2024-05-07T08:43:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-07T08:44:14 IST" duration-ms="35460" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User tries to login with Invalid password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@615091b8]" started-at="2024-05-07T08:44:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-07T08:44:46 IST" duration-ms="31370" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Creating a new Account"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Sign Up functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@615091b8]" started-at="2024-05-07T08:44:46 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-07T08:45:26 IST" duration-ms="40575" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Creating a new account with already existing email"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Sign Up functionality"]]>
+              </value>
+            </param>
+          </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[text()='Sign In']' (tried for 10 second(s) with 500 milliseconds interval)]]>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[text()='Sign Up']' (tried for 10 second(s) with 500 milliseconds interval)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[text()='Sign In']' (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[text()='Sign Up']' (tried for 10 second(s) with 500 milliseconds interval)
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at com.ust.lenskart.pages.HomePage.clickSignInLink(HomePage.java:259)
-at stepdefinitions.LoginValid.user_clicks_on_sign_in_link(LoginValid.java:24)
-at ✽.User clicks on signIn Link(file:///C:/Users/268877/eclipse-workspace/LenskartQA/src/test/resources/features/SignIn.feature:17)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Sign In']"}
+at com.ust.lenskart.pages.HomePage.clickSignUp(HomePage.java:210)
+at stepdefinitions.SignUpValid.user_clicks_on_the_signup_link(SignUpValid.java:31)
+at ✽.User clicks on the signup Link.(file:///C:/Users/268850/Capstone-workspace/lenskart-qa/src/test/resources/features/SignUp.feature:24)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Sign Up']"}
   (Session info: chrome=124.0.6367.119)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.19.1', revision: 'abe0ee07dc'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1dff7c66ab889b91ffe3d60cea132de7, findElement {value=//span[text()='Sign In'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\268877\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59920}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59920/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1dff7c66ab889b91ffe3d60cea132de7
-at jdk.internal.reflect.GeneratedConstructorAccessor34.newInstance(Unknown Source)
+Command: [a616f65220d18b39b75fb412004d08ec, findElement {value=//span[text()='Sign Up'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\268850\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59798}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59798/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a616f65220d18b39b75fb412004d08ec
+at jdk.internal.reflect.GeneratedConstructorAccessor39.newInstance(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
@@ -644,8 +430,8 @@ at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedCo
 at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
 at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-at com.ust.lenskart.pages.HomePage.clickSignInLink(HomePage.java:259)
-at stepdefinitions.LoginValid.user_clicks_on_sign_in_link(LoginValid.java:24)
+at com.ust.lenskart.pages.HomePage.clickSignUp(HomePage.java:210)
+at stepdefinitions.SignUpValid.user_clicks_on_the_signup_link(SignUpValid.java:31)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -703,79 +489,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@4fce136b]" started-at="2024-05-06T21:16:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-06T21:17:18 IST" duration-ms="18633" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User tries to login with Invalid password"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@4fce136b]" started-at="2024-05-06T21:17:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-06T21:17:33 IST" duration-ms="15555" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Creating a new Account"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Sign Up functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@4fce136b]" started-at="2024-05-06T21:17:33 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-06T21:18:02 IST" duration-ms="28479" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Creating a new account with already existing email"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Sign Up functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-<<<<<<< HEAD
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@609e8838]" started-at="2024-05-06T14:29:25 IST" name="tearDownClass" finished-at="2024-05-06T14:29:27 IST" duration-ms="2687" status="PASS">
-=======
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at java.base/java.util.Objects.requireNonNull(Objects.java:209)
-at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1105)
-at java.base/java.util.Map.of(Map.java:1353)
-at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:1063)
-at com.ust.lenskart.base.TestBase.navigateTo(TestBase.java:59)
-at stepdefinitions.Hooks.setup(Hooks.java:22)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@6ed3f258]" started-at="2024-05-06T15:54:11 IST" name="tearDownClass" finished-at="2024-05-06T15:54:11 IST" duration-ms="18" status="PASS">
->>>>>>> finaltouch
-=======
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@4fce136b]" started-at="2024-05-06T21:18:02 IST" name="tearDownClass" finished-at="2024-05-06T21:18:04 IST" duration-ms="1945" status="PASS">
->>>>>>> allure-report
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@615091b8]" started-at="2024-05-07T08:45:26 IST" name="tearDownClass" finished-at="2024-05-07T08:45:27 IST" duration-ms="326" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
