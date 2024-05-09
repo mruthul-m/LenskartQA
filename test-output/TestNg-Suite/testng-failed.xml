@@ -3,14 +3,14 @@
 <suite name="Failed suite [TestNg-Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.ust.lenskart.testcases.TestResetFilters">
+      <class name="com.ust.lenskart.testcases.TestSortBy">
         <methods>
-          <include name="testEnterSearchBox"/>
           <include name="pageLoader"/>
-          <include name="testSetFilters"/>
+          <include name="TsetSortByHighToLow"/>
+          <include name="TsetSortByLowToHigh"/>
           <include name="quitDriver"/>
         </methods>
-      </class> <!-- com.ust.lenskart.testcases.TestResetFilters -->
+      </class> <!-- com.ust.lenskart.testcases.TestSortBy -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [TestNg-Suite] -->

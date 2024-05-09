@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Cucumber" time="42.409" tests="1" skipped="0" failures="1" errors="0">
 <testcase classname="Add to cart functionality" name="Adding item to the cart functionality" time="42.161">
@@ -24,3 +25,5 @@ Then User will successfully add item to the Cart............................fail
 ]]></system-out>
 </testcase>
 </testsuite>
+=======
+>>>>>>> 36c51e9c26336e9bb1acda1c4fb64e72ded24ebf
