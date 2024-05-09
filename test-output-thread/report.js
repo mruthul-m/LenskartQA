@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 $(document).ready(function() {
-CucumberHTML.timelineItems.pushArray([{"id":"77fa7698-bc76-401a-bb87-5ca109f6e977","feature":"Add to cart functionality","scenario":"Adding item to the cart functionality","start":1715149984205,"group":1,"content":"","tags":"@addtocart,@itemadding,","end":1715150026366,"className":"failed"}]);
+CucumberHTML.timelineItems.pushArray([{"id":"5519f3c1-17fb-47c1-9d16-bc453d543f72","feature":"Login functionality","scenario":"Login to existing account","start":1715236932981,"group":1,"content":"","tags":"@signin,@loginpositive,","end":1715236963339,"className":"passed"},{"id":"31d13113-45cf-48eb-8944-efee09f31254","feature":"Login functionality","scenario":"User tries to login with Invalid Email","start":1715236963432,"group":1,"content":"","tags":"@signin,@loginwrongemail,","end":1715236987499,"className":"passed"},{"id":"d4d7b74b-9a6d-41b8-bd07-6bc00ba23426","feature":"Login functionality","scenario":"User tries to login with Invalid password","start":1715236987537,"group":1,"content":"","tags":"@signin,@loginwrongpassword,","end":1715237016972,"className":"passed"}]);
 CucumberHTML.timelineGroups.pushArray([{"id":1,"content":"Thread[main,5,main]"}]);
 });
-=======
->>>>>>> 36c51e9c26336e9bb1acda1c4fb64e72ded24ebf

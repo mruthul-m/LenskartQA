@@ -10,6 +10,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(glue = "stepdefinitions",
 				features = "src/test/resources",
+				tags = "@SignIn",
 				plugin = { "pretty",
 						"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 						"timeline:test-output-thread",

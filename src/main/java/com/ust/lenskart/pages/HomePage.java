@@ -112,7 +112,7 @@ public class HomePage extends TestBase {
 	@FindBy(css = "button[id='remove-button']")
 	private WebElement signInBtn;
 	
-	@FindBy(css = ".login-panel")
+	@FindBy(css = ".ActionLinksContainer--76ae3r.iwODZW > div:nth-child(2)")
 	private WebElement loginUserName;
 	
 	@FindBy(css = "div[subtext]")

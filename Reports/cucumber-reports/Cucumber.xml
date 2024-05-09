@@ -1,29 +1,27 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="42.409" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="Add to cart functionality" name="Adding item to the cart functionality" time="42.161">
-<failure type="java.lang.AssertionError" message="expected [false] but found [true]">
-<![CDATA[java.lang.AssertionError: expected [false] but found [true]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:1067)
-	at org.testng.Assert.assertEquals(Assert.java:1031)
-	at org.testng.Assert.assertEquals(Assert.java:1077)
-	at stepdefinitions.AddItemInCart.user_will_successfully_add_item_to_the_cart(AddItemInCart.java:77)
-	at ✽.User will successfully add item to the Cart(file:///C:/Users/268877/assessment-workspace/lenskart-qa/src/test/resources/features/AddToCart.feature:12)
-]]>
-</failure>
+<testsuite name="Cucumber" time="84.319" tests="3" skipped="0" failures="0" errors="0">
+<testcase classname="Login functionality" name="Login to existing account" time="30.357">
 <system-out><![CDATA[
 Given User already on homepage..............................................passed
-When User search for Aviator................................................passed
-Then User selects a Product.................................................passed
-Then User on product page...................................................passed
-And User clicks on Buy Now..................................................passed
-Then User will successfully add item to the Cart............................failed
+When User clicks on signIn Link.............................................passed
+Then User enters email and password and logins..............................passed
+And 'Vivek' will be loggedIn to their homepage..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login functionality" name="User tries to login with Invalid Email" time="24.066">
+<system-out><![CDATA[
+Given User already on homepage..............................................passed
+When User clicks on signIn Link.............................................passed
+Then User enters wrong email 'fakeusertest@gmail.com'.......................passed
+And User get "Account doesn't exist. Use different phone number or email." as error.passed
+]]></system-out>
+</testcase>
+<testcase classname="Login functionality" name="User tries to login with Invalid password" time="29.434">
+<system-out><![CDATA[
+Given User already on homepage..............................................passed
+When User clicks on signIn Link.............................................passed
+Then User enters email and password and logins..............................passed
+And User get "Either Email or Password is Incorrect" as error...............passed
 ]]></system-out>
 </testcase>
 </testsuite>
-=======
->>>>>>> 36c51e9c26336e9bb1acda1c4fb64e72ded24ebf
