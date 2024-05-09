@@ -1,271 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results ignored="0" total="34" passed="33" failed="1" skipped="0">
+<testng-results ignored="0" total="9" passed="4" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-07T08:25:42 IST" name="TestNg-Suite" finished-at="2024-05-07T08:38:47 IST" duration-ms="785363">
-=======
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
-  <reporter-output>
-  </reporter-output>
-  <suite started-at="2024-05-07T00:47:14 IST" name="Default suite" finished-at="2024-05-07T00:47:45 IST" duration-ms="31133">
->>>>>>> 2ac5b96fbf21ee993d811c4b9c44bde109e96de5
-    <groups>
-    </groups>
-<<<<<<< HEAD
-    <test started-at="2024-05-07T08:25:42 IST" name="Test" finished-at="2024-05-07T08:38:47 IST" duration-ms="785363">
-      <class name="com.ust.lenskart.testcases.TestRemovingFromWishList">
-        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestRemovingFromWishList@69653e16]" started-at="2024-05-07T08:28:21 IST" name="pageLoader" finished-at="2024-05-07T08:28:45 IST" duration-ms="24071" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pageLoader -->
-        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestRemovingFromWishList@69653e16]" started-at="2024-05-07T08:28:45 IST" name="testEnterSearchBox" finished-at="2024-05-07T08:29:04 IST" duration-ms="18688" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testEnterSearchBox -->
-        <test-method signature="testAddingToWishList()[pri:1, instance:com.ust.lenskart.testcases.TestRemovingFromWishList@69653e16]" started-at="2024-05-07T08:29:04 IST" name="testAddingToWishList" finished-at="2024-05-07T08:29:23 IST" depends-on-methods="com.ust.lenskart.testcases.TestRemovingFromWishList.testEnterSearchBox" duration-ms="19058" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAddingToWishList -->
-        <test-method signature="testWishList()[pri:2, instance:com.ust.lenskart.testcases.TestRemovingFromWishList@69653e16]" started-at="2024-05-07T08:29:24 IST" name="testWishList" finished-at="2024-05-07T08:29:43 IST" depends-on-methods="com.ust.lenskart.testcases.TestRemovingFromWishList.testAddingToWishList" duration-ms="18347" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testWishList -->
-        <test-method signature="testAddingToWishListAgain()[pri:3, instance:com.ust.lenskart.testcases.TestRemovingFromWishList@69653e16]" started-at="2024-05-07T08:29:43 IST" name="testAddingToWishListAgain" finished-at="2024-05-07T08:29:58 IST" depends-on-methods="com.ust.lenskart.testcases.TestRemovingFromWishList.testEnterSearchBox" duration-ms="14895" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAddingToWishListAgain -->
-        <test-method signature="testWishListAgain()[pri:4, instance:com.ust.lenskart.testcases.TestRemovingFromWishList@69653e16]" started-at="2024-05-07T08:29:58 IST" name="testWishListAgain" finished-at="2024-05-07T08:30:06 IST" depends-on-methods="com.ust.lenskart.testcases.TestRemovingFromWishList.testAddingToWishListAgain" duration-ms="7527" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testWishListAgain -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.TestRemovingFromWishList@69653e16]" started-at="2024-05-07T08:30:06 IST" name="quitDriver" finished-at="2024-05-07T08:30:08 IST" duration-ms="1864" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- com.ust.lenskart.testcases.TestRemovingFromWishList -->
-      <class name="com.ust.lenskart.testcases.TestChatBot">
-        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestChatBot@6b8d96d9]" started-at="2024-05-07T08:27:00 IST" name="pageLoader" finished-at="2024-05-07T08:27:27 IST" duration-ms="27639" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pageLoader -->
-        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestChatBot@6b8d96d9]" started-at="2024-05-07T08:27:27 IST" name="testEnterSearchBox" finished-at="2024-05-07T08:27:28 IST" duration-ms="1076" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testEnterSearchBox -->
-        <test-method signature="testChatBot()[pri:1, instance:com.ust.lenskart.testcases.TestChatBot@6b8d96d9]" started-at="2024-05-07T08:27:29 IST" name="testChatBot" finished-at="2024-05-07T08:27:31 IST" depends-on-methods="com.ust.lenskart.testcases.TestChatBot.testEnterSearchBox" duration-ms="1148" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testChatBot -->
-        <test-method signature="testChatNewConversation()[pri:2, instance:com.ust.lenskart.testcases.TestChatBot@6b8d96d9]" started-at="2024-05-07T08:27:32 IST" name="testChatNewConversation" finished-at="2024-05-07T08:27:38 IST" depends-on-methods="com.ust.lenskart.testcases.TestChatBot.testChatBot" duration-ms="5324" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testChatNewConversation -->
-        <test-method signature="testChatBotSuggestion(java.lang.String,java.lang.String)[pri:3, instance:com.ust.lenskart.testcases.TestChatBot@6b8d96d9]" started-at="2024-05-07T08:27:44 IST" name="testChatBotSuggestion" data-provider="chatBotSuggestion" finished-at="2024-05-07T08:27:57 IST" depends-on-methods="com.ust.lenskart.testcases.TestChatBot.testChatNewConversation" duration-ms="12296" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Buy Eyewear]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Thanks for choosing Lenskart, India’s largest online eyewear company.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testChatBotSuggestion -->
-        <test-method signature="testChatBotSuggestion(java.lang.String,java.lang.String)[pri:3, instance:com.ust.lenskart.testcases.TestChatBot@6b8d96d9]" started-at="2024-05-07T08:27:58 IST" name="testChatBotSuggestion" data-provider="chatBotSuggestion" finished-at="2024-05-07T08:28:08 IST" depends-on-methods="com.ust.lenskart.testcases.TestChatBot.testChatNewConversation" duration-ms="9968" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Query about my order]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Please provide your phone number.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testChatBotSuggestion -->
-        <test-method signature="testChatBotSuggestion(java.lang.String,java.lang.String)[pri:3, instance:com.ust.lenskart.testcases.TestChatBot@6b8d96d9]" started-at="2024-05-07T08:28:09 IST" name="testChatBotSuggestion" data-provider="chatBotSuggestion" finished-at="2024-05-07T08:28:19 IST" depends-on-methods="com.ust.lenskart.testcases.TestChatBot.testChatNewConversation" duration-ms="9682" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Locate Nearby Store]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[View Menu]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testChatBotSuggestion -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.TestChatBot@6b8d96d9]" started-at="2024-05-07T08:28:19 IST" name="quitDriver" finished-at="2024-05-07T08:28:21 IST" duration-ms="1460" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- com.ust.lenskart.testcases.TestChatBot -->
-      <class name="com.ust.lenskart.testcases.TestSortBy">
-        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestSortBy@ebaa6cb]" started-at="2024-05-07T08:30:57 IST" name="pageLoader" finished-at="2024-05-07T08:31:23 IST" duration-ms="25660" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pageLoader -->
-        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestSortBy@ebaa6cb]" started-at="2024-05-07T08:31:23 IST" name="testEnterSearchBox" finished-at="2024-05-07T08:31:40 IST" duration-ms="17215" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testEnterSearchBox -->
-        <test-method signature="TsetSortByLowToHigh()[pri:1, instance:com.ust.lenskart.testcases.TestSortBy@ebaa6cb]" started-at="2024-05-07T08:31:41 IST" name="TsetSortByLowToHigh" finished-at="2024-05-07T08:32:58 IST" duration-ms="77143" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TsetSortByLowToHigh -->
-        <test-method signature="TsetSortByHighToLow()[pri:2, instance:com.ust.lenskart.testcases.TestSortBy@ebaa6cb]" started-at="2024-05-07T08:32:58 IST" name="TsetSortByHighToLow" finished-at="2024-05-07T08:34:07 IST" duration-ms="68661" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TsetSortByHighToLow -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.TestSortBy@ebaa6cb]" started-at="2024-05-07T08:34:07 IST" name="quitDriver" finished-at="2024-05-07T08:34:08 IST" duration-ms="1217" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- com.ust.lenskart.testcases.TestSortBy -->
-      <class name="com.ust.lenskart.testcases.StoreLocatorTest">
-        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.StoreLocatorTest@758705fa]" started-at="2024-05-07T08:30:08 IST" name="pageLoader" finished-at="2024-05-07T08:30:33 IST" duration-ms="24763" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pageLoader -->
-        <test-method signature="gotoLocator()[pri:0, instance:com.ust.lenskart.testcases.StoreLocatorTest@758705fa]" started-at="2024-05-07T08:30:33 IST" name="gotoLocator" finished-at="2024-05-07T08:30:48 IST" duration-ms="15190" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gotoLocator -->
-        <test-method signature="searchCity()[pri:0, instance:com.ust.lenskart.testcases.StoreLocatorTest@758705fa]" started-at="2024-05-07T08:30:49 IST" name="searchCity" finished-at="2024-05-07T08:30:55 IST" depends-on-methods="com.ust.lenskart.testcases.StoreLocatorTest.gotoLocator" duration-ms="6452" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchCity -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.StoreLocatorTest@758705fa]" started-at="2024-05-07T08:30:56 IST" name="quitDriver" finished-at="2024-05-07T08:30:57 IST" duration-ms="901" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- com.ust.lenskart.testcases.StoreLocatorTest -->
-      <class name="com.ust.lenskart.testcases.TestAddingtoWishList">
-        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestAddingtoWishList@49d3c823]" started-at="2024-05-07T08:35:06 IST" name="pageLoader" finished-at="2024-05-07T08:35:32 IST" duration-ms="25651" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pageLoader -->
-        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestAddingtoWishList@49d3c823]" started-at="2024-05-07T08:35:32 IST" name="testEnterSearchBox" finished-at="2024-05-07T08:35:52 IST" duration-ms="19855" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testEnterSearchBox -->
-        <test-method signature="testAddingToWishList()[pri:0, instance:com.ust.lenskart.testcases.TestAddingtoWishList@49d3c823]" started-at="2024-05-07T08:35:52 IST" name="testAddingToWishList" finished-at="2024-05-07T08:36:13 IST" depends-on-methods="com.ust.lenskart.testcases.TestAddingtoWishList.testEnterSearchBox" duration-ms="20652" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAddingToWishList -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.TestAddingtoWishList@49d3c823]" started-at="2024-05-07T08:36:14 IST" name="quitDriver" finished-at="2024-05-07T08:36:16 IST" duration-ms="2326" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- com.ust.lenskart.testcases.TestAddingtoWishList -->
-      <class name="com.ust.lenskart.testcases.TestItemSearch">
-        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestItemSearch@906d29b]" started-at="2024-05-07T08:34:08 IST" name="pageLoader" finished-at="2024-05-07T08:34:34 IST" duration-ms="25958" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pageLoader -->
-        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestItemSearch@906d29b]" started-at="2024-05-07T08:34:34 IST" name="testEnterSearchBox" finished-at="2024-05-07T08:34:51 IST" duration-ms="17065" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testEnterSearchBox -->
-        <test-method signature="testInvalidSearchItem()[pri:1, instance:com.ust.lenskart.testcases.TestItemSearch@906d29b]" started-at="2024-05-07T08:34:52 IST" name="testInvalidSearchItem" finished-at="2024-05-07T08:35:04 IST" duration-ms="12253" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testInvalidSearchItem -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.TestItemSearch@906d29b]" started-at="2024-05-07T08:35:05 IST" name="quitDriver" finished-at="2024-05-07T08:35:06 IST" duration-ms="1539" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- com.ust.lenskart.testcases.TestItemSearch -->
-      <class name="com.ust.lenskart.testcases.TestWishListEmpty">
-        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestWishListEmpty@614df0a4]" started-at="2024-05-07T08:25:45 IST" name="pageLoader" finished-at="2024-05-07T08:26:23 IST" duration-ms="37909" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pageLoader -->
-        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestWishListEmpty@614df0a4]" started-at="2024-05-07T08:26:23 IST" name="testEnterSearchBox" finished-at="2024-05-07T08:26:52 IST" duration-ms="29549" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testEnterSearchBox -->
-        <test-method signature="testWishList()[pri:0, instance:com.ust.lenskart.testcases.TestWishListEmpty@614df0a4]" started-at="2024-05-07T08:26:53 IST" name="testWishList" finished-at="2024-05-07T08:26:57 IST" depends-on-methods="com.ust.lenskart.testcases.TestWishListEmpty.testEnterSearchBox" duration-ms="3528" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testWishList -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.TestWishListEmpty@614df0a4]" started-at="2024-05-07T08:26:58 IST" name="quitDriver" finished-at="2024-05-07T08:27:00 IST" duration-ms="1945" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- com.ust.lenskart.testcases.TestWishListEmpty -->
-      <class name="com.ust.lenskart.testcases.TestResetFilters">
-        <test-method is-config="true" signature="pageLoader()[pri:0, instance:com.ust.lenskart.testcases.TestResetFilters@436bc36]" started-at="2024-05-07T08:36:16 IST" name="pageLoader" finished-at="2024-05-07T08:36:45 IST" duration-ms="28328" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pageLoader -->
-        <test-method signature="testEnterSearchBox()[pri:0, instance:com.ust.lenskart.testcases.TestResetFilters@436bc36]" started-at="2024-05-07T08:36:45 IST" name="testEnterSearchBox" finished-at="2024-05-07T08:37:09 IST" duration-ms="24420" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testEnterSearchBox -->
-        <test-method signature="testSetFilters()[pri:1, instance:com.ust.lenskart.testcases.TestResetFilters@436bc36]" started-at="2024-05-07T08:37:09 IST" name="testSetFilters" finished-at="2024-05-07T08:38:43 IST" depends-on-methods="com.ust.lenskart.testcases.TestResetFilters.testEnterSearchBox" duration-ms="93287" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSetFilters -->
-        <test-method signature="testResetFilters()[pri:2, instance:com.ust.lenskart.testcases.TestResetFilters@436bc36]" started-at="2024-05-07T08:38:43 IST" name="testResetFilters" finished-at="2024-05-07T08:38:45 IST" duration-ms="2105" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testResetFilters -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ust.lenskart.testcases.TestResetFilters@436bc36]" started-at="2024-05-07T08:38:46 IST" name="quitDriver" finished-at="2024-05-07T08:38:47 IST" duration-ms="1218" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- com.ust.lenskart.testcases.TestResetFilters -->
-    </test> <!-- Test -->
-  </suite> <!-- TestNg-Suite -->
-  <suite started-at="2024-05-07T08:45:27 IST" name="AllSuites" finished-at="2024-05-07T08:45:27 IST" duration-ms="0">
-    <groups>
-    </groups>
-  </suite> <!-- AllSuites -->
-  <suite started-at="2024-05-07T08:38:48 IST" name="Suite2" finished-at="2024-05-07T08:45:27 IST" duration-ms="398404">
+  <suite started-at="2024-05-09T10:16:46 IST" name="Suite2" finished-at="2024-05-09T10:26:18 IST" duration-ms="571743">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@615091b8]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@6ed3f258]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-05-07T08:38:48 IST" name="Test2" finished-at="2024-05-07T08:45:27 IST" duration-ms="398404">
+    <test started-at="2024-05-09T10:16:46 IST" name="Test2" finished-at="2024-05-09T10:26:18 IST" duration-ms="571743">
       <class name="com.ust.lenskart.testrunner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@615091b8]" started-at="2024-05-07T08:38:48 IST" name="setUpClass" finished-at="2024-05-07T08:38:50 IST" duration-ms="1862" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@6ed3f258]" started-at="2024-05-09T10:16:46 IST" name="setUpClass" finished-at="2024-05-09T10:16:53 IST" duration-ms="6669" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@35da9f7f]]>
-=======
-    <test started-at="2024-05-07T00:47:14 IST" name="Default test" finished-at="2024-05-07T00:47:45 IST" duration-ms="31133">
-      <class name="com.ust.lenskart.testrunner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@6ed3f258]" started-at="2024-05-07T00:47:14 IST" name="setUpClass" finished-at="2024-05-07T00:47:14 IST" duration-ms="273" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@4beaf6bd]]>
->>>>>>> 2ac5b96fbf21ee993d811c4b9c44bde109e96de5
+                <![CDATA[org.testng.TestRunner@4e25282d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-<<<<<<< HEAD
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@615091b8]" started-at="2024-05-07T08:38:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-07T08:39:48 IST" duration-ms="57452" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@6ed3f258]" started-at="2024-05-09T10:16:53 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-09T10:18:18 IST" duration-ms="84795" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -281,10 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@615091b8]" started-at="2024-05-07T08:39:48 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-07T08:40:20 IST" duration-ms="32289" status="PASS">
-=======
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@6ed3f258]" started-at="2024-05-07T00:47:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-07T00:47:45 IST" duration-ms="30690" status="PASS">
->>>>>>> 2ac5b96fbf21ee993d811c4b9c44bde109e96de5
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@6ed3f258]" started-at="2024-05-09T10:18:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-09T10:19:59 IST" duration-ms="101534" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -297,140 +50,30 @@
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-<<<<<<< HEAD
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@615091b8]" started-at="2024-05-07T08:40:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-07T08:41:33 IST" duration-ms="73187" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Removing item from cart functionality"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Add to cart functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@615091b8]" started-at="2024-05-07T08:41:33 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-07T08:42:34 IST" duration-ms="61089" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Appointment booking functionality"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["book an appointment"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@615091b8]" started-at="2024-05-07T08:42:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-07T08:43:08 IST" duration-ms="33375" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Login to existing account"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@615091b8]" started-at="2024-05-07T08:43:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-07T08:43:39 IST" duration-ms="31303" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User tries to login with Invalid Email"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@615091b8]" started-at="2024-05-07T08:43:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-07T08:44:14 IST" duration-ms="35460" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User tries to login with Invalid password"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@615091b8]" started-at="2024-05-07T08:44:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-07T08:44:46 IST" duration-ms="31370" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Creating a new Account"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Sign Up functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@615091b8]" started-at="2024-05-07T08:44:46 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-07T08:45:26 IST" duration-ms="40575" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Creating a new account with already existing email"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Sign Up functionality"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[text()='Sign Up']' (tried for 10 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[text()='Sign Up']' (tried for 10 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at com.ust.lenskart.pages.HomePage.clickSignUp(HomePage.java:210)
-at stepdefinitions.SignUpValid.user_clicks_on_the_signup_link(SignUpValid.java:31)
-at ✽.User clicks on the signup Link.(file:///C:/Users/268850/Capstone-workspace/lenskart-qa/src/test/resources/features/SignUp.feature:24)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Sign Up']"}
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".mainNav_details > div:last-child"}
   (Session info: chrome=124.0.6367.119)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.19.1', revision: 'abe0ee07dc'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a616f65220d18b39b75fb412004d08ec, findElement {value=//span[text()='Sign Up'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\268850\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59798}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59798/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a616f65220d18b39b75fb412004d08ec
-at jdk.internal.reflect.GeneratedConstructorAccessor39.newInstance(Unknown Source)
+Command: [bbd8745e487875f1327b351c8445112c, findElement {using=css selector, value=.mainNav_details > div:last-child}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.155 (df4f029328b..., userDataDir: C:\Users\268850\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65223}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65223/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bbd8745e487875f1327b351c8445112c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".mainNav_details > div:last-child"}
+  (Session info: chrome=124.0.6367.119)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bbd8745e487875f1327b351c8445112c, findElement {using=css selector, value=.mainNav_details > div:last-child}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.155 (df4f029328b..., userDataDir: C:\Users\268850\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65223}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65223/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bbd8745e487875f1327b351c8445112c
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
@@ -447,13 +90,136 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy27.isDisplayed(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy35.click(Unknown Source)
+at com.ust.lenskart.pages.HomePage.cartLink(HomePage.java:157)
+at stepdefinitions.RemoveItemInvalid.user_clicks_on_cart_link(RemoveItemInvalid.java:27)
+at ✽.User clicks on cart link(file:///C:/Users/268850/Capstone-workspace/lenskart-qa/src/test/resources/features/AddToCart.feature:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@6ed3f258]" started-at="2024-05-09T10:19:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-09T10:21:17 IST" duration-ms="77608" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Removing item from cart functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add to cart functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".mainNav_details > div:last-child"}
+  (Session info: chrome=124.0.6367.119)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1d2a794b86095081548bdf93fd72e902, findElement {using=css selector, value=.mainNav_details > div:last-child}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.155 (df4f029328b..., userDataDir: C:\Users\268850\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49298}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49298/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1d2a794b86095081548bdf93fd72e902]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".mainNav_details > div:last-child"}
+  (Session info: chrome=124.0.6367.119)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1d2a794b86095081548bdf93fd72e902, findElement {using=css selector, value=.mainNav_details > div:last-child}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.155 (df4f029328b..., userDataDir: C:\Users\268850\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49298}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49298/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1d2a794b86095081548bdf93fd72e902
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy35.click(Unknown Source)
+at com.ust.lenskart.pages.HomePage.cartLink(HomePage.java:157)
+at stepdefinitions.RemoveItemInvalid.user_clicks_on_cart_link(RemoveItemInvalid.java:27)
+at ✽.User clicks on cart link(file:///C:/Users/268850/Capstone-workspace/lenskart-qa/src/test/resources/features/AddToCart.feature:29)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@6ed3f258]" started-at="2024-05-09T10:21:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-09T10:22:31 IST" duration-ms="73497" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Appointment booking functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["book an appointment"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[text()='Appointment Confirmed']' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[text()='Appointment Confirmed']' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.ust.lenskart.pages.StorePage.getConfirmationText(StorePage.java:110)
+at stepdefinitions.BookAppointmentTest.user_book_a_free_appointment_from_the_top_most_list(BookAppointmentTest.java:86)
+at ✽.User book a free appointment from the top most list(file:///C:/Users/268850/Capstone-workspace/lenskart-qa/src/test/resources/features/Appointment.feature:11)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Appointment Confirmed']"}
+  (Session info: chrome=124.0.6367.119)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [07eb3f6944d2994b21675a9963beb1d9, findElement {using=xpath, value=//div[text()='Appointment Confirmed']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.155 (df4f029328b..., userDataDir: C:\Users\268850\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50661}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50661/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 07eb3f6944d2994b21675a9963beb1d9
+at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy35.isDisplayed(Unknown Source)
 at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
 at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
 at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-at com.ust.lenskart.pages.HomePage.clickSignUp(HomePage.java:210)
-at stepdefinitions.SignUpValid.user_clicks_on_the_signup_link(SignUpValid.java:31)
+at com.ust.lenskart.pages.StorePage.getConfirmationText(StorePage.java:110)
+at stepdefinitions.BookAppointmentTest.user_book_a_free_appointment_from_the_top_most_list(BookAppointmentTest.java:86)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -498,7 +264,6 @@ at org.testng.SuiteRunner.run(SuiteRunner.java:336)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
 at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1296)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
 at org.testng.TestNG.runSuites(TestNG.java:1134)
 at org.testng.TestNG.run(TestNG.java:1101)
@@ -511,14 +276,285 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@615091b8]" started-at="2024-05-07T08:45:26 IST" name="tearDownClass" finished-at="2024-05-07T08:45:27 IST" duration-ms="326" status="PASS">
-=======
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@6ed3f258]" started-at="2024-05-07T00:47:45 IST" name="tearDownClass" finished-at="2024-05-07T00:47:45 IST" duration-ms="5" status="PASS">
->>>>>>> 2ac5b96fbf21ee993d811c4b9c44bde109e96de5
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@6ed3f258]" started-at="2024-05-09T10:22:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-09T10:23:26 IST" duration-ms="55446" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login to existing account"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: .login-panel' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: .login-panel' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.ust.lenskart.pages.HomePage.getLoginUserName(HomePage.java:303)
+at stepdefinitions.LoginValid.will_be_logged_in_to_their_homepage(LoginValid.java:52)
+at ✽.'Vivek' will be loggedIn to their homepage(file:///C:/Users/268850/Capstone-workspace/lenskart-qa/src/test/resources/features/SignIn.feature:12)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".login-panel"}
+  (Session info: chrome=124.0.6367.119)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6778a236c50439566decfb51b5400535, findElement {using=css selector, value=.login-panel}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.155 (df4f029328b..., userDataDir: C:\Users\268850\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51158}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51158/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6778a236c50439566decfb51b5400535
+at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy35.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+at com.ust.lenskart.pages.HomePage.getLoginUserName(HomePage.java:303)
+at stepdefinitions.LoginValid.will_be_logged_in_to_their_homepage(LoginValid.java:52)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
+at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
+at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@6ed3f258]" started-at="2024-05-09T10:23:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-09T10:24:07 IST" duration-ms="40601" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User tries to login with Invalid Email"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[text()='Sign In']' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[text()='Sign In']' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.ust.lenskart.pages.HomePage.clickSignInLink(HomePage.java:275)
+at stepdefinitions.LoginValid.user_clicks_on_sign_in_link(LoginValid.java:30)
+at ✽.User clicks on signIn Link(file:///C:/Users/268850/Capstone-workspace/lenskart-qa/src/test/resources/features/SignIn.feature:17)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Sign In']"}
+  (Session info: chrome=124.0.6367.119)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [94eb61daef5241164dc097fa06584981, findElement {using=xpath, value=//span[text()='Sign In']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.155 (df4f029328b..., userDataDir: C:\Users\268850\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51624}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51624/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 94eb61daef5241164dc097fa06584981
+at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy35.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+at com.ust.lenskart.pages.HomePage.clickSignInLink(HomePage.java:275)
+at stepdefinitions.LoginValid.user_clicks_on_sign_in_link(LoginValid.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
+at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
+at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@6ed3f258]" started-at="2024-05-09T10:24:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-09T10:24:46 IST" duration-ms="39300" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User tries to login with Invalid password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@6ed3f258]" started-at="2024-05-09T10:24:46 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-09T10:25:22 IST" duration-ms="36288" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Creating a new Account"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Sign Up functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@6ed3f258]" started-at="2024-05-09T10:25:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-09T10:26:04 IST" duration-ms="41797" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Creating a new account with already existing email"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Sign Up functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.ust.lenskart.testrunner.TestRunner@6ed3f258]" started-at="2024-05-09T10:26:04 IST" name="tearDownClass" finished-at="2024-05-09T10:26:18 IST" duration-ms="13356" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- com.ust.lenskart.testrunner.TestRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite2 -->
 </testng-results>

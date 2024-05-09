@@ -1,8 +1,5 @@
 package com.ust.lenskart.testcases;
 
-
-
-
 import static org.testng.Assert.assertTrue;
 
 import java.util.Arrays;

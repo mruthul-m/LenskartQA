@@ -3,8 +3,6 @@ package com.ust.lenskart.pages;
 import com.ust.lenskart.base.TestBase;
 import com.ust.lenskart.utils.DriverIsNotChanged;
 
-
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -24,7 +22,7 @@ public class CartPage extends TestBase {
     @FindBy(xpath = "//div[@class='CartStyles__RemoveItemOverlay-sc-14bvp3n-27 bLIudg'][last()]//div//span[text()='Remove']")
     private WebElement removeBtn;
     
-    @FindBy(css = ".PopUpConfirm--1ykjvo8.gvkMrH")
+    @FindBy(xpath = "//div[text()='Yes, remove']")
     private WebElement acceptRemove;
 
     @FindBy(xpath = "//div[@class='CartStyles__RemoveItemOverlay-sc-14bvp3n-27 bLIudg'][last()]//div//div//div//div[1]/div[1]")
@@ -63,7 +61,7 @@ public class CartPage extends TestBase {
     
     public void removeItemFromCart() {
     	setWait(driver, 10).until(ExpectedConditions.visibilityOf(removeBtn)).click();
-    	acceptRemove.click();
+    	wait.until(ExpectedConditions.visibilityOf(acceptRemove)).click();
     	delay(2);
     }
     

@@ -34,7 +34,7 @@ public class HomePage extends TestBase {
 	private WebElement storeLink;
 
 	
-	@FindBy(css = ".ActionLinksContainer--5xj1y5.gKkoeY > div:last-child")
+	@FindBy(css = ".ActionLinksContainer--76ae3r.iwODZW > div:last-child")
 	private WebElement cartLink;
 
 	@FindBy(xpath = "//div[@class='Buttons--15b7dyn jAmxXC']//span[text()='Remove']")
@@ -112,13 +112,13 @@ public class HomePage extends TestBase {
 	@FindBy(css = "button[id='remove-button']")
 	private WebElement signInBtn;
 	
-	@FindBy(css = ".ActionLinksContainer--5xj1y5.gKkoeY > div:nth-child(2)")
+	@FindBy(css = ".login-panel")
 	private WebElement loginUserName;
 	
 	@FindBy(css = "div[subtext]")
 	private WebElement invalidEmailError;
 	
-	@FindBy(css = ".ErrorField--6thwyh.ihTbJV")
+	@FindBy(xpath = "//div[starts-with(text(),'Email Id already exists')]")
 	private WebElement emailExistsError;
 	
 	@FindBy(css = "#remove-button")
@@ -153,7 +153,7 @@ public class HomePage extends TestBase {
 
 	public CartPage cartLink(WebDriver driver){
 		
-
+		wait.until(ExpectedConditions.visibilityOf(cartLink));
 		cartLink.click();
 		return PageFactory.initElements(driver, CartPage.class);
 	}
