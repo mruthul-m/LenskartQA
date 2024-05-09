@@ -22,7 +22,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.ust.lenskart.utils.TestConfig;
 
 public class TestBase {
-
+	
 
     // Load the configuration properties
     protected static final TestConfig testconfig = ConfigFactory.create(TestConfig.class);
