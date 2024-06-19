@@ -9,10 +9,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 
-import com.ust.lenskart.base.TestBase;
+import com.ust.lenskart.base.ReusableFunctions;
 import com.ust.lenskart.utils.Helper;
 
-public class SearchItemPage extends TestBase{
+public class SearchItemPage extends ReusableFunctions{
 	
 	//initializes a JavascriptExecutor object named js
 	JavascriptExecutor js = (JavascriptExecutor) driver;

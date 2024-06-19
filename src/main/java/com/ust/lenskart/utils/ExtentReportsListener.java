@@ -14,10 +14,10 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.Markup;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
-import com.ust.lenskart.base.TestBase;
+import com.ust.lenskart.base.ReusableFunctions;
 
 // Listener for Extent Reports
-public class ExtentReportsListener extends TestBase implements ITestListener {
+public class ExtentReportsListener extends ReusableFunctions implements ITestListener {
     
     public ExtentReports extent;
     public ExtentTest test;

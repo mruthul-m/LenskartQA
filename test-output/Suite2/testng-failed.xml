@@ -6,7 +6,7 @@
       <class name="com.ust.lenskart.testrunner.TestRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="3 4"/>
+          <include name="runScenario" invocation-numbers="3 4 6"/>
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- com.ust.lenskart.testrunner.TestRunner -->

@@ -3,14 +3,14 @@ package stepdefinitions;
 
 import org.openqa.selenium.WebDriver;
 
-import com.ust.lenskart.base.TestBase;
+import com.ust.lenskart.base.ReusableFunctions;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 
 // Hooks class to manage setup and teardown operations for scenarios
-public class Hooks extends TestBase {
+public class Hooks extends ReusableFunctions {
 	
 	// Static WebDriver instance shared across steps
 	public static WebDriver driver;
@@ -20,7 +20,7 @@ public class Hooks extends TestBase {
 	public static void setup() {
 		// Initialize WebDriver and navigate to the application URL
 		appInit();
-		driver = TestBase.driver;
+		driver = ReusableFunctions.driver;
 		navigateTo();
 	}
 	

@@ -31,6 +31,6 @@ public class TestItemSearch extends Hooks {
         homePage.enterSearchBox(testconfig.getInvalidSearchItem());
 		searchItemPage = PageFactory.initElements(driver, SearchItemPage.class);
         assertEquals(searchItemPage.getSearchItemText(),testconfig.getInvalidSearchItem().toUpperCase());
-        assertEquals(searchItemPage.getinvalidSearchItemText(),testconfig.getInvalidSearchMessage());
+        assertEquals(searchItemPage.getinvalidSearchItemText(),testconfig.getInvalidSearchMessage()+78);
     }
 }

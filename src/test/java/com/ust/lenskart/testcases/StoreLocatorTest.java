@@ -4,7 +4,6 @@ import static org.testng.Assert.assertTrue;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Set;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
@@ -17,7 +16,7 @@ import com.ust.lenskart.pages.StorePage;
 public class StoreLocatorTest extends Hooks{
 	
 	HomePage homepage;
-	String parentWindow;
+	
 	
 	@Test
 	public void gotoLocator() {
@@ -31,13 +30,7 @@ public class StoreLocatorTest extends Hooks{
 	
 	@Test(dependsOnMethods = "gotoLocator")
 	public void searchCity() {
-		Set<String> windows = driver.getWindowHandles();
-		for (String window : windows) {
-			if (! window.equals(parentWindow)) {
-				driver.switchTo().window(window);
-				break;
-			}
-		}
+	
 		List<String> places= PageFactory.initElements(driver, StorePage.class)
 				.setCity("Thiruvananthapuram, Kerala, India").clickCity().getShopText();
 		

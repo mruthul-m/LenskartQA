@@ -1,6 +1,6 @@
 package com.ust.lenskart.pages;
 
-import com.ust.lenskart.base.TestBase;
+import com.ust.lenskart.base.ReusableFunctions;
 import com.ust.lenskart.utils.DriverIsNotChanged;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 // Page class representing the shopping page
-public class ShoppingPage extends TestBase {
+public class ShoppingPage extends ReusableFunctions {
 
     // Constructor to initialize the page
     public ShoppingPage(WebDriver driver, String base) {

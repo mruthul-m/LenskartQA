@@ -8,9 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import com.ust.lenskart.base.TestBase;
+import com.ust.lenskart.base.ReusableFunctions;
 
-public class StorePage extends TestBase{
+public class StorePage extends ReusableFunctions{
 
 	
 	@FindBy(css = "input[placeholder='Search by state/pincode/Locality']")

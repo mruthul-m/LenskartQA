@@ -1,6 +1,6 @@
 package com.ust.lenskart.pages;
 
-import com.ust.lenskart.base.TestBase;
+import com.ust.lenskart.base.ReusableFunctions;
 import com.ust.lenskart.utils.DriverIsNotChanged;
 
 import org.openqa.selenium.WebDriver;
@@ -9,12 +9,15 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class CartPage extends TestBase {
+public class CartPage extends ReusableFunctions {
 
     // Element locator for the empty cart message
     @FindBy(css = "div[data-cy='cart-not-found-desktop'] > div > div:first-child")
     private WebElement emptyCart;
     
+    
+    @FindBy(css = "button[data-testid='button-testid']")
+    private WebElement shoppingText;
 
     @FindBy(css = "img[alt='lenskart-logo']")
     private WebElement homeLogo;
@@ -27,6 +30,17 @@ public class CartPage extends TestBase {
 
     @FindBy(xpath = "//div[@class='CartStyles__RemoveItemOverlay-sc-14bvp3n-27 bLIudg'][last()]//div//div//div//div[1]/div[1]")
     private WebElement productAtCartHeading;
+    
+    
+    public String getShoppingText() {
+    	wait.until(ExpectedConditions.visibilityOf(shoppingText));
+    	return shoppingText.getText();
+    }
+    
+    public String getColor() {
+    	wait.until(ExpectedConditions.visibilityOf(shoppingText));
+    	return shoppingText.getAttribute("style");
+    }
     // Method to get the text of the empty cart message
     public String getEmptyCartText(){
 //        setWait(driver,10).until(ExpectedConditions.visibilityOf(emptyCart));

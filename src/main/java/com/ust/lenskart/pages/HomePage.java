@@ -11,11 +11,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import com.ust.lenskart.base.TestBase;
+import com.ust.lenskart.base.ReusableFunctions;
 import com.ust.lenskart.utils.Helper;
 
 // This class represents the Home page of the Lenskart application
-public class HomePage extends TestBase {
+public class HomePage extends ReusableFunctions {
 
 	
 	//initializes a JavascriptExecutor object named js
@@ -34,7 +34,7 @@ public class HomePage extends TestBase {
 	private WebElement storeLink;
 
 	
-	@FindBy(css = ".ActionLinksContainer--76ae3r.iwODZW > div:last-child")
+	@FindBy(xpath = "//div[contains(@class,'ActionLinksContainer--')]/div[last()]")
 	private WebElement cartLink;
 
 	@FindBy(xpath = "//div[@class='Buttons--15b7dyn jAmxXC']//span[text()='Remove']")
@@ -151,8 +151,7 @@ public class HomePage extends TestBase {
 		return this;
 	}
 
-	public CartPage cartLink(WebDriver driver){
-		
+	public CartPage cartLink(WebDriver driver){		
 		wait.until(ExpectedConditions.visibilityOf(cartLink));
 		cartLink.click();
 		return PageFactory.initElements(driver, CartPage.class);
