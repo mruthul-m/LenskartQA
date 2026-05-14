@@ -70,7 +70,7 @@ public class ReusableFunctions {
 
       case "chrome":
         ChromeOptions chromeoptions = new ChromeOptions();
-        chromeoptions.addArguments("--disable-notifications", "--start-maximized");
+        chromeoptions.addArguments("--disable-notifications", "--start-maximized", "--headless=new");
         chromeoptions.addArguments("--guest");
         return new ChromeDriver(chromeoptions);
 
